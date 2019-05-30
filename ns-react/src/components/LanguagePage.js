@@ -2,9 +2,10 @@ import React from "react";
 import Language from "./Language";
 import "../style/LanguagePage.css";
 
-export class LanguageList extends React.Component{
+export class LanguagePage extends React.Component{
+
   cardClicked = id => {
-    this.props.cardClicked(id);
+    console.log("je klikt op taal: " + id);
   };
 
   render() {
@@ -42,4 +43,4 @@ export class LanguageList extends React.Component{
     );
   }
 }
-export default LanguageList;
+export default LanguagePage;
