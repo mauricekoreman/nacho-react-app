@@ -1,0 +1,10 @@
+.img-card.mdl-card {
+  width: 320px;
+  height: 320px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.img-card > .mdl-card__title {
+  color: #fff;
+  background-size: cover;
+}
