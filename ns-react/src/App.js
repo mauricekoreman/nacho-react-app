@@ -1,4 +1,5 @@
 import React from "react";
+
 import axios from "axios";
 import SightseeingComponent from './SightseeingComponent';
 import "./App.css";
@@ -48,17 +49,22 @@ class App extends React.Component {
   };
 
   render() {
-    const { name } = this.state;
-    const { text } = this.state;
-    const { image } = this.state
+    // const { name } = this.state;
+    // const { text } = this.state;
+    // const { image } = this.state
     return (
-      <div className="container">
-        <SightseeingComponent
-          name={ name }
-          text={ text }
-          image={ image }
-        />
-      </div>
+    //   <div className="container">
+    //     <SightseeingComponent
+    //       name={ name }
+    //       text={ text }
+    //       image={ image }
+    //     />
+        <div class="page1">
+        <h1 id="ns-sightseeing"alt="logo">NS Sightseeing</h1>
+        <img id="logo" src="/img/logo.jpg"></img>
+        </div>
+      // </div>
+
     );
   }
 };
