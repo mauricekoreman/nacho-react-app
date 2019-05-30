@@ -6,4 +6,4 @@ import App from "./App";
 
 import ErrorPage from "./ErrorPage";
 
-ReactDOM.render(<ErrorPage />, document.querySelector("#root"));
+ReactDOM.render(<App />, document.querySelector("#root"));
