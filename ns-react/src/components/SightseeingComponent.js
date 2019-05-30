@@ -1,5 +1,5 @@
 import React from "react";
-import './SightseeingComponent.css';
+import '../style/SightseeingComponent.css';
 
 class SightseeingComponent extends React.Component {
   render() {
