@@ -6,4 +6,6 @@ import App from "./App";
 
 import ErrorPage from "./ErrorPage";
 
-ReactDOM.render(<App />, document.querySelector("#root"));
+import GpsComponent from "./GpsComponent";
+
+ReactDOM.render(<GpsComponent />, document.querySelector("#root"));
