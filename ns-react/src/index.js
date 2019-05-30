@@ -1,12 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+//3 stappen om react werkend te krijgen
 
-ReactDOM.render(<App />, document.getElementById('root'));
+//1) React zelf importeren
+import React from "react";
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+//2) React renderen in het DOM
+import ReactDOM from "react-dom";
+
+//2)2.5 Importeer je componenten
+import App from "./App";
+
+//3) App in het DOM schieten
+ReactDOM.render(<App />, document.querySelector("#root"));
