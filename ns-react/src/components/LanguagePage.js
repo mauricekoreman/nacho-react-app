@@ -1,8 +1,8 @@
 import React from "react";
 import Language from "./Language";
-import "./LanguageList.css";
+import "../style/LanguagePage.css";
 
-class LanguageList extends React.Component{
+export class LanguageList extends React.Component{
   cardClicked = id => {
     this.props.cardClicked(id);
   };

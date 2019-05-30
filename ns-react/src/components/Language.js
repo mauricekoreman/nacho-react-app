@@ -1,8 +1,8 @@
 import React from "react";
 
-import "./Language.css";
+import "../style/Language.css";
 
-class Language extends React.Component {
+export class Language extends React.Component {
   onCardClicked = () => {
     this.props.cardClicked(this.props.id);
   };
@@ -10,7 +10,7 @@ class Language extends React.Component {
   render(){
     return(
         <button
-          className="mdl-button mdl-js-button mdl-button--fab mdl-button--colored"
+          className="language-btn"
           style={{ backgroundImage: `url(${this.props.background})` }}
           onClick={this.onCardClicked} >
         </button>

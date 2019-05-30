@@ -16,13 +16,14 @@ body{
   box-sizing: border-box;
 }
 
-button{
+.language-btn {
+  border: none;
   position: relative;
   height: 80px;
   width: 128px;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 25%;
+  border-radius: 14px;
   display: inline-block;
   background-position: center;
   padding: 0;
