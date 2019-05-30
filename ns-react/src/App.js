@@ -2,7 +2,9 @@ import React from "react";
 
 import axios from "axios";
 import SightseeingComponent from './SightseeingComponent';
+import GpsComponent from "./GpsComponent";
 import "./App.css";
+
 
 class App extends React.Component {
 
@@ -62,6 +64,7 @@ class App extends React.Component {
         <div class="page1">
         <h1 id="ns-sightseeing"alt="logo">NS Sightseeing</h1>
         <img id="logo" src="/img/logo.jpg"></img>
+        
         </div>
       // </div>
 
