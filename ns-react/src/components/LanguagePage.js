@@ -10,6 +10,8 @@ export class LanguagePage extends React.Component{
 
   render() {
     return (
+      <div>
+      <h3 className="language-title" >Pick your language</h3>
       <div className="grid-container">
         <div className="grid-item">
           <Language
@@ -39,6 +41,7 @@ export class LanguagePage extends React.Component{
             background="/img/FK.png"
           />
         </div>
+      </div>
       </div>
     );
   }

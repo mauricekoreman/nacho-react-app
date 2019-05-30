@@ -1,8 +1,15 @@
 .grid-container{
-  width: 80%;
+  width: 100%;
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 20px;
   grid-row-gap: 50px;
+  text-align: center;
+}
 
+
+
+.language-title{
+  text-align: center;
+  margin: 100px 0;
 }
