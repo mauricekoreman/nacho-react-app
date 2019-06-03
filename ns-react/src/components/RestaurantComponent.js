@@ -1,7 +1,7 @@
 import React from "react";
 import '../style/SightseeingComponent.css';
 
-class SightseeingComponent extends React.Component {
+class RestaurantComponent extends React.Component {
   render() {
     return (
       <div className="img-card mdl-card mdl-shadow--2dp">
@@ -19,4 +19,4 @@ class SightseeingComponent extends React.Component {
   }
 }
 
-export default SightseeingComponent;
+export default RestaurantComponent;
