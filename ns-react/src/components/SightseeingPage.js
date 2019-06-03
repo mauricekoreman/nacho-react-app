@@ -26,31 +26,14 @@ export class SightSeeingPage extends React.Component{
     const API_TOKEN = "&token=v56oi7tj6zdoweync49h0h3vyddtd13x";
 
     // Sightseeing
-    // axios.all([
-    //   axios.get(BASE_URL + CATEGORIE_POI + LOCATION + "Amsterdam" + "&order_by=-score&fields=name,score,images,snippet&count=1" + ACCOUNT + API_TOKEN),
-    //   axios.get(BASE_URL + CATEGORIE_POI + LOCATION + "Amsterdam" + TAG_LABELS + "eatingout" + "&order_by=-score&fields=name,coordinates,score,images,snippet" + ACCOUNT + API_TOKEN)
-    //   .then(res => {
-    //     console.log(res.data.results);
-    //     this.setState({ name: res.data.results[0].name});
-    //     this.setState({ text: res.data.results[0].snippet})
-    //     this.setState({ image: res.data.results[0].images[1].sizes.thumbnail.url });
-    //   })
-    //   .catch(error => {
-    //     console.log(error);
-    //   });
-    // ])
-
-    // Restaurant
-    // axios.get(BASE_URL + CATEGORIE_POI + LOCATION + "Amsterdam" + TAG_LABELS + "eatingout" + "&order_by=-score&fields=name,coordinates,score,images,snippet" + ACCOUNT + API_TOKEN)
-    // .then(res => {
-    //   console.log(res.data.results);
-    //   this.setState({ name: res.data.results[0].name});
-    //   this.setState({ text: res.data.results[0].snippet})
-    //   this.setState({ image: res.data.results[0].images[1].sizes.thumbnail.url });
-    // })
-    // .catch(error => {
-    //   console.log(error);
-    // });
+    axios.all([
+      axios.get(BASE_URL + CATEGORIE_POI + LOCATION + "Amsterdam" + "&order_by=-score&fields=name,score,images,snippet&count=1" + ACCOUNT + API_TOKEN),
+      axios.get(BASE_URL + CATEGORIE_POI + LOCATION + "Amsterdam" + TAG_LABELS + "eatingout" + "&order_by=-score&fields=name,coordinates,score,images,snippet" + ACCOUNT + API_TOKEN)
+    ])
+    .then(axios.spread((activityRes, restaurantRes) => {
+      console.log(activityRes.data.results[0]);
+      console.log(restaurantRes.data.results[0]);
+    }));
   };
 
   render(){
