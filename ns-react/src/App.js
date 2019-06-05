@@ -4,6 +4,7 @@ import {Router, Route, BrowserRouter} from "react-router-dom";
 
 import Root from "./components/Root";
 import ErrorPage from "./components/ErrorPage";
+import Contact from "./components/Contact";
 import SightSeeingPage from "./components/SightseeingPage";
 import GpsComponent from "./components/GpsComponent";
 import LanguagePage from "./components/LanguagePage";
@@ -19,6 +20,7 @@ class App extends React.Component {
       <BrowserRouter>
         <div>
           <Route path="/error" component={ErrorPage} />
+          <Route path="/contact" component={Contact} />
           <Route path="/sightseeing" component={SightSeeingPage} />
           <Route path="/language" component={LanguagePage} />
           <Route path="/offer" component={CityOfferPage} />
