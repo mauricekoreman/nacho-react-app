@@ -7,6 +7,7 @@ import ErrorPage from "./components/ErrorPage";
 import SightSeeingPage from "./components/SightseeingPage";
 import GpsComponent from "./components/GpsComponent";
 import LanguagePage from "./components/LanguagePage";
+import CityOfferPage from "./components/CityOfferPage";
 
 import "./style/App.css";
 
@@ -20,6 +21,7 @@ class App extends React.Component {
           <Route path="/error" component={ErrorPage} />
           <Route path="/sightseeing" component={SightSeeingPage} />
           <Route path="/language" component={LanguagePage} />
+          <Route path="/offer" component={CityOfferPage} />
         </div>
       </BrowserRouter>
 
