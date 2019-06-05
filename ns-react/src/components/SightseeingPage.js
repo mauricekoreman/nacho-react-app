@@ -31,29 +31,38 @@ export class SightSeeingPage extends React.Component{
       axios.get(BASE_URL + CATEGORIE_POI + LOCATION + "Amsterdam" + TAG_LABELS + "eatingout" + "&order_by=-score&fields=name,coordinates,score,images,snippet" + ACCOUNT + API_TOKEN)
     ])
     .then(axios.spread((activityRes, restaurantRes) => {
-      console.log(activityRes.data.results[0]);
-      console.log(restaurantRes.data.results[0]);
+      // console.log(activityRes.data.results[0]);
+      // console.log(restaurantRes.data.results[0]);
+
+      this.setState({ actname: activityRes.data.results[0].name});
+      this.setState({ acttext: activityRes.data.results[0].snippet})
+      this.setState({ resimage: restaurantRes.data.results[0].images[1].sizes.thumbnail.url });
+
+      // this.setState({ resname: restaurantRes.data.results[0].name});
+      // this.setState({ restext: restaurantRes.data.results[0].snippet})
+      // this.setState({ resimage: restaurantRes.data.results[0].images[2].sizes.thumbnail.url });
+
     }));
   };
 
   render(){
-    const { name } = this.state;
-    const { text } = this.state;
-    const { image } = this.state;
+    const { actname } = this.state;
+    const { acttext } = this.state;
+    const { resimage } = this.state;
 
     return (
       <div className="sightseeing-component">
         <h4 className="sightseeing-heading">Activity:</h4>
         <SightseeingComponent
-          name={ name }
-          text={ text }
-          image={ image }
+          name={ actname }
+          text={ acttext }
+          image={ resimage }
         />
         <h4 className="sightseeing-heading">Restaurant/café:</h4>
         <RestaurantComponent
-          name={ name }
-          text={ text }
-          image={ image }
+          name={ actname }
+          text={ acttext }
+          image={ resimage }
         />
       </div>
     );
