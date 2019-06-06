@@ -1,6 +1,13 @@
 import React from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Redirect
+} from "react-router-dom";
 import Language from "./Language";
 import "../style/LanguagePage.css";
+import Contact from "./Contact"
 
 export class LanguagePage extends React.Component{
 
@@ -41,6 +48,10 @@ export class LanguagePage extends React.Component{
             background="/img/FK.png"
           />
         </div>
+      </div>
+      <div>
+        <button className="Contact-btn">
+        <Link to="/Contact" className="Contact">Contact</Link></button>
       </div>
       </div>
     );
