@@ -8,6 +8,10 @@ import {
 import Language from "./Language";
 import "../style/LanguagePage.css";
 import Contact from "./Contact"
+import vlagNL from "../img/NL.png";
+import vlagUK from "../img/UK.png";
+import vlagSP from "../img/SP.png";
+import vlagFK from "../img/FK.png";
 
 export class LanguagePage extends React.Component{
 
@@ -24,28 +28,28 @@ export class LanguagePage extends React.Component{
           <Language
             id="Nederlands"
             cardClicked={this.cardClicked}
-            background="/img/NL.png"
+            background={vlagNL}
           />
         </div>
         <div className="grid-item">
           <Language
             id="Engels"
             cardClicked={this.cardClicked}
-            background="/img/UK.png"
+            background={vlagUK}
           />
         </div>
         <div className="grid-item">
           <Language
             id="Spaans"
             cardClicked={this.cardClicked}
-            background="/img/SP.png"
+            background={vlagSP}
           />
         </div>
         <div className="grid-item">
           <Language
             id="Frans"
             cardClicked={this.cardClicked}
-            background="/img/FK.png"
+            background={vlagFK}
           />
         </div>
       </div>

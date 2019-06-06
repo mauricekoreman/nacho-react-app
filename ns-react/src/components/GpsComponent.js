@@ -1,5 +1,6 @@
-import React from "react"
+import React from "react";
 import axios from "axios";
+import "../style/GpsComponent.css";
 
 class GpsComponent extends React.Component{
   // To show a photo in our React app, we need to store the API response in state.
@@ -17,7 +18,7 @@ class GpsComponent extends React.Component{
 
   componentDidMount() {
     this.getMyLocation()
-    // this.getMyCity()
+
   }
 
   getMyLocation() {
@@ -46,7 +47,19 @@ class GpsComponent extends React.Component{
     const { latitude, longitude, city} = this.state
     return (
       <div>
-        <h1>{latitude} {longitude} {city}</h1>
+        <h3 className="scanning_text">
+         Scanning...
+        </h3>
+        <h3 className="scanning_text">{city}</h3>
+        <div className="pulse">
+          <img
+            className="logo_puls"
+            src="/img/logo_puls.png"
+            alt=""
+            height="42"
+            width="42"/>
+        </div>
+
       </div>
     );
   }
