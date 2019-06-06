@@ -16,6 +16,7 @@
     "react-swipeable-views": "^0.13.3"
   },
   "scripts": {
+    "compile:sass": "node-sass sass/App.scss css/style.css -w",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
