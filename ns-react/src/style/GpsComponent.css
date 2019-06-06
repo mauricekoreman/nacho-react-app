@@ -52,9 +52,17 @@
     opacity: 0;
   }
 }
-
-.scanning_text{
+.gps-text{
   text-align: center;
   position: relative;
   top: 35px;
+}
+.gps-container{
+  height: 100%;
+  width: 100%;
+}
+.gps-background{
+  height: 100%;
+  width: 100%;
+  background-color: white;
 }

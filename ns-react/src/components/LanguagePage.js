@@ -12,7 +12,7 @@ import vlagNL from "../img/NL.png";
 import vlagUK from "../img/UK.png";
 import vlagSP from "../img/SP.png";
 import vlagFK from "../img/FK.png";
-
+import {Helmet} from 'react-helmet';
 export class LanguagePage extends React.Component{
 
   cardClicked = id => {
@@ -22,6 +22,9 @@ export class LanguagePage extends React.Component{
   render() {
     return (
       <div>
+        <Helmet>
+          <style>{'body { background-color: white; background-repeat: no-repeat;}'}</style>
+        </Helmet>
       <h3 className="language-title" >Pick your language</h3>
       <div className="grid-container">
         <div className="grid-item">
