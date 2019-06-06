@@ -1,3 +1,11 @@
+.home-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #FCC63F;
+}
+
 #logo {
   height: 100%;
   width: auto;

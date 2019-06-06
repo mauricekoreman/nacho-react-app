@@ -7,12 +7,14 @@ export class Home extends React.Component {
 
   render(){
     return(
-      <div class="page1">
-        <h1 id="ns-sightseeing"alt="logo">NS Sightseeing</h1>
-        <img
-          id="logo"
-          src={logoNS}>
-        </img>
+      <div className="home-container">
+        <div className="home-container-page--1">
+          <h1 id="ns-sightseeing" alt="logo">NS Sightseeing</h1>
+          <img
+            id="logo"
+            src={logoNS}>
+          </img>
+        </div>
       </div>
     );
   }

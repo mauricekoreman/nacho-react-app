@@ -21,7 +21,7 @@ export class LanguagePage extends React.Component{
 
   render() {
     return (
-      <div>
+      <div className="languagePage-container">
       <h3 className="language-title" >Pick your language</h3>
       <div className="grid-container">
         <div className="grid-item">

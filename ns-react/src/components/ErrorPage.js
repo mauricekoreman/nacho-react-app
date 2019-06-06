@@ -9,10 +9,10 @@ export class ErrorPage extends React.Component{
 
   render(){
     return (
-      <div className="error-page--container">
-        <h1 className="error-page--code">404</h1>
-        <h2 className="error-page--code-explanation">Page not found</h2>
-          <button className="error-page--btn" onClick={this.toHomePage}>Homepage</button>
+      <div className="error-page-container">
+          <h1 className="error-page--code">404</h1>
+          <h2 className="error-page--code-explanation">Page not found</h2>
+            <button className="error-page--btn" onClick={this.toHomePage}>Homepage</button>
       </div>
     );
   };
