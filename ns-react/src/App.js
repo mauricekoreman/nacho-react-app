@@ -2,6 +2,7 @@ import React from "react";
 
 import {Router, Route, BrowserRouter} from "react-router-dom";
 
+import Home from "./components/Home";
 import Root from "./components/Root";
 import ErrorPage from "./components/ErrorPage";
 import Contact from "./components/Contact";
@@ -18,20 +19,13 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <div>
+          <Route path="/home" component={Home} />
           <Route path="/error" component={ErrorPage} />
           <Route path="/contact" component={Contact} />
           <Route path="/sightseeing" component={SightSeeingPage} />
           <Route path="/language" component={LanguagePage} />
         </div>
       </BrowserRouter>
-
-        // <div class="page1">
-        // <h1 id="ns-sightseeing"alt="logo">NS Sightseeing</h1>
-        // <img id="logo" src="/img/logo.jpg"></img>
-        //
-        // </div>
-      // </div>
-
     );
   }
 };
