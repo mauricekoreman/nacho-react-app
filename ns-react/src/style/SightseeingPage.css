@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sightseeing-component {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.sightseeing-heading {
+  color: #212B5C;
+  display: inline-block;
+}
