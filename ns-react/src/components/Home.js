@@ -2,12 +2,15 @@ import React from "react";
 import "../style/App.css";
 import "../style/Home.css";
 import logoNS from "../img/logo.jpg";
-
+import {Helmet} from 'react-helmet';
 export class Home extends React.Component {
 
   render(){
     return(
       <div class="page1">
+        <Helmet>
+          <style>{'body { background-color: #fcc63f; background-repeat: no-repeat;}'}</style>
+        </Helmet>
         <h1 id="ns-sightseeing"alt="logo">NS Sightseeing</h1>
         <img
           id="logo"

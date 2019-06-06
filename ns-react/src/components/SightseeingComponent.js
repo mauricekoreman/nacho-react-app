@@ -1,10 +1,13 @@
 import React from "react";
 import '../style/SightseeingComponent.css';
-
+import {Helmet} from 'react-helmet';
 class SightseeingComponent extends React.Component {
   render() {
     return (
       <div className="img-card mdl-card mdl-shadow--2dp">
+        <Helmet>
+          <style>{'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'}</style>
+        </Helmet>
         <div className="mdl-card__title mdl-card--expand" style={{ backgroundImage: `url(${this.props.resimage})`}}>
           <h2 className="mdl-card__title-text">{ this.props.actname }</h2>
         </div>

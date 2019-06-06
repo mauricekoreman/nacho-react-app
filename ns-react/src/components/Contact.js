@@ -2,7 +2,7 @@ import React from "react";
 import "../style/Contact.css";
 import pijl_terug from "../img/arrow_back.png";
 import vlaggenMenu from "../img/vlaggenMenu.png";
-
+import {Helmet} from 'react-helmet';
 export class Contact extends React.Component{
   onArrowBackClicked = () => {
     console.log("op terug geklikt");
@@ -13,6 +13,9 @@ export class Contact extends React.Component{
   render(){
     return (
       <div>
+        <Helmet>
+          <style>{'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'}</style>
+        </Helmet>
       <img
         className="back-btn"
         src={pijl_terug}
