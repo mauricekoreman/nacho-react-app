@@ -6,7 +6,7 @@ import {
   Redirect
 } from "react-router-dom";
 import Language from "./Language";
-import "../style/LanguagePage.css";
+import "../css/style.css";
 import Contact from "./Contact"
 import vlagNL from "../img/NL.png";
 import vlagUK from "../img/UK.png";

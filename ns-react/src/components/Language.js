@@ -1,6 +1,6 @@
 import React from "react";
 import {Helmet} from 'react-helmet';
-import "../style/Language.css";
+import "../css/style.css";
 
 export class Language extends React.Component {
   onCardClicked = () => {

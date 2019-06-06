@@ -3,7 +3,7 @@ import axios from "axios";
 import {Helmet} from 'react-helmet';
 import SightseeingComponent from './SightseeingComponent';
 import RestaurantComponent from './RestaurantComponent';
-import "../style/SightseeingPage.css";
+import "../css/style.css";
 
 export class SightSeeingPage extends React.Component{
   // To show a photo in our React app, we need to store the API response in state.

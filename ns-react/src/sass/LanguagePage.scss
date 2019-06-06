@@ -1,0 +1,29 @@
+.grid-container{
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 50px;
+  text-align: center;
+}
+
+.Contact-btn{
+  margin: 10% auto 0% auto;
+  display:block;
+  padding: 20px 80px;
+  border-top-color: black;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  background: none;
+}
+
+.language-title{
+  text-align: center;
+  margin: 100px 0;
+}
+
+.Contact{
+  color: black;
+  text-decoration: none;
+}

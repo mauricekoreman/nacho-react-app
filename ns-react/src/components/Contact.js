@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/Contact.css";
+import "../css/style.css";
 import vlaggenMenu from "../img/vlaggenMenu.png";
 import {Helmet} from 'react-helmet';
 export class Contact extends React.Component{

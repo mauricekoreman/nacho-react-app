@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/CityOfferPage.css";
+import "../css/style.css";
 import SwipeableViews from 'react-swipeable-views';
 import {Helmet} from 'react-helmet';
 const styles = {

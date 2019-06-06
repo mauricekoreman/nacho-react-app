@@ -1,6 +1,5 @@
 import React from "react";
-import "../style/App.css";
-import "../style/Home.css";
+import "../css/style.css";
 import logoNS from "../img/logo.jpg";
 import {Helmet} from 'react-helmet';
 export class Home extends React.Component {

@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/ErrorPage.css";
+import "../css/style.css";
 import {Helmet} from 'react-helmet';
 export class ErrorPage extends React.Component{
 

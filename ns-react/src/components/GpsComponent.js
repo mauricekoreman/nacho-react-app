@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import "../style/GpsComponent.css";
+import "../css/style.css";
 import {Helmet} from 'react-helmet';
 import logoPuls from "../img/logo_puls.png";
 
