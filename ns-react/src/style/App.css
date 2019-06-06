@@ -30,28 +30,28 @@ body {
 }
 
 
-@media only screen
-and (max-width : 768px) {
+@media only screen and (max-width : 768px) {
 
-#logo {
-  width: 150%;
-  position: absolute;
-  top: 0%;
-  margin-left: 47%;
-  transform: translateX(-50%);
-  z-index: -5;
-}
+  #logo {
+    width: 150%;
+    position: absolute;
+    top: 0%;
+    margin-left: 47%;
+    transform: translateX(-50%);
+    z-index: -5;
+  }
 
-#ns-sightseeing {
-  z-index: 10;
-  color: #212B5C;
-  margin-top: 120%;
-  margin-left: 17%;
-  transform: translateX(-0%);
-  font-weight: 300;
-  font-size: 38px;
-}
+  #ns-sightseeing {
+    z-index: 10;
+    color: #212B5C;
+    margin-top: 120%;
+    margin-left: 17%;
+    transform: translateX(-0%);
+    font-weight: 300;
+    font-size: 38px;
+  }
 
-body{
-  font-family: 'Montserrat', sans-serif;
+  body{
+    font-family: 'Montserrat', sans-serif;
+  }
 }
