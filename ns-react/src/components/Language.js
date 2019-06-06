@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Helmet} from 'react-helmet';
 import "../style/Language.css";
 
 export class Language extends React.Component {
@@ -10,6 +10,9 @@ export class Language extends React.Component {
   render(){
     return(
       <div>
+        <Helmet>
+          <style>{'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'}</style>
+        </Helmet>
         <button
           className="language-btn"
           style={{ backgroundImage: `url(${this.props.background})` }}

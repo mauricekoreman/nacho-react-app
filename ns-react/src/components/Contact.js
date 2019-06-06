@@ -1,8 +1,8 @@
 import React from "react";
 import "../style/Contact.css";
 import vlaggenMenu from "../img/vlaggenMenu.png";
-
-export class Contact extends React.Component {
+import {Helmet} from 'react-helmet';
+export class Contact extends React.Component{
   onArrowBackClicked = () => {
     console.log("op terug geklikt");
   };
@@ -11,6 +11,9 @@ export class Contact extends React.Component {
   };
   render() {
     return (<div>
+      <Helmet>
+        <style>{'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'}</style>
+      </Helmet>
       <img className="vlaggenMenu" src={vlaggenMenu} onClick={this.onVlaggenMenuClicked}></img>
       <h1>Contact</h1>
     <div className="contact-container">
