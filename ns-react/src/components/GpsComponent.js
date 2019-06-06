@@ -1,6 +1,6 @@
 import React from "react"
 import axios from "axios";
-import "./GpsComponent.css";
+import "../style/GpsComponent.css";
 
 class GpsComponent extends React.Component{
   // To show a photo in our React app, we need to store the API response in state.
