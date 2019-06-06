@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-
+import {Helmet} from 'react-helmet';
 import SightseeingComponent from './SightseeingComponent';
 import RestaurantComponent from './RestaurantComponent';
 import "../style/SightseeingPage.css";
@@ -52,6 +52,9 @@ export class SightSeeingPage extends React.Component{
 
     return (
       <div className="sightseeing-component">
+        <Helmet>
+          <style>{'body { background-color: white; background-repeat: no-repeat;}'}</style>
+        </Helmet>
         <h4 className="sightseeing-heading">Activity:</h4>
         <SightseeingComponent
           name={ actname }
