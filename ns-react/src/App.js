@@ -8,14 +8,17 @@ import {
   Redirect
 } from "react-router-dom";
 
+
 import ErrorPage from "./components/ErrorPage";
 import Contact from "./components/Contact";
 import SightSeeingPage from "./components/SightseeingPage";
 import GpsComponent from "./components/GpsComponent";
 import LanguagePage from "./components/LanguagePage";
 import CityOfferPage from "./components/CityOfferPage";
+import Home from "./components/Home";
 
 import "./style/App.css";
+
 
 const App = (props) => {
   return (

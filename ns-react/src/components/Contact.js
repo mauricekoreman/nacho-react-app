@@ -1,5 +1,7 @@
 import React from "react";
 import "../style/Contact.css";
+import pijl_terug from "../img/arrow_back.png";
+import vlaggenMenu from "../img/vlaggenMenu.png";
 
 export class Contact extends React.Component{
   onArrowBackClicked = () => {
@@ -13,12 +15,12 @@ export class Contact extends React.Component{
       <div>
       <img
         className="back-btn"
-        src="../img/arrow_back.png"
+        src={pijl_terug}
         onClick={this.onArrowBackClicked} >
       </img>
       <img
         className="vlaggenMenu"
-        src="../img/vlaggenMenu.png"
+        src={vlaggenMenu}
         onClick={this.onVlaggenMenuClicked} >
       </img>
         <h1>Contact</h1>

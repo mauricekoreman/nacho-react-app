@@ -52,4 +52,6 @@ and (max-width : 768px) {
   font-size: 38px;
 }
 
+body{
+  font-family: 'Montserrat', sans-serif;
 }
