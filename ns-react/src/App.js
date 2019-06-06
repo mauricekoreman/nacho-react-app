@@ -24,13 +24,14 @@ const App = (props) => {
   return (
     <Router>
       <div>
-        <h1>Mijn routing website</h1>
         <Switch>
           <Route path="/language" component={LanguagePage} />
           <Route path="/error" component={ErrorPage} />
           <Route path="/contact" component={Contact} />
           <Route path="/sightseeing" component={SightSeeingPage} />
           <Route path="/offer" component={CityOfferPage} />
+          <Route path="/Gps" component={GpsComponent} />
+          <Route path="/home" component={home} />
         </Switch>
       </div>
     </Router>
