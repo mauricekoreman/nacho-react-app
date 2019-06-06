@@ -1,0 +1,64 @@
+body{
+  background-color: white;
+}
+
+.logo_puls{
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+.pulse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  background-color: #212B5C;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 80px;
+  font-size: 48px;
+}
+
+.pulse::before,
+.pulse::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 1px solid #212B5C;
+  left: -40px;
+  right: -40px;
+  top: -40px;
+  bottom: -40px;
+  border-radius: 50%;
+  animation: animate 1.5s linear infinite;
+  backface-visibility: hidden;
+}
+.pulse::after {
+  animation-delay: 0.5s;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+.scanning_text{
+  text-align: center;
+  position: relative;
+  top: 35px;
+}
