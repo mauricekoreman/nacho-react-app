@@ -17,7 +17,7 @@ import LanguagePage from "./components/LanguagePage";
 import CityOfferPage from "./components/CityOfferPage";
 import Home from "./components/Home";
 
-import "./style/App.css";
+import "./css/style.css";
 
 
 const App = (props) => {
