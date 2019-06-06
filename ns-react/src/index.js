@@ -4,8 +4,8 @@ import ReactDOM from "react-dom";
 
 import App from "./App";
 
-import ErrorPage from "./ErrorPage";
+import ErrorPage from "./components/ErrorPage";
 
-import GpsComponent from "./GpsComponent";
+import GpsComponent from "./components/GpsComponent";
 
-ReactDOM.render(<App/>, document.querySelector("#root"));
+ReactDOM.render(<GpsComponent/>, document.querySelector("#root"));
