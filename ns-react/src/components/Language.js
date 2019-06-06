@@ -9,11 +9,13 @@ export class Language extends React.Component {
 
   render(){
     return(
+      <div>
         <button
           className="language-btn"
           style={{ backgroundImage: `url(${this.props.background})` }}
           onClick={this.onCardClicked} >
         </button>
+      </div>
     );
   }
 }

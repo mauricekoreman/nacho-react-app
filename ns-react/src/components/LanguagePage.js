@@ -1,6 +1,13 @@
 import React from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Redirect
+} from "react-router-dom";
 import Language from "./Language";
 import "../style/LanguagePage.css";
+import Contact from "./Contact"
 import vlagNL from "../img/NL.png";
 import vlagUK from "../img/UK.png";
 import vlagSP from "../img/SP.png";
@@ -45,6 +52,10 @@ export class LanguagePage extends React.Component{
             background={vlagFK}
           />
         </div>
+      </div>
+      <div>
+        <button className="Contact-btn">
+        <Link to="/Contact" className="Contact">Contact</Link></button>
       </div>
       </div>
     );
