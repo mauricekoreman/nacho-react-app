@@ -47,8 +47,19 @@ class GpsComponent extends React.Component{
     const { latitude, longitude, city} = this.state
     return (
       <div>
-        <h3>{latitude} {longitude} {city}</h3>
-        <img src="/ns-react/public/img/logo_puls.png" alt="" height="42" width="42"/>
+        <h3 className="scanning_text">
+         Scanning...
+        </h3>
+        <h3 className="scanning_text">{city}</h3>
+        <div className="pulse">
+          <img
+            className="logo_puls"
+            src="/img/logo_puls.png"
+            alt=""
+            height="42"
+            width="42"/>
+        </div>
+
       </div>
     );
   }

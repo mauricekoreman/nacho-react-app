@@ -8,4 +8,4 @@ import ErrorPage from "./ErrorPage";
 
 import GpsComponent from "./GpsComponent";
 
-ReactDOM.render(<GpsComponent />, document.querySelector("#root"));
+ReactDOM.render(<App/>, document.querySelector("#root"));
