@@ -31,7 +31,7 @@ const App = (props) => {
           <Route path="/sightseeing" component={SightSeeingPage} />
           <Route path="/offer" component={CityOfferPage} />
           <Route path="/Gps" component={GpsComponent} />
-          <Route path="/home" component={home} />
+          <Route path="/home" component={Home} />
         </Switch>
       </div>
     </Router>
