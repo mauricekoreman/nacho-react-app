@@ -29,23 +29,18 @@ h1 {
   cursor: pointer;
 }
 
-/* .container{
-  position: absolute;
-  bottom: 0px;
-} */
-
-.url-container {
+.contact-container {
   margin-top: 70px;
   position: relative;
+  margin-right:600px;
 }
 
-#tel, #url, #mail, #social {
+.contact-container-tel, .contact-container-url, .contact-container-mail, .contact-container-social {
   border: 3px solid #4CAF50;
   position: relative;
-  width: 90vw;
   margin: 0 auto;
   margin-bottom: 40px;
-}
+  }
 
 .fa {
   background-color: #212B5C;
@@ -55,22 +50,34 @@ h1 {
   display: inline-block;
   top: 50%;
   transform: translateY(-50%);
+  border-radius: 100px;
+  padding: 15px;
 }
 
 .fa-mobile {
-  padding: 0 15px;
+  padding: 10px 25px;
 }
 
-/* .fa-phone:before {
-  height: 200px;
-} */
+.fa-globe {
+  padding: 9px 13px;
+}
 
-.contact-text {
+.fa-at {
+  padding: 9px 14px;
+}
+
+.fa-twitter {
+  padding: 9px 12px;
+}
+
+.contact-container-text {
   color: #212B5C;
   padding: 25px;
   font-size: 40px;
   margin: 0;
+  display: inline-block;
   text-align: center;
+  margin-left: 180px;
 }
 
 @media only screen and (max-width : 768px) {
