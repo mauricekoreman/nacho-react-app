@@ -24,6 +24,7 @@ class App extends React.Component {
           <Route path="/sightseeing" component={SightSeeingPage} />
           <Route path="/language" component={LanguagePage} />
           <Route path="/offer" component={CityOfferPage} />
+          <Route path="/scanning" component={GpsComponent}/>
         </div>
       </BrowserRouter>
 

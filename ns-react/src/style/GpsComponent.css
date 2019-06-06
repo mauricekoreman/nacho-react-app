@@ -31,7 +31,7 @@ body{
   content: "";
   display: block;
   position: absolute;
-  border: 1px solid #212B5C;
+  border: 4px solid #212B5C;
   left: -40px;
   right: -40px;
   top: -40px;
