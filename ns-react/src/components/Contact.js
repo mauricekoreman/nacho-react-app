@@ -2,6 +2,7 @@ import React from "react";
 import "../css/style.css";
 import vlaggenMenu from "../img/vlaggenMenu.png";
 import {Helmet} from 'react-helmet';
+
 export class Contact extends React.Component{
   onArrowBackClicked = () => {
     console.log("op terug geklikt");
@@ -9,6 +10,7 @@ export class Contact extends React.Component{
   onVlaggenMenuClicked = () => {
     console.log("op vlaggenMenu geklikt");
   };
+ 
   render() {
     return (<div>
       <Helmet>
