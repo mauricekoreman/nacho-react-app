@@ -1,3 +1,8 @@
+.contact-heading-primary {
+  text-align: center;
+  color: $primary-text-color;
+}
+
 .vlaggenMenu {
   position: absolute;
   width: auto;
@@ -13,13 +18,14 @@
 .contact-container {
   margin-top: 70px;
   position: relative;
-  margin-right:600px;
+  text-align: center;
 
-  &-tel, &-url, &-mail, &-social {
-    border: 3px solid #4CAF50;
+  &-mail,
+  &-social,
+  &-tel,
+  &-url {
     position: relative;
-    margin: 0 auto;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
   }
 
   &-text {
@@ -30,6 +36,10 @@
     display: inline-block;
     text-align: center;
     margin-left: 180px;
+  }
+
+  &-text:hover {
+    cursor: pointer;
   }
 }
 
@@ -43,16 +53,27 @@
   transform: translateY(-50%);
   border-radius: 100px;
   padding: 15px;
-  
+  margin-left: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+
   &-mobile {
     padding: 10px 25px;
+    margin-left: 16px;
   }
 
-  &-globe, &-at, &-twitter {
+  &-at,
+  &-globe {
     padding: 9px 13px;
   }
-}
 
+  &-twitter {
+    margin-left: 16px;
+    padding: 6px 10px;
+  }
+}
 @media only screen and (max-width : 768px) {
   .contact-heading-primary {
     font-size: 40px;
