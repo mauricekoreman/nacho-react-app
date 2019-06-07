@@ -2,23 +2,29 @@ import React from "react";
 import "../css/style.css";
 import vlaggenMenu from "../img/vlaggenMenu.png";
 import {Helmet} from 'react-helmet';
+import Language from "./Language";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Redirect
+} from "react-router-dom";
 
 export class Contact extends React.Component{
-  onArrowBackClicked = () => {
-    console.log("op terug geklikt");
-  };
-  onVlaggenMenuClicked = () => {
-    console.log("op vlaggenMenu geklikt");
-  };
- 
   render() {
-    return (<div>
+    return (
+    <div>
       <Helmet>
         <style>{'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'}</style>
       </Helmet>
-      <img className="vlaggenMenu" src={vlaggenMenu} onClick={this.onVlaggenMenuClicked}></img>
-      <h1 className="contact-heading-primary">Contact</h1>
-    <div className="contact-container">
+      <div>
+        <button className="vlaggenMenu-btn"
+          >
+        <Link to="/Language" className="vlaggenMenu">taal</Link></button>
+      </div>
+      <h1>Contact</h1>
+      <div className="contact-container">
+
         <div className="contact-container-tel">
           <i className="fa fa-mobile"></i>
           <p className="contact-container-text">030 751 5155</p>
