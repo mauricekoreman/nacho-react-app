@@ -139,13 +139,6 @@ body {
     transform: scale(1.2);
     opacity: 0; } }
 
-#logo {
-  height: 100%;
-  width: auto;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%); }
-
 .home-heading {
   position: absolute;
   z-index: 1;
@@ -154,6 +147,13 @@ body {
   left: 50%;
   transform: translateX(-50%);
   text-align: center; }
+
+#logo {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%); }
 
 @media only screen and (max-width: 768px) {
   #logo {
@@ -166,48 +166,6 @@ body {
     font-size: 38px;
     width: 80%; } }
 
-/* #logo {
-width: 50%;
-position: absolute;
-top: 0%;
-margin-left: 50%;
-top: -15%;
-transform: translateX(-50%);
-z-index: -5;
-}
-
-#ns-sightseeing {
-z-index: 10;
-color: #212B5C;
-margin-top: 20%;
-margin-left: 42.5%;
-transform: translateX(-42.5%);
-margin-top: 65vh;
-font-weight: 300;
-} */
-/* @media only screen
-and (max-width : 768px) {
-
-#logo {
-  width: 150%;
-  position: absolute;
-  top: 0%;
-  margin-left: 47%;
-  transform: translateX(-50%);
-  z-index: -5;
-}
-
-#ns-sightseeing {
-  z-index: 10;
-  color: #212B5C;
-  margin-top: 120%;
-  margin-left: 17%;
-  transform: translateX(-0%);
-  font-weight: 300;
-  font-size: 38px;
-}
-
-} */
 .language-btn {
   border: none;
   position: relative;
@@ -221,6 +179,10 @@ and (max-width : 768px) {
   padding: 0;
   margin: 0 25px; }
 
+.language-title {
+  text-align: center;
+  margin: 100px 0; }
+
 .grid-container {
   width: 100%;
   display: inline-grid;
@@ -233,20 +195,13 @@ and (max-width : 768px) {
   margin: 10% auto 0% auto;
   display: block;
   padding: 20px 80px;
-  border-top-color: black;
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
+  border: none;
+  border-top: 1.5px solid black;
   background: none; }
-
-.language-title {
-  text-align: center;
-  margin: 100px 0; }
-
-.contact-btn--link {
-  color: black;
-  text-decoration: none;
-  border-bottom: 1px solid #000; }
+  .contact-btn--link {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid #000; }
 
 .img-card.mdl-card {
   width: 100%;
@@ -256,7 +211,7 @@ and (max-width : 768px) {
   color: #fff;
   background-size: cover; }
 
-.sightseeing-component {
+.sightseeing-container {
   position: relative;
   width: 90%;
   margin: 0 auto;
