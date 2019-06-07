@@ -86,12 +86,14 @@ body {
   .error-page--btn:hover {
     cursor: pointer; }
 
-.logo_puls {
-  display: block;
+.gps-container {
   height: 100%;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto; }
+  width: 100%; }
+
+.gps-text {
+  text-align: center;
+  position: relative;
+  top: 35px; }
 
 .pulse {
   position: absolute;
@@ -106,23 +108,26 @@ body {
   text-align: center;
   line-height: 80px;
   font-size: 48px; }
-
-.pulse::before,
-.pulse::after {
-  content: "";
-  display: block;
-  position: absolute;
-  border: 4px solid #212B5C;
-  left: -40px;
-  right: -40px;
-  top: -40px;
-  bottom: -40px;
-  border-radius: 50%;
-  animation: animate 1.5s linear infinite;
-  backface-visibility: hidden; }
-
-.pulse::after {
-  animation-delay: 0.5s; }
+  .pulse::before, .pulse::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 4px solid #212B5C;
+    left: -40px;
+    right: -40px;
+    top: -40px;
+    bottom: -40px;
+    border-radius: 50%;
+    animation: animate 1.5s linear infinite;
+    backface-visibility: hidden; }
+  .pulse::after {
+    animation-delay: 0.5s; }
+  .pulse .logo_puls {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
 
 @keyframes animate {
   0% {
@@ -133,20 +138,6 @@ body {
   100% {
     transform: scale(1.2);
     opacity: 0; } }
-
-.gps-text {
-  text-align: center;
-  position: relative;
-  top: 35px; }
-
-.gps-container {
-  height: 100%;
-  width: 100%; }
-
-.gps-background {
-  height: 100%;
-  width: 100%;
-  background-color: white; }
 
 #logo {
   height: 100%;
