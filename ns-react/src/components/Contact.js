@@ -17,7 +17,7 @@ export class Contact extends React.Component{
         <style>{'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'}</style>
       </Helmet>
       <img className="vlaggenMenu" src={vlaggenMenu} onClick={this.onVlaggenMenuClicked}></img>
-      <h1>Contact</h1>
+      <h1 className="contact-heading-primary">Contact</h1>
     <div className="contact-container">
         <div className="contact-container-tel">
           <i className="fa fa-mobile"></i>
