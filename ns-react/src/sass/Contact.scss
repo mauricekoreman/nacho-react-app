@@ -23,7 +23,7 @@
   }
 
   &-text {
-    color: #212B5C;
+    color: $primary-text-color;
     padding: 25px;
     font-size: 40px;
     margin: 0;
@@ -34,7 +34,7 @@
 }
 
 .fa {
-  background-color: #212B5C;
+  background-color: $primary-text-color;
   color: #FCC63F;
   position: absolute;
   font-size: 4em;

@@ -4,7 +4,7 @@
 
 body {
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   height: 100%; }
 
 .vlaggenMenu {
@@ -75,8 +75,8 @@ body {
   top: 70%;
   width: 80%;
   font-size: 40px;
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #FFF;
   padding: 20px;
   border: none;
   border-radius: 25px;
@@ -103,7 +103,7 @@ body {
   width: 120px;
   height: 120px;
   background-color: #212B5C;
-  color: #fff;
+  color: #FFF;
   border-radius: 50%;
   text-align: center;
   line-height: 80px;
@@ -196,10 +196,10 @@ body {
   display: block;
   padding: 20px 80px;
   border: none;
-  border-top: 1.5px solid black;
+  border-top: 1.5px solid #000;
   background: none; }
   .contact-btn--link {
-    color: black;
+    color: #000;
     text-decoration: none;
     border-bottom: 1px solid #000; }
 
@@ -208,7 +208,7 @@ body {
   height: 320px; }
 
 .img-card > .mdl-card__title {
-  color: #fff;
+  color: #FFF;
   background-size: cover; }
 
 .sightseeing-container {

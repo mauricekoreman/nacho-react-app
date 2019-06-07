@@ -17,12 +17,12 @@
   display:block;
   padding: 20px 80px;
   border: none;
-  border-top: 1.5px solid black;
+  border-top: 1.5px solid $primary-btn-color;
   background: none;
 
   &--link {
-    color: black;
+    color: $primary-btn-color;
     text-decoration: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid $primary-btn-color;
   }
 }
