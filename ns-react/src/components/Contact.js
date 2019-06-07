@@ -24,6 +24,7 @@ export class Contact extends React.Component{
       </div>
       <h1>Contact</h1>
       <div className="contact-container">
+
         <div className="contact-container-tel">
           <i className="fa fa-mobile"></i>
           <p className="contact-container-text">030 751 5155</p>

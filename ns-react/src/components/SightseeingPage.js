@@ -51,7 +51,7 @@ export class SightSeeingPage extends React.Component{
     const { resimage } = this.state;
 
     return (
-      <div className="sightseeing-component">
+      <div className="sightseeing-container">
         <Helmet>
           <style>{'body { background-color: white; background-repeat: no-repeat;}'}</style>
         </Helmet>

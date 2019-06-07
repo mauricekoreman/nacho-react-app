@@ -10,7 +10,7 @@ export class Home extends React.Component {
         <Helmet>
           <style>{'body { background-color: #fcc63f; background-repeat: no-repeat;}'}</style>
         </Helmet>
-        <h1 id="ns-sightseeing"alt="logo">NS Sightseeing</h1>
+        <h1 className="home-heading"alt="logo">NS Sightseeing</h1>
         <img
           id="logo"
           src={logoNS}>

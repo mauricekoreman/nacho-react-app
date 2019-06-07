@@ -1,3 +1,13 @@
+.home-heading {
+  position: absolute;
+  z-index: 1;
+  color: $primary-text-color;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
 #logo {
   height: 100%;
   width: auto;
@@ -6,19 +16,7 @@
   transform: translate(-50%);
 }
 
-#ns-sightseeing {
-  position: absolute;
-  z-index: 1;
-  color: #212B5C;
-  top: 70%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-}
-
-
-@media only screen
-and (max-width : 768px) {
+@media only screen and (max-width : 768px) {
   #logo{
     width: 100%;
     height: auto;
@@ -32,47 +30,3 @@ and (max-width : 768px) {
     width: 80%;
   }
 }
-
-/* #logo {
-width: 50%;
-position: absolute;
-top: 0%;
-margin-left: 50%;
-top: -15%;
-transform: translateX(-50%);
-z-index: -5;
-}
-
-#ns-sightseeing {
-z-index: 10;
-color: #212B5C;
-margin-top: 20%;
-margin-left: 42.5%;
-transform: translateX(-42.5%);
-margin-top: 65vh;
-font-weight: 300;
-} */
-
-/* @media only screen
-and (max-width : 768px) {
-
-#logo {
-  width: 150%;
-  position: absolute;
-  top: 0%;
-  margin-left: 47%;
-  transform: translateX(-50%);
-  z-index: -5;
-}
-
-#ns-sightseeing {
-  z-index: 10;
-  color: #212B5C;
-  margin-top: 120%;
-  margin-left: 17%;
-  transform: translateX(-0%);
-  font-weight: 300;
-  font-size: 38px;
-}
-
-} */
