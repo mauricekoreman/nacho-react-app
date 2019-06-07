@@ -1,3 +1,8 @@
+.language-title {
+  text-align: center;
+  margin: 100px 0;
+}
+
 .grid-container{
   width: 100%;
   display: inline-grid;
@@ -7,23 +12,17 @@
   text-align: center;
 }
 
-.Contact-btn{
+.contact-btn{
   margin: 10% auto 0% auto;
   display:block;
   padding: 20px 80px;
-  border-top-color: black;
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
+  border: none;
+  border-top: 1.5px solid $primary-btn-color;
   background: none;
-}
 
-.language-title{
-  text-align: center;
-  margin: 100px 0;
-}
-
-.Contact{
-  color: black;
-  text-decoration: none;
+  &--link {
+    color: $primary-btn-color;
+    text-decoration: none;
+    border-bottom: 1px solid $primary-btn-color;
+  }
 }

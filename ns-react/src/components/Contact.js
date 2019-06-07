@@ -2,6 +2,7 @@ import React from "react";
 import "../css/style.css";
 import vlaggenMenu from "../img/vlaggenMenu.png";
 import {Helmet} from 'react-helmet';
+
 export class Contact extends React.Component{
   onArrowBackClicked = () => {
     console.log("op terug geklikt");
@@ -9,13 +10,14 @@ export class Contact extends React.Component{
   onVlaggenMenuClicked = () => {
     console.log("op vlaggenMenu geklikt");
   };
+ 
   render() {
     return (<div>
       <Helmet>
         <style>{'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'}</style>
       </Helmet>
       <img className="vlaggenMenu" src={vlaggenMenu} onClick={this.onVlaggenMenuClicked}></img>
-      <h1>Contact</h1>
+      <h1 className="contact-heading-primary">Contact</h1>
     <div className="contact-container">
         <div className="contact-container-tel">
           <i className="fa fa-mobile"></i>

@@ -52,10 +52,10 @@ class GpsComponent extends React.Component{
         <Helmet>
           <style>{'body { background-color: white; background-repeat: no-repeat;}'}</style>
         </Helmet>
-          <h3 className="gps-text gps-text--heading">
+          <h3 className="gps-text">
            Scanning...
           </h3>
-          <h3 className="gps-text gps-text--city">{city}</h3>
+          <h3 className="gps-text">{city}</h3>
           <div className="pulse">
             <img
               className="logo_puls"

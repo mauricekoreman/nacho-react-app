@@ -1,11 +1,13 @@
-.sightseeing-component {
-  position: relative;
-  width: 90%;
-  margin: 0 auto;
-  margin-bottom: 50px;
-}
+.sightseeing {
+  &-container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
 
-.sightseeing-heading {
-  color: #212B5C;
-  display: inline-block;
+  &-heading {
+    color: $primary-text-color;
+    display: inline-block;
+  }
 }

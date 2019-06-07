@@ -1,39 +1,41 @@
+.error-page {
 
-.error-page--code, .error-page--code-explanation {
-  color: #212B5C;
-  text-align: center;
-  position: absolute;
-}
+  &--code, &--explanation {
+    color: $primary-text-color;
+    text-align: center;
+    position: absolute;
+  }
 
-.error-page--code {
-  top: 70px;
-  font-size: 170px;
-  margin-left: 50vw;
-  transform: translateX(-50%);
-}
+  &--code {
+    top: 70px;
+    font-size: 170px;
+    margin-left: 50vw;
+    transform: translateX(-50%);
+  }
 
-.error-page--code-explanation {
-  top: 300px;
-  font-size: 60px;
-  margin-left: 50vw;
-  transform: translateX(-50%);
-}
+  &--explanation {
+    top: 300px;
+    font-size: 60px;
+    margin-left: 50vw;
+    transform: translateX(-50%);
+  }
 
-.error-page--btn {
-  position:absolute;
-  top: 70%;
-  width: 80%;
-  font-size: 40px;
-  background-color: black;
-  color: white;
-  padding: 20px;
-  border: none;
-  border-radius: 25px;
-  height: 120px;
-  margin-left: 50vw;
-  transform: translateX(-50%);
-}
+  &--btn {
+    position:absolute;
+    top: 70%;
+    width: 80%;
+    font-size: 40px;
+    background-color: $primary-btn-color;
+    color: $color-white;
+    padding: 20px;
+    border: none;
+    border-radius: 25px;
+    height: 120px;
+    margin-left: 50vw;
+    transform: translateX(-50%);
 
-.error-page--btn:hover{
-  cursor: pointer;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
