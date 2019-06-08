@@ -30,9 +30,13 @@ export class Contact extends React.Component {
               'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'
             }</style>
         </Helmet>
-        <Link to="/language">
-          <img className="vlaggenMenu" src={vlaggenMenu}></img>
-        </Link>
+
+        <div>
+          <button className="vlaggenMenu-btn">
+            <Link to="/Language" className="vlaggenMenu">Links</Link>
+          </button>
+        </div>
+
         <h1 className="contact-heading-primary">Contact</h1>
         <div className="contact-container">
           <div className="contact-container-tel">

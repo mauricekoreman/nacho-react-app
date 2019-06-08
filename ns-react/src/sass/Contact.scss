@@ -1,26 +1,28 @@
  .vlaggenMenu {
-  color: black;
-  text-decoration: none;
+  // color: black;
+  // text-decoration: none;
 
   &-btn {
-    border: none;
-    float: right;
-    height: 80px;
-    width: 128px;
-    border-radius: 14px;
-    display: inline-block;
-    background-position: center;
-    background-image: url('../img/vlaggenMenu.png');
-    background-size: cover;
-    padding: 0;
-    margin:0 25px;
+    background-color: white;
+    // border: none;
+    // float: right;
+    // height: 80px;
+    // width: 128px;
+    // border-radius: 14px;
+    // display: inline-block;
+    // background-position: center;
+    // background-image: url('../img/vlaggenMenu.png');
+    // background-size: cover;
+    // padding: 0;
+    // margin:0 25px;
 
   }
 
-    .contact-heading-primary {
-      text-align: center;
-      color: $primary-text-color;
-    }
+}
+
+.contact-heading-primary {
+  text-align: center;
+  color: $primary-text-color;
 }
 
 .vlaggenMenu {
