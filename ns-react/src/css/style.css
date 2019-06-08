@@ -22,6 +22,18 @@ body {
     background-size: cover;
     padding: 0;
     margin: 0 25px; }
+  .vlaggenMenu .contact-heading-primary {
+    text-align: center;
+    color: #212B5C; }
+
+.vlaggenMenu {
+  position: absolute;
+  width: auto;
+  height: 70px;
+  right: 20px;
+  top: 20px; }
+  .vlaggenMenu:hover {
+    cursor: pointer; }
 
 .contact-container {
   margin-top: 70px;
