@@ -97,6 +97,16 @@ body {
   .error-page--btn:hover {
     cursor: pointer; }
 
+.error-page-btn--link{
+  color: white;
+  text-decoration: none;}
+
+.error-page--btn:hover {
+  cursor: pointer; }
+
+.logo_puls {
+  display: block;}
+
 .gps-container {
   height: 100%;
   width: 100%; }
