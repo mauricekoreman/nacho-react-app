@@ -32,8 +32,8 @@ export class Contact extends React.Component {
         </Helmet>
 
         <div>
-          <button className="vlaggenMenu-btn">
-            <Link to="/Language" className="vlaggenMenu">Links</Link>
+          <button className="vlaggenMenu">
+            <Link to="/Language" className="vlaggenMenu-link">Links</Link>
           </button>
         </div>
 
