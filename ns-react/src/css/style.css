@@ -26,12 +26,10 @@ body {
 .contact-container {
   margin-top: 70px;
   position: relative;
-  margin-right: 600px; }
-  .contact-container-tel, .contact-container-url, .contact-container-mail, .contact-container-social {
-    border: 3px solid #4CAF50;
+  text-align: center; }
+  .contact-container-mail, .contact-container-social, .contact-container-tel, .contact-container-url {
     position: relative;
-    margin: 0 auto;
-    margin-bottom: 40px; }
+    margin: 0 auto 40px; }
   .contact-container-text {
     color: #212B5C;
     padding: 25px;
@@ -40,6 +38,8 @@ body {
     display: inline-block;
     text-align: center;
     margin-left: 180px; }
+  .contact-container-text:hover {
+    cursor: pointer; }
 
 .fa {
   background-color: #212B5C;
@@ -50,11 +50,18 @@ body {
   top: 50%;
   transform: translateY(-50%);
   border-radius: 100px;
-  padding: 15px; }
+  padding: 15px;
+  margin-left: 0; }
+  .fa:hover {
+    cursor: pointer; }
   .fa-mobile {
-    padding: 10px 25px; }
-  .fa-globe, .fa-at, .fa-twitter {
+    padding: 10px 25px;
+    margin-left: 16px; }
+  .fa-at, .fa-globe {
     padding: 9px 13px; }
+  .fa-twitter {
+    margin-left: 16px;
+    padding: 6px 10px; }
 
 @media only screen and (max-width: 768px) {
   .contact-heading-primary {
