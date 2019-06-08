@@ -18,9 +18,8 @@ export class Contact extends React.Component{
         <style>{'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'}</style>
       </Helmet>
       <div>
-        <button className="vlaggenMenu-btn"
-          >
-        <Link to="/Language" className="vlaggenMenu">taal</Link></button>
+        <button className="vlaggenMenu-btn">
+        <Link to="/Language" className="vlaggenMenu">Links</Link></button>
       </div>
       <h1>Contact</h1>
       <div className="contact-container">
