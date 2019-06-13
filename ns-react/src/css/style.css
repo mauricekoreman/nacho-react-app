@@ -7,7 +7,6 @@ body {
   font-family: "Montserrat", sans-serif;
   height: 100%; }
 
-
 .vlaggenMenu {
   color: black;
   text-decoration: none;
@@ -205,13 +204,14 @@ body {
     transform: scale(1.2);
     opacity: 0; } }
 
+@media only screen and (max-width: 768px) {
+  .gps-header {
+    height: 90px; } }
 
 .page1 {
   position: relative; }
 
 .home-container {
-
-
   position: absolute;
   text-align: center;
   width: 100%;
