@@ -30,9 +30,7 @@ export class Contact extends React.Component {
       <div>
         <Helmet>
           <style>
-            {
-              'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'
-            }</style>
+            {'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'}</style>
         </Helmet>
 
         <div>

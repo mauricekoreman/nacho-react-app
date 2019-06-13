@@ -3,6 +3,13 @@ import axios from "axios";
 import "../css/style.css";
 import {Helmet} from 'react-helmet';
 import logoPuls from "../img/logo_puls.png";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Switch,
+  Redirect
+} from "react-router-dom";
 
 class GpsComponent extends React.Component{
   // To show a photo in our React app, we need to store the API response in state.
@@ -49,21 +56,23 @@ class GpsComponent extends React.Component{
     const { latitude, longitude, city} = this.state
     return (
       <div className="gps-container">
-        <Helmet>
-          <style>{'body { background-color: white; background-repeat: no-repeat;}'}</style>
-        </Helmet>
-          <h3 className="gps-text">
-           Scanning...
-          </h3>
+        <div className="gps-header">
+          <button className="vlaggenMenu">
+            <Link to="/Language" className="vlaggenMenu-link"></Link>
+          </button>
+        </div>
+        <div>
+          <h3 className="gps-text">Scanning...</h3>
           <h3 className="gps-text">{city}</h3>
-          <div className="pulse">
-            <img
-              className="logo_puls"
-              src={logoPuls}
-              alt=""
-              height="42"
-              width="42"/>
-          </div>
+        </div>
+        <div className="pulse">
+          <img
+            className="logo_puls"
+            src={logoPuls}
+            alt=""
+            height="42"
+            width="42"/>
+        </div>
       </div>
     );
   }
