@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/style.css";
-import logoNS from "../img/logo.jpg";
+import logoNS from "../img/logo.png";
 import {Helmet} from 'react-helmet';
 import {
   BrowserRouter as Router,
@@ -18,14 +18,16 @@ export class Home extends React.Component {
         <Helmet>
           <style>{'body { background-color: #fcc63f; background-repeat: no-repeat;}'}</style>
         </Helmet>
-        <h1 className="home-heading"alt="logo">NS Sightseeing</h1>
-        <img
+        <div className="home-container">
+          <img
           id="logo"
           src={logoNS}>
-        </img>
-        <p>
-          <Link to="/language">Click here to begin</Link>
-        </p>
+          </img>
+          <h1 className="home-heading"alt="logo">NS Sightseeing</h1>
+          <p className="home-beginBtn">
+            <Link to="/language" className="home-beginBtn--link">Click here to begin</Link>
+          </p>
+        </div>
       </div>
     );
   }
