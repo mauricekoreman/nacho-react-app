@@ -25,6 +25,7 @@ const App = (props) => {
     <Router>
       <div>
         <Switch>
+          <Route path="" component={Home} />
           <Route path="/language" component={LanguagePage} />
           <Route path="/error" component={ErrorPage} />
           <Route path="/contact" component={Contact} />

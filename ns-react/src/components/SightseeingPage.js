@@ -4,6 +4,13 @@ import {Helmet} from 'react-helmet';
 import SightseeingComponent from './SightseeingComponent';
 import RestaurantComponent from './RestaurantComponent';
 import "../css/style.css";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Switch,
+  Redirect
+} from "react-router-dom";
 
 export class SightSeeingPage extends React.Component{
   // To show a photo in our React app, we need to store the API response in state.
@@ -31,42 +38,47 @@ export class SightSeeingPage extends React.Component{
       axios.get(BASE_URL + CATEGORIE_POI + LOCATION + "Amsterdam" + TAG_LABELS + "eatingout" + "&order_by=-score&fields=name,coordinates,score,images,snippet" + ACCOUNT + API_TOKEN)
     ])
     .then(axios.spread((activityRes, restaurantRes) => {
-      // console.log(activityRes.data.results[0]);
-      // console.log(restaurantRes.data.results[0]);
-
-      this.setState({ actname: activityRes.data.results[0].name});
-      this.setState({ acttext: activityRes.data.results[0].snippet})
-      this.setState({ resimage: restaurantRes.data.results[0].images[1].sizes.thumbnail.url });
-
-      // this.setState({ resname: restaurantRes.data.results[0].name});
-      // this.setState({ restext: restaurantRes.data.results[0].snippet})
-      // this.setState({ resimage: restaurantRes.data.results[0].images[2].sizes.thumbnail.url });
-
+      this.setState({
+        name: activityRes.data.results[0].name,
+        text: activityRes.data.results[0].snippet,
+        image: activityRes.data.results[0].images[2].sizes.thumbnail.url
+      });
+      this.setState({
+        nameEst: restaurantRes.data.results[0].name,
+        textEst: restaurantRes.data.results[0].snippet,
+        imageEst: restaurantRes.data.results[0].images[1].sizes.thumbnail.url,
+      });
     }));
   };
 
+
   render(){
-    const { actname } = this.state;
-    const { acttext } = this.state;
-    const { resimage } = this.state;
+
 
     return (
       <div className="sightseeing-container">
         <Helmet>
           <style>{'body { background-color: white; background-repeat: no-repeat;}'}</style>
         </Helmet>
-        <h4 className="sightseeing-heading">Activity:</h4>
-        <SightseeingComponent
-          name={ actname }
-          text={ acttext }
-          image={ resimage }
-        />
-        <h4 className="sightseeing-heading">Restaurant/café:</h4>
-        <RestaurantComponent
-          name={ actname }
-          text={ acttext }
-          image={ resimage }
-        />
+        <div className="sightseeing-header">
+          <h3 className="sightseeing-heading">Activity:</h3>
+          <button className="vlaggenMenu">
+            <Link to="/Language" className="vlaggenMenu-link"></Link>
+          </button>
+        </div>
+        <div>
+          <SightseeingComponent
+            actname={ this.state.name }
+            acttext={ this.state.text }
+            actimage={ this.state.image }
+          />
+          <h3 className="sightseeing-heading">Restaurant/café:</h3>
+          <RestaurantComponent
+            name={ this.state.nameEst }
+            text={ this.state.textEst }
+            image={ this.state.imageEst }
+          />
+        </div>
       </div>
     );
   };

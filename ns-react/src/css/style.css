@@ -21,6 +21,7 @@ body {
   font-family: "Montserrat", sans-serif;
   height: 100%; }
 
+
 .contact-heading-primary {
   text-align: center;
   color: #212B5C; }
@@ -122,6 +123,10 @@ body {
 .gps-container {
   height: 100%;
   width: 100%; }
+
+.gps-header {
+  background-color: #fcc63f;
+  height: 120px; }
 
 .gps-text {
   text-align: center;
@@ -225,7 +230,7 @@ body {
   text-align: center; }
 
 .contact-btn {
-  margin: 10% auto 0% auto;
+  margin: 150px auto 0% auto;
   display: block;
   padding: 20px 80px;
   border: none;
@@ -252,4 +257,8 @@ body {
 
 .sightseeing-heading {
   color: #212B5C;
-  display: inline-block; }
+  display: inline-block;
+  margin-top: 50px; }
+
+.sightseeing-header {
+  height: 120px; }

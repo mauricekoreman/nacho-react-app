@@ -3,8 +3,13 @@ import "../css/style.css";
 import vlaggenMenu from "../img/vlaggenMenu.png";
 import {Helmet} from 'react-helmet';
 import Language from './Language';
-
-import {BrowserRouter as Router, Route, Link, Redirect, Switch} from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Switch,
+  Redirect
+} from "react-router-dom";
 
 export class Contact extends React.Component {
   onMobileClicked = () => {
@@ -25,13 +30,15 @@ export class Contact extends React.Component {
       <div>
         <Helmet>
           <style>
-            {
-              'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'
-            }</style>
+            {'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'}</style>
         </Helmet>
-        <Link to="/language">
-          <img className="vlaggenMenu" src={vlaggenMenu}></img>
-        </Link>
+
+        <div>
+          <button className="vlaggenMenu">
+            <Link to="/Language" className="vlaggenMenu-link"></Link>
+          </button>
+        </div>
+
         <h1 className="contact-heading-primary">Contact</h1>
         <div className="contact-container">
           <div className="contact-container-tel">

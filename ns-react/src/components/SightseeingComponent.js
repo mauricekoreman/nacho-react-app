@@ -8,7 +8,7 @@ class SightseeingComponent extends React.Component {
         <Helmet>
           <style>{'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'}</style>
         </Helmet>
-        <div className="mdl-card__title mdl-card--expand" style={{ backgroundImage: `url(${this.props.resimage})`}}>
+        <div className="mdl-card__title mdl-card--expand" style={{ backgroundImage: `url(${this.props.actimage})`}}>
           <h2 className="mdl-card__title-text">{ this.props.actname }</h2>
         </div>
         <div className="mdl-card__supporting-text">{ this.props.acttext }</div>
