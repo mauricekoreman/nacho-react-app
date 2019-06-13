@@ -2,6 +2,14 @@ import React from "react";
 import "../css/style.css";
 import logoNS from "../img/logo.jpg";
 import {Helmet} from 'react-helmet';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+} from "react-router-dom";
+
+import LanguagePage from "../components/LanguagePage";
+
 export class Home extends React.Component {
 
   render(){
@@ -15,6 +23,9 @@ export class Home extends React.Component {
           id="logo"
           src={logoNS}>
         </img>
+        <p>
+          <Link to="/language">Click here to begin</Link>
+        </p>
       </div>
     );
   }
