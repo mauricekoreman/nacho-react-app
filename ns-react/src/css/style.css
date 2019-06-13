@@ -1,3 +1,17 @@
+.vlaggenMenu {
+  position: absolute;
+  width: auto;
+  height: 70px;
+  right: 15px;
+  top: 15px; }
+  .vlaggenMenu:hover {
+    cursor: pointer; }
+
+@media only screen and (max-width: 768px) {
+  .vlaggenMenu {
+    height: 50px;
+    top: 25px; } }
+
 * {
   margin: 0;
   padding: 0; }
@@ -10,15 +24,6 @@ body {
 .contact-heading-primary {
   text-align: center;
   color: #212B5C; }
-
-.vlaggenMenu {
-  position: absolute;
-  width: auto;
-  height: 70px;
-  right: 20px;
-  top: 20px; }
-  .vlaggenMenu:hover {
-    cursor: pointer; }
 
 .contact-container {
   margin-top: 70px;
@@ -62,7 +67,24 @@ body {
 
 @media only screen and (max-width: 768px) {
   .contact-heading-primary {
-    font-size: 40px; } }
+    font-size: 40px; }
+  .contact-container {
+    margin-top: 70px;
+    position: relative;
+    text-align: center;
+    margin-left: 20px; }
+    .contact-container-tel, .contact-container-mail, .contact-container-url, .contact-container-social {
+      position: relative;
+      margin: 0 auto 40px; }
+    .contact-container-tel, .contact-container-social {
+      left: -8px; }
+    .contact-container-text {
+      padding: 25px;
+      font-size: 20px;
+      margin: 0;
+      display: inline-block;
+      text-align: center;
+      margin-left: 100px; } }
 
 .error-page--code, .error-page--explanation {
   color: #212B5C;

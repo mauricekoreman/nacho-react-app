@@ -22,7 +22,6 @@ export class Contact extends React.Component {
 
   render() {
     return (
-      <Router>
       <div>
         <Helmet>
           <style>
@@ -57,7 +56,6 @@ export class Contact extends React.Component {
         </Switch>
 
     </div>
-  </Router>
   );
   };
 }
