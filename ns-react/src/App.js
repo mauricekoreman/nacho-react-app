@@ -30,7 +30,7 @@ const App = (props) => {
           <Route path="/contact" component={Contact} />
           <Route path="/sightseeing" component={SightSeeingPage} />
           <Route path="/offer" component={CityOfferPage} />
-          <Route path="/Gps" component={GpsComponent} />
+          <Route path="/GpsComponent" component={GpsComponent} />
           <Route path="/home" component={Home} />
         </Switch>
       </div>

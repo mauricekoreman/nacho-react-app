@@ -7,7 +7,7 @@ import {
   Link,
   Redirect
 } from "react-router-dom";
-import Home from "./Home";
+import GpsComponent from "./GpsComponent";
 
 export class ErrorPage extends React.Component{
 
@@ -18,8 +18,9 @@ export class ErrorPage extends React.Component{
           <style>{'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'}</style>
         </Helmet>
         <h1 className="error-page--code">404</h1>
-        <h2 className="error-page--code-explanation">Page not found</h2>
-          <button className="error-page--btn"><Link to="/Home" className="error-page-btn--link">Homepage</Link></button>
+        <h2 className="error-page--code--explanation">Page not found</h2>
+        <h3 className="error-page--code--explanation--text">sorry! this city has not yet been added.</h3>
+          <button className="error-page--btn"><Link to="/GpsComponent" className="error-page--btn--link">Scanner</Link></button>
       </div>
     );
   };
