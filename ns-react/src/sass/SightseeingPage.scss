@@ -9,5 +9,9 @@
   &-heading {
     color: $primary-text-color;
     display: inline-block;
+    margin-top: 50px;
+  }
+  &-header{
+    height: 120px;
   }
 }
