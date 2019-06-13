@@ -53,8 +53,6 @@ export class SightSeeingPage extends React.Component{
 
 
   render(){
-
-
     return (
       <div className="sightseeing-container">
         <Helmet>
