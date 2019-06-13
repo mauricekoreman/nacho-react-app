@@ -27,13 +27,10 @@ export class Contact extends React.Component {
 
   render() {
     return (
-      <Router>
       <div>
         <Helmet>
           <style>
-            {
-              'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'
-            }</style>
+            {'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'}</style>
         </Helmet>
 
         <div>
@@ -66,7 +63,6 @@ export class Contact extends React.Component {
         </Switch>
 
     </div>
-  </Router>
   );
   };
 }

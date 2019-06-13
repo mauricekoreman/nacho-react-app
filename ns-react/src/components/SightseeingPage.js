@@ -4,6 +4,13 @@ import {Helmet} from 'react-helmet';
 import SightseeingComponent from './SightseeingComponent';
 import RestaurantComponent from './RestaurantComponent';
 import "../css/style.css";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Switch,
+  Redirect
+} from "react-router-dom";
 
 export class SightSeeingPage extends React.Component{
   // To show a photo in our React app, we need to store the API response in state.
@@ -53,18 +60,25 @@ export class SightSeeingPage extends React.Component{
         <Helmet>
           <style>{'body { background-color: white; background-repeat: no-repeat;}'}</style>
         </Helmet>
-        <h4 className="sightseeing-heading">Activity:</h4>
-        <SightseeingComponent
-          actname={ this.state.name }
-          acttext={ this.state.text }
-          actimage={ this.state.image }
-        />
-        <h4 className="sightseeing-heading">Restaurant/café:</h4>
-        <RestaurantComponent
-          name={ this.state.nameEst }
-          text={ this.state.textEst }
-          image={ this.state.imageEst }
-        />
+        <div className="sightseeing-header">
+          <h3 className="sightseeing-heading">Activity:</h3>
+          <button className="vlaggenMenu">
+            <Link to="/Language" className="vlaggenMenu-link"></Link>
+          </button>
+        </div>
+        <div>
+          <SightseeingComponent
+            actname={ this.state.name }
+            acttext={ this.state.text }
+            actimage={ this.state.image }
+          />
+          <h3 className="sightseeing-heading">Restaurant/café:</h3>
+          <RestaurantComponent
+            name={ this.state.nameEst }
+            text={ this.state.textEst }
+            image={ this.state.imageEst }
+          />
+        </div>
       </div>
     );
   };
