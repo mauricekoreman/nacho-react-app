@@ -52,8 +52,10 @@ class GpsComponent extends React.Component{
       })
     }
   }
+
+
   render() {
-    const { latitude, longitude, city} = this.state
+    const {city} = this.state;
     return (
       <div className="gps-container">
         <div className="gps-header">
