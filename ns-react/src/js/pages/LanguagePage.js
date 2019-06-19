@@ -58,7 +58,8 @@ export class LanguagePage extends React.Component {
           <Link to="/Contact" className="contact-btn--link">Contact</Link>
         </button>
       </div>
-    </div>);
+    </div>
+  );
   }
 }
 

@@ -42,6 +42,8 @@ class GpsComponent extends React.Component{
         axios.get("https://geocode.xyz/"+ this.state.latitude +","+ this.state.longitude + "?json=1&auth=708506218534296685130x2493")
         .then(res=>{
           this.setState({city: res.data.city});
+          var naam_stad = this.setState({city: res.data.city});
+          return naam_stad;
         })
         .catch(error =>{
           console.log(error);
@@ -51,6 +53,7 @@ class GpsComponent extends React.Component{
         this.setState({ latitude: 'error-latitude', longitude: 'error-longitude' })
       })
     }
+    // return naam_stad;
   }
   render() {
     const { latitude, longitude, city} = this.state
@@ -77,4 +80,6 @@ class GpsComponent extends React.Component{
     );
   }
 }
+
 export default GpsComponent;
+export var naam_stad = naam_stad;

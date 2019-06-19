@@ -1,8 +1,8 @@
 import React from "react";
 import axios from "axios";
 import {Helmet} from 'react-helmet';
-import SightseeingComponent from './SightseeingComponent';
-import RestaurantComponent from './RestaurantComponent';
+import SightseeingComponent from '../components/SightseeingComponent';
+import RestaurantComponent from '../components/RestaurantComponent';
 import "../css/style.css";
 import {
   BrowserRouter as Router,
@@ -53,8 +53,6 @@ export class SightSeeingPage extends React.Component{
 
 
   render(){
-
-
     return (
       <div className="sightseeing-container">
         <Helmet>
