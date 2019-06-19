@@ -1,6 +1,6 @@
 import React from "react";
-import "../css/style.css";
-import vlaggenMenu from "../img/vlaggenMenu.png";
+import "../../css/style.css";
+import vlaggenMenu from "../../img/vlaggenMenu.png";
 import {Helmet} from 'react-helmet';
 import Language from '../components/Language';
 import {

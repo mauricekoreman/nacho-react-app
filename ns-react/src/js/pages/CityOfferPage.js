@@ -1,6 +1,6 @@
 import React from "react";
-import "../css/style.css";
-import "../sass/CityOfferPage.scss";
+import "../../css/style.css";
+import "../../sass/CityOfferPage.scss";
 import axios from "axios";
 import SwipeableViews from 'react-swipeable-views';
 import {BrowserRouter as Router, Route, Link, Redirect, Switch} from "react-router-dom";
