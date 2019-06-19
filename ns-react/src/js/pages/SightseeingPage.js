@@ -3,7 +3,7 @@ import axios from "axios";
 import {Helmet} from 'react-helmet';
 import SightseeingComponent from '../components/SightseeingComponent';
 import RestaurantComponent from '../components/RestaurantComponent';
-import "../css/style.css";
+import "../../css/style.css";
 import {
   BrowserRouter as Router,
   Route,

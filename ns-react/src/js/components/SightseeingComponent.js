@@ -1,5 +1,5 @@
 import React from "react";
-import '../css/style.css';
+import '../../css/style.css';
 import {Helmet} from 'react-helmet';
 class SightseeingComponent extends React.Component {
   render() {
