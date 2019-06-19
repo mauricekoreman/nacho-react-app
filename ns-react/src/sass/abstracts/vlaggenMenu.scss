@@ -1,0 +1,18 @@
+.vlaggenMenu{
+  position: absolute;
+  width: auto;
+  height: 70px;
+  right: 15px;
+  top: 15px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .vlaggenMenu{
+    height: 50px;
+    top: 25px;
+  }
+}

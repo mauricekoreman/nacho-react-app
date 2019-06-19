@@ -1,4 +1,6 @@
 import React from "react";
+import { store } from "./store";
+import { Provider } from "react-redux";
 
 import {
   BrowserRouter as Router,
@@ -7,7 +9,6 @@ import {
   Switch,
   Redirect
 } from "react-router-dom";
-
 
 import ErrorPage from "./components/ErrorPage";
 import Contact from "./components/Contact";
