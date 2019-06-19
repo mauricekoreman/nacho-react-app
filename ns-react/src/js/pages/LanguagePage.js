@@ -1,12 +1,12 @@
 import React from "react";
 import {BrowserRouter as Router, Route, Link, Redirect} from "react-router-dom";
-import Language from "./Language";
-import "../css/style.css";
+import Language from "../components/Language";
+import "../../css/style.css";
 import Contact from "./Contact"
-import vlagNL from "../img/NL.png";
-import vlagUK from "../img/UK.png";
-import vlagSP from "../img/SP.png";
-import vlagFK from "../img/FK.png";
+import vlagNL from "../../img/NL.png";
+import vlagUK from "../../img/UK.png";
+import vlagSP from "../../img/SP.png";
+import vlagFK from "../../img/FK.png";
 import {Helmet} from 'react-helmet';
 export class LanguagePage extends React.Component {
 

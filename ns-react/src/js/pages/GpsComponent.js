@@ -1,8 +1,8 @@
 import React from "react";
 import axios from "axios";
-import "../css/style.css";
+import "../../css/style.css";
 import {Helmet} from 'react-helmet';
-import logoPuls from "../img/logo_puls.png";
+import logoPuls from "../../img/logo_puls.png";
 import {
   BrowserRouter as Router,
   Route,
