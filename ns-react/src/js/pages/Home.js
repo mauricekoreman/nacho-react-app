@@ -1,6 +1,6 @@
 import React from "react";
-import "../css/style.css";
-import logoNS from "../img/logo.png";
+import "../../css/style.css";
+import logoNS from "../../img/logo.png";
 import {Helmet} from 'react-helmet';
 import {
   BrowserRouter as Router,
