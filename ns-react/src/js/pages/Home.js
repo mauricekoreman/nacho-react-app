@@ -8,7 +8,7 @@ import {
   Link,
 } from "react-router-dom";
 
-import LanguagePage from "../components/LanguagePage";
+import LanguagePage from "./LanguagePage";
 
 export class Home extends React.Component {
 
