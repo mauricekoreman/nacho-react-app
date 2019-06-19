@@ -9,13 +9,13 @@ import {
 } from "react-router-dom";
 
 
-import ErrorPage from "./components/ErrorPage";
-import Contact from "./components/Contact";
-import SightSeeingPage from "./components/SightseeingPage";
-import GpsComponent from "./components/GpsComponent";
-import LanguagePage from "./components/LanguagePage";
-import CityOfferPage from "./components/CityOfferPage";
-import Home from "./components/Home";
+import ErrorPage from "./js/pages/ErrorPage";
+import Contact from "./js/pages/Contact";
+import SightSeeingPage from "./js/pages/SightseeingPage";
+import GpsComponent from "./js/pages/GpsComponent";
+import LanguagePage from "./js/pages/LanguagePage";
+import CityOfferPage from "./js/pages/CityOfferPage";
+import Home from "./js/pages/Home";
 
 import "./css/style.css";
 
