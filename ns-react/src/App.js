@@ -15,6 +15,7 @@ import SightSeeingPage from "./js/pages/SightseeingPage";
 import GpsComponent from "./js/pages/GpsComponent";
 import LanguagePage from "./js/pages/LanguagePage";
 import CityOfferPage from "./js/pages/CityOfferPage";
+import StartPage from "./js/pages/StartPage";
 import Home from "./js/pages/Home";
 
 import "./css/style.css";
@@ -31,6 +32,7 @@ const App = (props) => {
           <Route path="/sightseeing" component={SightSeeingPage} />
           <Route path="/offer" component={CityOfferPage} />
           <Route path="/GpsComponent" component={GpsComponent} />
+          <Route path="/startpage" component={StartPage} />
           <Route path="/" component={Home} />
         </Switch>
       </div>
