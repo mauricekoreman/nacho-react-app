@@ -14,20 +14,17 @@ import {changeLanguage} from "./actions";
 export class LanguagePage extends React.Component {
 
   cardNLClicked = () => {
-    this.props.language("Nederlands");
+    this.props.changeLanguage("Nederlands");
   };
   cardENClicked = () => {
-    this.props.language("Engels");
+    this.props.changeLanguage("Engels");
   };
   cardSPClicked = () => {
-    this.props.language("Spaans");
+    this.props.changeLanguage("Spaans");
   };
   cardFRClicked = () => {
-    this.props.language("Frans");
-  };
+    this.props.changeLanguage("Frans");
 
-  onSearch = event => {
-    this.props.changeSearchterm(event.target.value);
   };
 
   render() {
