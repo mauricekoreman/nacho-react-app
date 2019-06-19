@@ -1,6 +1,6 @@
 import React from "react";
-import "../css/style.css";
-import vlaggenMenu from "../img/vlaggenMenu.png";
+import "../../css/style.css";
+import vlaggenMenu from "../../img/vlaggenMenu.png";
 import {
   Helmet
 } from 'react-helmet';
@@ -15,19 +15,19 @@ import {
 
 export class StartPage extends React.Component {
 
-
     render() {
         return (
           <div>
             <Helmet>
               <style>{'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'}</style>
             </Helmet>
-            <div className = "gps-container" >
-            <div className = "gps-header" >
+            <div className = "gps-container" />
+            <div className = "gps-header" />
             <button className = "vlaggenMenu" >
-              <Link to = "/Language" className = "vlaggenMenu-link"></Link>
+              <Link to = "../Language" className = "vlaggenMenu-link"></Link>
             </button>
           </div>
         );
       };
+    }
       export default StartPage;
