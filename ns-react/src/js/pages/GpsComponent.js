@@ -3,6 +3,8 @@ import axios from "axios";
 import "../../css/style.css";
 import {Helmet} from 'react-helmet';
 import logoPuls from "../../img/logo_puls.png";
+import {changeCity} from "./actions";
+import { connect } from "react-redux";
 import {
   BrowserRouter as Router,
   Route,
@@ -15,13 +17,10 @@ class GpsComponent extends React.Component{
   // To show a photo in our React app, we need to store the API response in state.
   constructor() {
     super()
-
     this.state = {
       latitude: '',
       longitude: '',
-      city:'',
     }
-
     this.getMyLocation = this.getMyLocation.bind(this)
   }
 
@@ -41,9 +40,8 @@ class GpsComponent extends React.Component{
         })
         axios.get("https://geocode.xyz/"+ this.state.latitude +","+ this.state.longitude + "?json=1&auth=708506218534296685130x2493")
         .then(res=>{
-          this.setState({city: res.data.city});
-          var naam_stad = this.setState({city: res.data.city});
-          return naam_stad;
+          this.props.changeCity(res.data.city);
+
         })
         .catch(error =>{
           console.log(error);
@@ -52,11 +50,10 @@ class GpsComponent extends React.Component{
       }, (error) => {
         this.setState({ latitude: 'error-latitude', longitude: 'error-longitude' })
       })
+      console.log(this.props.city)
     }
-    // return naam_stad;
   }
   render() {
-    const { latitude, longitude, city} = this.state
     return (
       <div className="gps-container">
         <div className="gps-header">
@@ -66,7 +63,7 @@ class GpsComponent extends React.Component{
         </div>
         <div>
           <h3 className="gps-text">Scanning...</h3>
-          <h3 className="gps-text">{city}</h3>
+          <h3 className="gps-text">{this.props.city}</h3>
         </div>
         <div className="pulse">
           <img
@@ -80,6 +77,7 @@ class GpsComponent extends React.Component{
     );
   }
 }
-
-export default GpsComponent;
-export var naam_stad = naam_stad;
+const mapStateToProps = state => {
+  return { city: state.city };
+};
+export default connect(mapStateToProps, {changeCity: changeCity})(GpsComponent);

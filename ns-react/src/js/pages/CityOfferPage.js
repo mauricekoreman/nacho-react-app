@@ -6,7 +6,6 @@ import SwipeableViews from 'react-swipeable-views';
 import {BrowserRouter as Router, Route, Link, Redirect, Switch} from "react-router-dom";
 import {Helmet} from 'react-helmet';
 import Language from '../components/Language';
-import {naam_stad} from './GpsComponent';
 import GpsComponent from './GpsComponent';
 const styles = {
   slide: {
@@ -41,29 +40,25 @@ class CityOfferPage extends React.Component{
   constructor() {
     super()
     this.state = {
-      city:'',
       image:''
     }
 
   }
 
   componentDidMount() {
-    const BASE_URL = "http://95.179.178.130/api/";
-    const CITY = {naam_stad};
-
-    console.log({naam_stad});
-    // Sightseeing
-    axios.all([
-      axios.get(BASE_URL+CITY),
-      console.log(BASE_URL+CITY)
-    ])
-    .then(axios.spread((activityRes) => {
-      this.setState({
-        name: activityRes.data.stad
-        // image: activityRes.merk_naam
-      });
-    }));
-  };
+  //   const BASE_URL = "http://95.179.178.130/api/";
+  //   // Sightseeing
+  //   axios.all([
+  //     axios.get(BASE_URL+CITY),
+  //     console.log(BASE_URL+CITY)
+  //   ])
+  //   .then(axios.spread((activityRes) => {
+  //     this.setState({
+  //       name: activityRes.data.stad
+  //       // image: activityRes.merk_naam
+  //     });
+  //   }));
+  // };
 
 
 render() {

@@ -3,12 +3,12 @@ import {
   createStore
 } from "redux";
 
-import { language } from "./reducers";
+import { language, city } from "./reducers";
 
 export const store = createStore(
-  
-  combineReducers({
-    language
 
+  combineReducers({
+    language,
+    city
   })
 );
