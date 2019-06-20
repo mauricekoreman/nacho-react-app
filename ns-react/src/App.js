@@ -1,4 +1,6 @@
 import React from "react";
+import { store } from "./js/pages/store";
+import { Provider } from "react-redux";
 
 import {
   BrowserRouter as Router,
@@ -25,18 +27,6 @@ const App = (props) => {
   return (
     <Router>
       <div>
-<<<<<<< Updated upstream
-        <Switch>
-          <Route path="/language" component={LanguagePage} />
-          <Route path="/error" component={ErrorPage} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/sightseeing" component={SightSeeingPage} />
-          <Route path="/offer" component={CityOfferPage} />
-          <Route path="/GpsComponent" component={GpsComponent} />
-          <Route path="/startpage" component={StartPage} />
-          <Route path="/" component={Home} />
-        </Switch>
-=======
         <Provider store={store}>
           <Switch>
             <Route path="/language" component={LanguagePage} />
@@ -47,9 +37,9 @@ const App = (props) => {
             <Route path="/GpsComponent" component={GpsComponent} />
             <Route path="/StartPage" component={StartPage} />
             <Route path="/" component={Home} />
+            <Route path="/" component={Home} />
           </Switch>
       </Provider>
->>>>>>> Stashed changes
       </div>
     </Router>
   );
