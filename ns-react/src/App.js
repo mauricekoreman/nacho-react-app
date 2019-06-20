@@ -1,4 +1,6 @@
 import React from "react";
+import { store } from "./js/pages/store";
+import { Provider } from "react-redux";
 
 import {
   BrowserRouter as Router,
@@ -9,13 +11,14 @@ import {
 } from "react-router-dom";
 
 
-import ErrorPage from "./components/ErrorPage";
-import Contact from "./components/Contact";
-import SightSeeingPage from "./components/SightseeingPage";
-import GpsComponent from "./components/GpsComponent";
-import LanguagePage from "./components/LanguagePage";
-import CityOfferPage from "./components/CityOfferPage";
-import Home from "./components/Home";
+import ErrorPage from "./js/pages/ErrorPage";
+import Contact from "./js/pages/Contact";
+import SightSeeingPage from "./js/pages/SightseeingPage";
+import GpsComponent from "./js/pages/GpsComponent";
+import LanguagePage from "./js/pages/LanguagePage";
+import CityOfferPage from "./js/pages/CityOfferPage";
+import StartPage from "./js/pages/StartPage";
+import Home from "./js/pages/Home";
 
 import "./css/style.css";
 
@@ -24,15 +27,17 @@ const App = (props) => {
   return (
     <Router>
       <div>
-        <Switch>
-          <Route path="/language" component={LanguagePage} />
-          <Route path="/error" component={ErrorPage} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/sightseeing" component={SightSeeingPage} />
-          <Route path="/offer" component={CityOfferPage} />
-          <Route path="/Gps" component={GpsComponent} />
-          <Route path="/home" component={Home} />
-        </Switch>
+        <Provider store={store}>
+          <Switch>
+            <Route path="/language" component={LanguagePage} />
+            <Route path="/error" component={ErrorPage} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/sightseeing" component={SightSeeingPage} />
+            <Route path="/offer" component={CityOfferPage} />
+            <Route path="/GpsComponent" component={GpsComponent} />
+            <Route path="/" component={Home} />
+          </Switch>
+      </Provider>
       </div>
     </Router>
   );
