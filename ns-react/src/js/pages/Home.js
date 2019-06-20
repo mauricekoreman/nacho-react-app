@@ -1,6 +1,6 @@
 import React from "react";
-import "../css/style.css";
-import logoNS from "../img/logo.png";
+import "../../css/style.css";
+import logoNS from "../../img/logo.png";
 import {Helmet} from 'react-helmet';
 import {
   BrowserRouter as Router,
@@ -8,7 +8,7 @@ import {
   Link,
 } from "react-router-dom";
 
-import LanguagePage from "../components/LanguagePage";
+import LanguagePage from "./LanguagePage";
 
 export class Home extends React.Component {
 
@@ -25,7 +25,7 @@ export class Home extends React.Component {
           </img>
           <h1 className="home-heading"alt="logo">NS Sightseeing</h1>
           <p className="home-beginBtn">
-            <Link to="/language" className="home-beginBtn--link">Click here to begin</Link>
+            <Link to="/language" className="home-beginBtn--link">Start</Link>
           </p>
         </div>
       </div>
