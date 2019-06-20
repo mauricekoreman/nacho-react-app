@@ -16,6 +16,7 @@ import GpsComponent from "./components/GpsComponent";
 import LanguagePage from "./components/LanguagePage";
 import CityOfferPage from "./components/CityOfferPage";
 import Home from "./components/Home";
+import CityStory from "./components/CityStory";
 
 import "./css/style.css";
 
@@ -31,7 +32,9 @@ const App = (props) => {
           <Route path="/sightseeing" component={SightSeeingPage} />
           <Route path="/offer" component={CityOfferPage} />
           <Route path="/GpsComponent" component={GpsComponent} />
+          <Route path="/CityStory" component={CityStory} />
           <Route path="/" component={Home} />
+
         </Switch>
       </div>
     </Router>
