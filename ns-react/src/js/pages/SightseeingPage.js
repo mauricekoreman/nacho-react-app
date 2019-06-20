@@ -72,7 +72,6 @@ export class SightSeeingPage extends React.Component{
             actimage={ this.state.image }
           />
           <h3 className="sightseeing-heading">Restaurant/café:</h3>
-          <h3>{this.props.city}</h3>
           <RestaurantComponent
             name={ this.state.nameEst }
             text={ this.state.textEst }
