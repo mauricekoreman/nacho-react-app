@@ -17,6 +17,7 @@ import SightSeeingPage from "./js/pages/SightseeingPage";
 import GpsComponent from "./js/pages/GpsComponent";
 import LanguagePage from "./js/pages/LanguagePage";
 import CityOfferPage from "./js/pages/CityOfferPage";
+import StartPage from "./js/pages/StartPage";
 import Home from "./js/pages/Home";
 
 import "./css/style.css";
