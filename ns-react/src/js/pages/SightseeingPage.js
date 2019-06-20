@@ -3,6 +3,8 @@ import axios from "axios";
 import {Helmet} from 'react-helmet';
 import SightseeingComponent from '../components/SightseeingComponent';
 import RestaurantComponent from '../components/RestaurantComponent';
+import {changeCity} from "./actions";
+import { connect } from "react-redux";
 import "../../css/style.css";
 import {
   BrowserRouter as Router,
@@ -25,16 +27,15 @@ export class SightSeeingPage extends React.Component{
     const BASE_URL = "https://www.triposo.com/api/20181213/";
     const CATEGORIE_LOCATION = "location.json?";
     const CATEGORIE_POI = "poi.json?";
-
     const TAG_LABELS = "&tag_labels=";
     const LOCATION = "location_id=";
 
     const ACCOUNT = "&account=P8TOBP16";
     const API_TOKEN = "&token=v56oi7tj6zdoweync49h0h3vyddtd13x";
-
+    const CITY = this.props.city;
     // Sightseeing
     axios.all([
-      axios.get(BASE_URL + CATEGORIE_POI + LOCATION + "Amsterdam" + "&order_by=-score&fields=name,score,images,snippet&count=1" + ACCOUNT + API_TOKEN),
+      axios.get(BASE_URL + CATEGORIE_POI + LOCATION + CITY + "&order_by=-score&fields=name,score,images,snippet&count=1" + ACCOUNT + API_TOKEN),
       axios.get(BASE_URL + CATEGORIE_POI + LOCATION + "Amsterdam" + TAG_LABELS + "eatingout" + "&order_by=-score&fields=name,coordinates,score,images,snippet" + ACCOUNT + API_TOKEN)
     ])
     .then(axios.spread((activityRes, restaurantRes) => {
@@ -81,5 +82,7 @@ export class SightSeeingPage extends React.Component{
     );
   };
 }
-
-export default SightSeeingPage;
+const mapStateToProps = state => {
+  return { city: state.city };
+};
+export default connect(mapStateToProps)(SightSeeingPage);

@@ -73,6 +73,7 @@ class GpsComponent extends React.Component{
             height="42"
             width="42"/>
         </div>
+        <Link to="/sightseeing" className="home-beginBtn--link">Start</Link>
       </div>
     );
   }
