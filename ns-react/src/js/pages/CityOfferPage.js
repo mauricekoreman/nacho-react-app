@@ -81,12 +81,12 @@ render() {
 
       <SwipeableViews enableMouseEvents>
         <div style={Object.assign({}, styles.slide, styles.slide1)}>
-          <img src="../img/Leiden.jpg" alt="" />
+          <img className="city" src="../img/Leiden.jpg" alt="" />
           <h1 style={Object.assign({}, styles.text)}>{this.state.name}</h1>
           </div>
 
         <div style={Object.assign({}, styles.slide, styles.slide2)}>
-          <img src="../img/Amsterdam.jpg" alt="" />
+          <img className="city" src="../img/Amsterdam.jpg" alt="" />
           <h1 style={Object.assign({}, styles.text)}>{this.state.name}</h1>
         </div>
       </SwipeableViews>
