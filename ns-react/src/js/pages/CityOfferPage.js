@@ -6,7 +6,7 @@ import SwipeableViews from 'react-swipeable-views';
 import {BrowserRouter as Router, Route, Link, Redirect, Switch} from "react-router-dom";
 import {Helmet} from 'react-helmet';
 import Language from '../components/Language';
-import GpsComponent from './GpsComponent';
+// import GpsComponent from './GpsComponent';
 const styles = {
   slide: {
     padding: 15,
