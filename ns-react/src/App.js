@@ -37,7 +37,6 @@ const App = (props) => {
             <Route path="/GpsComponent" component={GpsComponent} />
             <Route path="/StartPage" component={StartPage} />
             <Route path="/" component={Home} />
-            <Route path="/" component={Home} />
           </Switch>
       </Provider>
       </div>

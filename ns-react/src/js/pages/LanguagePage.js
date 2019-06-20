@@ -15,16 +15,19 @@ export class LanguagePage extends React.Component {
 
   cardNLClicked = () => {
     this.props.changeLanguage("Nederlands");
+    this.props.history.push('/startpage');
   };
   cardENClicked = () => {
     this.props.changeLanguage("Engels");
+    this.props.history.push('/startpage');
   };
   cardSPClicked = () => {
     this.props.changeLanguage("Spaans");
+    this.props.history.push('/startpage');
   };
   cardFRClicked = () => {
     this.props.changeLanguage("Frans");
-
+    this.props.history.push('/startpage');
   };
 
   render() {
