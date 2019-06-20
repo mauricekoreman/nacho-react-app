@@ -58,7 +58,7 @@ class CityOfferPage extends React.Component{
   //       // image: activityRes.merk_naam
   //     });
   //   }));
-  // };
+  };
 
 
 render() {
