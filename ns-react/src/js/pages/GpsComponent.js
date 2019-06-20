@@ -69,11 +69,11 @@ class GpsComponent extends React.Component{
           <img
             className="logo_puls"
             src={logoPuls}
-            alt=""
+            alt="logoPuls"
             height="42"
             width="42"/>
         </div>
-        <Link to="/sightseeing" className="home-beginBtn--link">Start</Link>
+        <Link to="/offer" className="home-beginBtn--link">Start</Link>
       </div>
     );
   }
