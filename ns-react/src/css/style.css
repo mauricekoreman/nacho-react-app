@@ -7,6 +7,13 @@ body {
   font-family: "Montserrat", sans-serif;
   height: 100%; }
 
+h1 {
+  text-align: center; }
+
+img {
+  width: 76.5vw;
+  border-radius: 15px; }
+
 .vlaggenMenu {
   color: black;
   text-decoration: none;
@@ -219,7 +226,6 @@ body {
   margin-top: 50px; }
 
 #logo {
-  width: 100%;
   height: auto;
   z-index: 1;
   margin-top: 40px; }
@@ -242,6 +248,16 @@ body {
     color: #FFF;
     text-decoration: none;
     font-weight: 400; }
+
+@media only screen and (max-width: 330px) {
+  #logo {
+    width: 200px; } }
+
+@media only screen and (min-width: 400px) {
+  .home-container {
+    margin-top: 0; }
+  #logo {
+    width: 400px; } }
 
 .language-btn {
   border: none;
