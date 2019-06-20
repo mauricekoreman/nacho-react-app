@@ -54,6 +54,13 @@
   }
 }
 
+.home-beginBtn--link{
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @keyframes animate {
   0% {
     transform: scale(0.5);
