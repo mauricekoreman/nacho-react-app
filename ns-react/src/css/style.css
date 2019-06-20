@@ -274,7 +274,8 @@ h1 {
 
 .language-title {
   text-align: center;
-  margin: 100px 0; }
+  margin: 100px 0;
+  color: #212B5C; }
 
 .grid-container {
   width: 100%;
