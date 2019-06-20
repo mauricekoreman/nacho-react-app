@@ -36,18 +36,18 @@ export class SightSeeingPage extends React.Component{
     // Sightseeing
     axios.all([
       axios.get(BASE_URL + CATEGORIE_POI + LOCATION + CITY + "&order_by=-score&fields=name,score,images,snippet&count=1" + ACCOUNT + API_TOKEN),
-      axios.get(BASE_URL + CATEGORIE_POI + LOCATION + "Amsterdam" + TAG_LABELS + "eatingout" + "&order_by=-score&fields=name,coordinates,score,images,snippet" + ACCOUNT + API_TOKEN)
+      axios.get(BASE_URL + CATEGORIE_POI + LOCATION + CITY + TAG_LABELS + "eatingout" + "&order_by=-score&fields=name,coordinates,score,images,snippet" + ACCOUNT + API_TOKEN)
     ])
     .then(axios.spread((activityRes, restaurantRes) => {
       this.setState({
         name: activityRes.data.results[0].name,
         text: activityRes.data.results[0].snippet,
-        image: activityRes.data.results[0].images[2].sizes.thumbnail.url
+        image: activityRes.data.results[0].images[0].sizes.thumbnail.url
       });
       this.setState({
         nameEst: restaurantRes.data.results[0].name,
         textEst: restaurantRes.data.results[0].snippet,
-        imageEst: restaurantRes.data.results[0].images[1].sizes.thumbnail.url,
+        imageEst: restaurantRes.data.results[0].images[0].sizes.thumbnail.url,
       });
     }));
   };
