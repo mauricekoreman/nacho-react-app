@@ -14,7 +14,7 @@ export class Home extends React.Component {
 
   render(){
     return(
-      <div class="page1">
+      <div className="page1">
         <Helmet>
           <style>{'body { background-color: #fcc63f; background-repeat: no-repeat;}'}</style>
         </Helmet>
