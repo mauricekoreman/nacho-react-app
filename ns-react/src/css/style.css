@@ -25,7 +25,7 @@ body {
 .CityOfferPage-btn-no {
   text-decoration: none;
   position: absolute;
-  right: 40px;
+  left: 40px;
   top: 80%;
   border: none;
   background: none; }
@@ -42,7 +42,7 @@ body {
 .CityOfferPage-btn-yes {
   text-decoration: none;
   position: absolute;
-  left: 40px;
+  right: 40px;
   top: 80%;
   border: none;
   background: none; }
@@ -358,3 +358,7 @@ body {
 
 .sightseeing-header {
   height: 120px; }
+
+.CityStory-text {
+  margin: 16px;
+  font-size: 15px; }

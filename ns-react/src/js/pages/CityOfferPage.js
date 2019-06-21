@@ -49,11 +49,11 @@ render() {
         <h1 className="CityOfferPage-text">{this.state.name}</h1>
       </div>
       <div>
-        <button className="CityOfferPage-btn-no">
-          <Link className="CityOfferPage-btn-no-link" to="/GpsComponent"></Link>
-        </button>
         <button className="CityOfferPage-btn-yes">
           <Link className="CityOfferPage-btn-yes-link" to="/CityStory"></Link>
+        </button>
+        <button className="CityOfferPage-btn-no">
+          <Link className="CityOfferPage-btn-no-link" to="/GpsComponent"></Link>
         </button>
       </div>
     </div>
