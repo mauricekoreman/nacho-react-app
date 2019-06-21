@@ -46,7 +46,7 @@ render() {
       </div>
       <div className="CityOfferPage-keuzevlak">
         <img className="CityOfferPage-img"src="../img/Leiden.jpg" alt="" />
-        <h1 className="CityOfferPage-text">/*{this.state.name}*/hallo</h1>
+        <h1 className="CityOfferPage-text">{this.state.name}</h1>
       </div>
       <div>
         <button className="CityOfferPage-btn-no">
