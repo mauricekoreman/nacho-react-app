@@ -280,24 +280,20 @@ body {
   z-index: 2;
   font-size: 3rem; }
 
-.home-beginBtn {
-  width: 100%;
-  bottom: 30px;
-  position: absolute; }
-  .home-beginBtn--link {
-    padding: 15px 20%;
-    border-radius: 50px;
-    background-color: #212B5C;
-    display: inline-block;
-    color: #FFF;
-    text-decoration: none;
-    font-weight: 400; }
+.home-beginBtn--link {
+  padding: 15px 30%;
+  border-radius: 50px;
+  background-color: #212B5C;
+  display: inline-block;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: 400; }
 
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 400px) {
   #logo {
-    width: 200px; } }
+    width: 270px; } }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 401px) {
   .home-container {
     margin-top: 0; }
   #logo {
