@@ -29,6 +29,7 @@ const App = (props) => {
   return (
     <Router>
       <div>
+        <Provider store={store}>
         <Switch>
           <Route path="/language" component={LanguagePage} />
           <Route path="/error" component={ErrorPage} />
@@ -39,8 +40,8 @@ const App = (props) => {
           <Route path="/CityStory" component={CityStory} />
           <Route path="/StartPage" component={StartPage} />
           <Route path="/" component={Home} />
-
         </Switch>
+      </Provider>
       </div>
     </Router>
   );
