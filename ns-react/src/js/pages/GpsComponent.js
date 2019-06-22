@@ -53,6 +53,8 @@ class GpsComponent extends React.Component{
       console.log(this.props.city)
     }
   }
+
+
   render() {
     return (
       <div className="gps-container">
