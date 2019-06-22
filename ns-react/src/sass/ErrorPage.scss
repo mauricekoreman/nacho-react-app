@@ -28,16 +28,12 @@
   }
   &--btn {
     position:absolute;
-    top: 80%;
-    width: 80%;
+    width: 210px;
+    height: 60px;
     font-size: 40px;
     background-color: $primary-btn-color;
-    padding: 20px;
     border: none;
     border-radius: 25px;
-    height: 120px;
-    margin-left: 50vw;
-    transform: translateX(-50%);
 
     &--link{
       color: white;
@@ -66,8 +62,5 @@
     &--btn{
       top: 75%;
     }
-
-
-
   }
 }

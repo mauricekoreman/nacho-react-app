@@ -2,38 +2,12 @@ import React from "react";
 import "../../css/style.css";
 import "../../sass/CityOfferPage.scss";
 import axios from "axios";
-import SwipeableViews from 'react-swipeable-views';
 import {BrowserRouter as Router, Route, Link, Redirect, Switch} from "react-router-dom";
 import {Helmet} from 'react-helmet';
 import Language from '../components/Language';
-import GpsComponent from './GpsComponent';
-const styles = {
-  slide: {
-    padding: 15,
-    minHeight: 100,
-    marginLeft: 30,
-    marginRight: 30,
-    marginTop: 150,
-    borderRadius: 25,
-    color: '#212B5C',
-  },
-  slide1: {
-    backgroundColor: '#fff',
-    // paddingLeft: 100,
-  },
-  slide2: {
-    backgroundColor: '#fff',
-    // paddingLeft: 100,
-  },
-  text: {
-    paddingTop: 10,
-    paddingBottom:-10,
-    fontSize: 30,
-  }
-  // slide3: {
-  //   backgroundColor: '#fff',
-  // },
-};
+import CityStory from '../pages/CityStory';
+import {naam_stad} from './GpsComponent';
+import GpsComponent from '../pages/GpsComponent';
 
 class CityOfferPage extends React.Component{
   // To show a photo in our React app, we need to store the API response in state.
@@ -42,7 +16,6 @@ class CityOfferPage extends React.Component{
     this.state = {
       image:''
     }
-
   }
 
   componentDidMount() {
@@ -60,9 +33,7 @@ class CityOfferPage extends React.Component{
   //   }));
   };
 
-
 render() {
-// const CityOfferPage = () => {
   return (
     <div>
       <Helmet>
@@ -73,18 +44,18 @@ render() {
           <Link to="/Language" className="vlaggenMenu-link"></Link>
         </button>
       </div>
-
-      <SwipeableViews enableMouseEvents>
-        <div style={Object.assign({}, styles.slide, styles.slide1)}>
-          <img className="city" src="../img/Leiden.jpg" alt="" />
-          <h1 style={Object.assign({}, styles.text)}>{this.state.name}</h1>
-          </div>
-
-        <div style={Object.assign({}, styles.slide, styles.slide2)}>
-          <img className="city" src="../img/Amsterdam.jpg" alt="" />
-          <h1 style={Object.assign({}, styles.text)}>{this.state.name}</h1>
-        </div>
-      </SwipeableViews>
+      <div className="CityOfferPage-keuzevlak">
+        <img className="CityOfferPage-img"src="../img/Leiden.jpg" alt="" />
+        <h1 className="CityOfferPage-text">{this.state.name}</h1>
+      </div>
+      <div>
+        <button className="CityOfferPage-btn-yes">
+          <Link className="CityOfferPage-btn-yes-link" to="/CityStory"></Link>
+        </button>
+        <button className="CityOfferPage-btn-no">
+          <Link className="CityOfferPage-btn-no-link" to="/GpsComponent"></Link>
+        </button>
+      </div>
     </div>
 
   );
