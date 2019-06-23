@@ -1,0 +1,23 @@
+.vlaggenMenu{
+  position: absolute;
+  width: auto;
+  height: 11%;
+  right: 10px;
+  top: 0px;
+  background: none;
+  border: none;
+
+  &-link {
+    height: 40px;
+    width: 60px;
+    border-radius: 8px;
+    display: inline-block;
+    background-position: center;
+    background-image: url('../img/vlaggenMenu.png');
+    background-size: cover;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

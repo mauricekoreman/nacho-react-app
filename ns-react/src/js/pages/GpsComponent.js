@@ -58,7 +58,7 @@ class GpsComponent extends React.Component{
   render() {
     return (
       <div className="gps-container">
-        <div className="gps-header">
+        <div className="header">
           <button className="vlaggenMenu">
             <Link to="/Language" className="vlaggenMenu-link"></Link>
           </button>

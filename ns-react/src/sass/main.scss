@@ -1,5 +1,7 @@
 @import "abstracts/variables";
 
+@import "components/header";
+@import "components/vlaggenMenu";
 
 @import "App";
 @import "CityOfferPage";
@@ -12,3 +14,4 @@
 @import "SightseeingComponent";
 @import "SightseeingPage";
 @import "CityStory";
+@import "StartPage";
