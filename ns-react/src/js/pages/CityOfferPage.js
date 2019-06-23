@@ -1,6 +1,6 @@
 import React from "react";
 import "../../css/style.css";
-import "../../sass/CityOfferPage.scss";
+
 import axios from "axios";
 import {BrowserRouter as Router, Route, Link, Redirect, Switch} from "react-router-dom";
 import {Helmet} from 'react-helmet';
