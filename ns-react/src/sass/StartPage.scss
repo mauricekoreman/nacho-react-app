@@ -12,9 +12,17 @@
   position: relative;
 }
 
-.conducteurPic {
-  width: 120%;
-  border-radius: 0;
+.startPage-img {
+  width: 100vw;
+  position: relative;
+  // background-color: red;
+  height: 40vh;
+  background-image: url("/img/conducteur.jpg");
+  background-position: top;
+  background-size: cover;
+}
+
+.startPage-img--conducteur {
 }
 
 .tekstBlok {

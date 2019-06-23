@@ -27,10 +27,11 @@ export class StartPage extends React.Component {
             <button className = "vlaggenMenu" >
               <Link to = "../Language" className = "vlaggenMenu-link"></Link>
             </button>
-            <img className= "conducteurPic" src="../img/conducteur.jpg" alt="" />
+            <div className="startPage-img">
+              
+            </div>
             <div className="tekstBlok">
-              <p className="introductie">First of all,
-Welcome to the Netherlands!!</p>
+              <p className="introductie">First of all, Welcome to the Netherlands!!</p>
               <Link to="/GpsComponent" className="start_knop">Get started</Link>
             </div>
           </div>
