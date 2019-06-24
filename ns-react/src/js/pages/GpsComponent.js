@@ -38,7 +38,7 @@ class GpsComponent extends React.Component{
           latitude: position.coords.latitude,
           longitude: position.coords.longitude,
         })
-        axios.get("https://geocode.xyz/"+ this.state.latitude +","+ this.state.longitude + "?json=1&auth=708506218534296685130x2493")
+        axios.get("https://geocode.xyz/"+ this.state.latitude +","+ this.state.longitude + "?json=1&auth=23107494923575132780x2775")
         .then(res=>{
           this.props.changeCity(res.data.city);
 
