@@ -13,6 +13,7 @@ import {changeLanguage} from "./actions";
 
 export class LanguagePage extends React.Component {
 
+//hier word geregiestreerd welke taal voorkeur heeft en er word door gegaan naar de volgende pagina
   cardNLClicked = () => {
     this.props.changeLanguage("Nederlands");
     this.props.history.push('/startpage');

@@ -1,7 +1,6 @@
 import React from "react";
 import "../../css/style.css";
 import vlaggenMenu from "../../img/vlaggenMenu.png";
-import "../../sass/StartPage.scss";
 import {
   Helmet
 } from 'react-helmet';
@@ -22,15 +21,14 @@ export class StartPage extends React.Component {
             <Helmet>
               <style>{'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'}</style>
             </Helmet>
-            <div className = "gps-container" />
-            <div className = "gps-header" />
+            <div className = "header" />
             <button className = "vlaggenMenu" >
               <Link to = "../Language" className = "vlaggenMenu-link"></Link>
             </button>
-            <img className= "conducteurPic" src="../img/conducteur.jpg" alt="" />
+
+            <div className="startPage-img" />
             <div className="tekstBlok">
-              <p className="introductie">First of all,
-Welcome to the Netherlands!!</p>
+              <p className="introductie">First of all, Welcome to the Netherlands!!</p>
               <Link to="/GpsComponent" className="start_knop">Get started</Link>
             </div>
           </div>
