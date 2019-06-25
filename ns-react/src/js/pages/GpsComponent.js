@@ -20,13 +20,25 @@ class GpsComponent extends React.Component{
     this.state = {
       latitude: '',
       longitude: '',
+      scanning: '',
     }
     this.getMyLocation = this.getMyLocation.bind(this)
   }
 
   componentDidMount() {
     this.getMyLocation()
-
+    if (this.props.language == 'NL'){
+        this.setState({scanning: "Zoeken"});
+    }
+    if (this.props.language == 'ENG'){
+        this.setState({scanning: "Scanning"});
+    }
+    if (this.props.language == 'SP'){
+        this.setState({scanning: "exploración"});
+    }
+    if (this.props.language == 'FR'){
+        this.setState({scanning: "balayage"});
+    }
   }
 
   getMyLocation() {
@@ -50,7 +62,6 @@ class GpsComponent extends React.Component{
       }, (error) => {
         this.setState({ latitude: 'error-latitude', longitude: 'error-longitude' })
       })
-      console.log(this.props.city)
     }
   }
 
@@ -64,7 +75,7 @@ class GpsComponent extends React.Component{
           </button>
         </div>
         <div>
-          <h3 className="gps-text">Scanning...</h3>
+          <h3 className="gps-text">{this.state.scanning}...</h3>
           <h3 className="gps-text">{this.props.city}</h3>
         </div>
         <div className="pulse">
@@ -81,6 +92,7 @@ class GpsComponent extends React.Component{
   }
 }
 const mapStateToProps = state => {
-  return { city: state.city };
+  return { city: state.city, language: state.language };
 };
+
 export default connect(mapStateToProps, {changeCity: changeCity})(GpsComponent);

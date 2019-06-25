@@ -15,19 +15,19 @@ export class LanguagePage extends React.Component {
 
 //hier word geregiestreerd welke taal voorkeur heeft en er word door gegaan naar de volgende pagina
   cardNLClicked = () => {
-    this.props.changeLanguage("Nederlands");
+    this.props.changeLanguage("NL");
     this.props.history.push('/startpage');
   };
   cardENClicked = () => {
-    this.props.changeLanguage("Engels");
+    this.props.changeLanguage("ENG");
     this.props.history.push('/startpage');
   };
   cardSPClicked = () => {
-    this.props.changeLanguage("Spaans");
+    this.props.changeLanguage("SP");
     this.props.history.push('/startpage');
   };
   cardFRClicked = () => {
-    this.props.changeLanguage("Frans");
+    this.props.changeLanguage("FR");
     this.props.history.push('/startpage');
   };
 
