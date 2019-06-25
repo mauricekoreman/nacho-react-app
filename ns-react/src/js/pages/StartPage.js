@@ -6,13 +6,7 @@ import {
 } from 'react-helmet';
 import Language from '../components/Language';
 import {connect} from "react-redux";
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch,
-  Redirect
-} from "react-router-dom";
+import {BrowserRouter as Router, Route, Link, Switch, Redirect} from "react-router-dom";
 
 export class StartPage extends React.Component {
   constructor() {
