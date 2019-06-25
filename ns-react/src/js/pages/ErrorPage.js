@@ -19,9 +19,10 @@ export class ErrorPage extends React.Component{
         </Helmet>
         <h1 className="error-page--code">404</h1>
         <h2 className="error-page--code--explanation">Page not found</h2>
+
         <h3 className="error-page--code--explanation--text">sorry! this city has not yet been added.</h3>
 
-        <Link to="/GpsComponent" className="error-page--btn--link">Scanner</Link>  
+        <Link to="/GpsComponent" className="error-page--btn--link">Scanner</Link>
       </div>
     );
   };
