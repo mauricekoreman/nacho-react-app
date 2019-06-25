@@ -1,56 +1,40 @@
-.gps-container {
-  height: 100%;
-  width: 100%;
-}
-
-.gps-header {
-  background-color: #fcc63f;
-  height: 120px;
-}
-
-.gps-text {
-  text-align: center;
+.startPage-img {
+  width: 100vw;
   position: relative;
-}
-
-.conducteurPic {
-  width: 100%;
-  border-radius: 0;
+  height: 40vh;
+  background-image: url("/img/conducteur.jpg");
+  background-position: top;
+  background-size: cover;
 }
 
 .tekstBlok {
-  position: absolute;
   background-color: #141935;
   width: 100%;
-  padding-top: 0;
-  bottom: 0;
-  height: 42vh;
-  margin: 0;
+  height: 50vh;
+  text-align: center;
 }
 
 .start_knop {
-  margin-top: 13%;
   position: absolute;
-  background-color: white;
-  width: 70%;
-  height: 12%;
+  background-color: #FFF;
   color: #141935;
   text-decoration: none;
-  padding-top: 12px;
   text-align: center;
-  border-radius: 20px;
-  margin-left: 14%;
+  border-radius: 25px;
   font-size: 17px;
-  bottom: 10px;
+  padding: 15px 60px;
+  margin: 0 -100px;
+  bottom: 8%;
 }
 
 .introductie {
+  position: relative;
+  top: 20%;
   color: white;
   font-size: 25px;
   width: 60%;
   text-align: center;
-  padding-top: 10%;
-  margin-left: 20%;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width : 768px) {

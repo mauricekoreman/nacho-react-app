@@ -1,6 +1,6 @@
 import React from "react";
 import "../../css/style.css";
-import "../../sass/CityOfferPage.scss";
+
 import axios from "axios";
 import {BrowserRouter as Router, Route, Link, Redirect, Switch} from "react-router-dom";
 import {Helmet} from 'react-helmet';
@@ -8,6 +8,8 @@ import Language from '../components/Language';
 import CityStory from '../pages/CityStory';
 import {naam_stad} from './GpsComponent';
 import GpsComponent from '../pages/GpsComponent';
+import stad from "../../img/steden/Leiden1.jpg";
+
 
 class CityOfferPage extends React.Component{
   // To show a photo in our React app, we need to store the API response in state.
@@ -45,7 +47,7 @@ render() {
         </button>
       </div>
       <div className="CityOfferPage-keuzevlak">
-        <img className="CityOfferPage-img"src="../img/Leiden.jpg" alt="" />
+        <img className="CityOfferPage-img"src={stad} alt="" />
         <h1 className="CityOfferPage-text">{this.state.name}</h1>
       </div>
       <div>
