@@ -26,19 +26,20 @@
       }
     }
   }
-  &--btn {
-    position:absolute;
-    width: 210px;
-    height: 60px;
-    font-size: 40px;
+  &--btn--link {
+    padding: 15px 100px;
+    border-radius: 50px;
     background-color: $primary-btn-color;
-    border: none;
-    border-radius: 25px;
+    display: inline-block;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 400;
+    bottom: 8%;
 
-    &--link{
-      color: white;
-      text-decoration:none;
-    }
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
 
     &:hover {
       cursor: pointer;

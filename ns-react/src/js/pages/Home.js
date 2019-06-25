@@ -24,9 +24,7 @@ export class Home extends React.Component {
           src={logoNS}>
           </img>
           <h1 className="home-heading"alt="logo">NS Sightseeing</h1>
-
-            <Link to="/language" className="home-beginBtn--link">Start</Link>
-          
+          <Link to="/language" className="home-beginBtn--link">Start</Link>
         </div>
       </div>
     );
