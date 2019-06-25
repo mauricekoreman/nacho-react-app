@@ -36,3 +36,58 @@
   text-align: center;
   margin: 0 auto;
 }
+
+@media only screen and (max-width : 768px) {
+  .gps-container {
+    height: 100%;
+    width: 100%;
+  }
+
+  .gps-header {
+    background-color: #fcc63f;
+    height: 90px;
+  }
+
+  .gps-text {
+    text-align: center;
+    position: relative;
+  }
+
+  .conducteurPic {
+    width: 120%;
+    border-radius: 0;
+  }
+
+  .tekstBlok {
+    position: absolute;
+    background-color: #141935;
+    width: 100%;
+    padding-top: 0;
+    height: 42vh;
+    margin: 0;
+  }
+
+  .start_knop {
+    margin-top: 13%;
+    position: absolute;
+    background-color: white;
+    width: 70%;
+    height: 12%;
+    color: #141935;
+    text-decoration: none;
+    padding-top: 12px;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 14%;
+    font-size: 17px;
+  }
+
+  .introductie {
+    color: white;
+    font-size: 25px;
+    width: 60%;
+    text-align: center;
+    padding-top: 10%;
+    margin-left: 20%;
+  }
+}

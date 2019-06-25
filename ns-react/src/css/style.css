@@ -34,10 +34,14 @@ body {
   background-color: white;
   margin: 110px 20px;
   border-radius: 15px;
-  padding-top: 20px; }
+  padding: 20px 20px 0px 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
 
 .CityOfferPage-img {
-  width: 76.5vw;
+  width: auto;
+  height: 60vh;
   border-radius: 15px;
   display: block;
   margin: auto; }
