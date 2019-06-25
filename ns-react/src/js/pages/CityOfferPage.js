@@ -1,10 +1,10 @@
 import React from "react";
 import "../../css/style.css";
-
 import axios from "axios";
 import {BrowserRouter as Router, Route, Link, Redirect, Switch} from "react-router-dom";
 import {Helmet} from 'react-helmet';
 import Language from '../components/Language';
+import { connect } from "react-redux";
 import CityStory from '../pages/CityStory';
 import {naam_stad} from './GpsComponent';
 import GpsComponent from '../pages/GpsComponent';
@@ -21,18 +21,7 @@ class CityOfferPage extends React.Component{
   }
 
   componentDidMount() {
-  //   const BASE_URL = "http://95.179.178.130/api/";
-  //   // Sightseeing
-  //   axios.all([
-  //     axios.get(BASE_URL+CITY),
-  //     console.log(BASE_URL+CITY)
-  //   ])
-  //   .then(axios.spread((activityRes) => {
-  //     this.setState({
-  //       name: activityRes.data.stad
-  //       // image: activityRes.merk_naam
-  //     });
-  //   }));
+    const CITY = this.props.city;
   };
 
 render() {
@@ -48,7 +37,7 @@ render() {
       </div>
       <div className="CityOfferPage-keuzevlak">
         <img className="CityOfferPage-img"src={stad} alt="" />
-        <h1 className="CityOfferPage-text">{this.state.name}</h1>
+        <h1 className="CityOfferPage-text">{this.props.city}</h1>
       </div>
       <div>
         <button className="CityOfferPage-btn-yes">
@@ -63,4 +52,7 @@ render() {
   );
 }
 }
-export default CityOfferPage;
+const mapStateToProps = state => {
+  return { city: state.city, language: state.language };
+};
+export default connect(mapStateToProps) (CityOfferPage);

@@ -1,6 +1,7 @@
 import React from "react";
 import "../../css/style.css";
 import {Helmet} from 'react-helmet';
+import { connect } from "react-redux";
 import axios from "axios";
 import {
   BrowserRouter as Router,
@@ -18,11 +19,12 @@ export class CityStory extends React.Component{
     }
   }
   componentDidMount(){
-    axios.get("http://95.179.178.130/api/SP/Leiden")
-    .then(res=>{
-      console.log(res);
-      this.setState({info: res.data[0].info});
+    const CITY = this.props.city;
+    const LANGUAGE =this.props.language;
 
+    axios.get("http://95.179.178.130/api/" + LANGUAGE + "/" + CITY)
+    .then(res=>{
+      this.setState({info: res.data[0].info});
     })
   }
   render(){
@@ -33,7 +35,7 @@ export class CityStory extends React.Component{
         </Helmet>
         <div>
           <img className="CityStory-img"src={stad} alt="" />
-          <h2>{this.state.name}</h2>
+          <h2>{this.props.city}</h2>
           <p className="CityStory-text">{this.state.info}</p>
         </div>
         <div>
@@ -45,5 +47,7 @@ export class CityStory extends React.Component{
     );
   };
 }
-
-export default CityStory;
+const mapStateToProps = state => {
+  return { city: state.city,language: state.language };
+};
+export default connect(mapStateToProps) (CityStory);
