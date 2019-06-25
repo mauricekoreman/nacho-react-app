@@ -13,20 +13,25 @@ export class StartPage extends React.Component {
     super()
     this.state = {
       zin: '',
+      knop: '',
     }
   }
   componentDidMount(){
     if (this.props.language == 'NL'){
         this.setState({zin: "Welkom in Nederland !!"});
+        this.setState({knop: "Begin"});
     }
     if (this.props.language == 'ENG'){
         this.setState({zin: "Welcome to the Netherlands !!"});
+        this.setState({knop: "Get started"});
     }
     if (this.props.language == 'SP'){
         this.setState({zin: "Bienvenidos a Holanda !!"});
+        this.setState({knop: "Empezar"});
     }
     if (this.props.language == 'FR'){
         this.setState({zin: "Bienvenue aux Pays-Bas !!"});
+        this.setState({knop: "Commencer"});
     }
   }
 
@@ -44,7 +49,7 @@ export class StartPage extends React.Component {
             <div className="startPage-img" />
             <div className="tekstBlok">
               <p className="introductie">{this.state.zin}</p>
-              <Link to="/GpsComponent" className="start_knop">Get started</Link>
+              <Link to="/GpsComponent" className="start_knop">{this.state.knop}</Link>
             </div>
           </div>
         );
