@@ -55,7 +55,7 @@ body {
   background-color: white;
   margin: 110px 20px;
   border-radius: 15px;
-  padding: 20px; }
+  padding: 27px 7px 12px 7px; }
 
 .CityOfferPage-img {
   width: 76.5vw;
@@ -65,8 +65,10 @@ body {
 
 .CityOfferPage-text {
   text-align: center;
-  margin-top: 5px;
-  margin-bottom: 0; }
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 40px;
+  color: #212B5C; }
 
 .CityOfferPage-btn-no {
   text-decoration: none;
