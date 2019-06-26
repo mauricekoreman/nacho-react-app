@@ -34,26 +34,24 @@ body {
   background-color: white;
   margin: 110px 20px;
   border-radius: 15px;
-  padding: 20px 20px 0px 20px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%); }
+  padding: 20px; }
 
 .CityOfferPage-img {
-  width: auto;
-  height: 60vh;
+  width: 76.5vw;
   border-radius: 15px;
   display: block;
   margin: auto; }
 
 .CityOfferPage-text {
-  text-align: center; }
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 0; }
 
 .CityOfferPage-btn-no {
   text-decoration: none;
   position: absolute;
   left: 40px;
-  top: 80%;
+  top: 83%;
   border: none;
   background: none; }
   .CityOfferPage-btn-no-link {
@@ -70,7 +68,7 @@ body {
   text-decoration: none;
   position: absolute;
   right: 40px;
-  top: 80%;
+  top: 83%;
   border: none;
   background: none; }
   .CityOfferPage-btn-yes-link {
@@ -82,6 +80,11 @@ body {
     background-size: cover;
     padding: 0;
     margin: 0 25px; }
+
+@media only screen and (min-width: 768px) {
+  .CityOfferPage-img {
+    height: 50vh;
+    width: auto; } }
 
 .contact-heading-primary {
   text-align: center;
@@ -168,18 +171,19 @@ body {
       transform: translateX(-50%);
       top: 400px; }
 
-.error-page--btn {
-  position: absolute;
-  width: 210px;
-  height: 60px;
-  font-size: 40px;
+.error-page--btn--link {
+  padding: 15px 100px;
+  border-radius: 50px;
   background-color: #000;
-  border: none;
-  border-radius: 25px; }
-  .error-page--btn--link {
-    color: white;
-    text-decoration: none; }
-  .error-page--btn:hover {
+  display: inline-block;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: 400;
+  bottom: 8%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
+  .error-page--btn--link:hover {
     cursor: pointer; }
 
 @media only screen and (max-width: 768px) {
@@ -239,7 +243,6 @@ body {
 
 .home-beginBtn--link {
   position: absolute;
-  bottom: 100px;
   left: 50%;
   transform: translateX(-50%); }
 
@@ -279,13 +282,14 @@ body {
   font-size: 3rem; }
 
 .home-beginBtn--link {
-  padding: 15px 30%;
+  padding: 15px 100px;
   border-radius: 50px;
   background-color: #212B5C;
   display: inline-block;
   color: #FFF;
   text-decoration: none;
-  font-weight: 400; }
+  font-weight: 400;
+  bottom: 8%; }
 
 @media only screen and (max-width: 400px) {
   #logo {
@@ -358,11 +362,22 @@ body {
   height: 120px; }
 
 .CityStory-text {
-  margin: 16px;
+  margin: 10px 16px 0 16px;
   font-size: 15px; }
 
 .CityStory-img {
   width: 100%; }
+
+.CityStory-title {
+  margin: 10px 16px 0 16px; }
+
+.CityStory-btn {
+  margin: 10px auto 0% auto;
+  display: block;
+  padding: 20px 80px;
+  border: none;
+  border-top: 1.5px solid #000;
+  background: none; }
 
 .startPage-img {
   width: 100vw;
@@ -388,7 +403,8 @@ body {
   font-size: 17px;
   padding: 15px 60px;
   margin: 0 -100px;
-  bottom: 8%; }
+  bottom: 8%;
+  font-weight: 400; }
 
 .introductie {
   position: relative;
