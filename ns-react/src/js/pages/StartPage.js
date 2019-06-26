@@ -18,19 +18,19 @@ export class StartPage extends React.Component {
   }
   componentDidMount(){
     if (this.props.language == 'NL'){
-        this.setState({zin: "Welkom in Nederland!"});
+        this.setState({zin: "Welkom in Nederland !!"});
         this.setState({knop: "Begin"});
     }
     if (this.props.language == 'ENG'){
-        this.setState({zin: "Welcome to the Netherlands!"});
+        this.setState({zin: "Welcome to the Netherlands !!"});
         this.setState({knop: "Get started"});
     }
     if (this.props.language == 'SP'){
-        this.setState({zin: "Bienvenidos a Holanda!"});
+        this.setState({zin: "Bienvenidos a Holanda !!"});
         this.setState({knop: "Empezar"});
     }
     if (this.props.language == 'FR'){
-        this.setState({zin: "Bienvenue aux Pays-Bas!"});
+        this.setState({zin: "Bienvenue aux Pays-Bas !!"});
         this.setState({knop: "Commencer"});
     }
   }
