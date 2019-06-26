@@ -9,7 +9,6 @@ import {
   Link,
   Redirect
 } from "react-router-dom";
-import stad from "../../img/steden/Leiden2.jpg";
 
 export class CityStory extends React.Component{
   constructor(props) {
@@ -44,7 +43,7 @@ export class CityStory extends React.Component{
 
 
         <div>
-          <img className="CityStory-img"src={stad} alt="" />
+          <img className="CityStory-img"src={"../img/steden/" + this.props.city+ "2.jpg"} alt="" />
           <h2 className="CityStory-title">{this.props.city}</h2>
           <p className="CityStory-text">{this.state.info}</p>
         </div>
