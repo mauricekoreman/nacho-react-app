@@ -201,6 +201,7 @@ body {
   text-decoration: none;
   font-weight: 400;
   bottom: 8%;
+  font-size: 18px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%); }
@@ -310,6 +311,7 @@ body {
   color: #FFF;
   text-decoration: none;
   font-weight: 400;
+  font-size: 18px;
   bottom: 8%; }
 
 @media only screen and (max-width: 400px) {
@@ -335,9 +337,19 @@ body {
   padding: 0;
   margin: 0 25px; }
 
+.language-container {
+  height: 100vh;
+  position: relative; }
+
+.language-content {
+  top: 80px;
+  position: absolute;
+  width: 100%; }
+
 .language-title {
   text-align: center;
-  margin: 100px 0;
+  margin: 0;
+  margin-bottom: 70px;
   color: #212B5C; }
 
 .grid-container {
@@ -349,12 +361,15 @@ body {
   text-align: center; }
 
 .contact-btn {
-  margin: 150px auto 0% auto;
   display: block;
   padding: 20px 80px;
   border: none;
   border-top: 1.5px solid #000;
-  background: none; }
+  background: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 8%; }
   .contact-btn--link {
     color: #000;
     text-decoration: none;
@@ -372,8 +387,8 @@ body {
   position: relative;
   width: 90%;
   margin: 0 auto;
-  height: 50px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  background-color: red; }
 
 .CityStory-text {
   margin: 10px 16px 0 16px;
@@ -416,6 +431,7 @@ body {
   display: inline-block;
   text-decoration: none;
   font-weight: 400;
+  font-size: 18px;
   bottom: 8%;
   transform: translateX(-50%); }
 
