@@ -32,39 +32,35 @@ export class LanguagePage extends React.Component {
   };
 
   render() {
-    return (
-      <div>
-        <Helmet>
-          <style>
-            {
-              'body { background-color: white; background-repeat: no-repeat;}'
-            }</style>
-        </Helmet>
-        <div className="language-container">
-          <div className="language-content">
-            <h3 className="language-title">Pick your language</h3>
-            <div className="grid-container">
-              <div className="grid-item">
-                <Language id="Nederlands" cardClicked={this.cardNLClicked} background={vlagNL}/>
-              </div>
-              <div className="grid-item">
-                <Language id="Engels" cardClicked={this.cardENClicked} background={vlagUK}/>
-              </div>
-              <div className="grid-item">
-                <Language id="Spaans" cardClicked={this.cardSPClicked} background={vlagSP}/>
-              </div>
-              <div className="grid-item">
-                <Language id="Frans" cardClicked={this.cardFRClicked} background={vlagFK}/>
-              </div>
-            </div>
-
-          </div>
-          <button className="contact-btn">
-          <Link to="/Contact" className="contact-btn--link">Contact</Link>
-          </button>
+    return (<div>
+      <Helmet>
+        <style>
+          {
+            'body { background-color: white; background-repeat: no-repeat;}'
+          }</style>
+      </Helmet>
+      <h3 className="language-title">Pick your language</h3>
+      <div className="grid-container">
+        <div className="grid-item">
+          <Language id="Nederlands" cardClicked={this.cardNLClicked} background={vlagNL}/>
+        </div>
+        <div className="grid-item">
+          <Language id="Engels" cardClicked={this.cardENClicked} background={vlagUK}/>
+        </div>
+        <div className="grid-item">
+          <Language id="Spaans" cardClicked={this.cardSPClicked} background={vlagSP}/>
+        </div>
+        <div className="grid-item">
+          <Language id="Frans" cardClicked={this.cardFRClicked} background={vlagFK}/>
         </div>
       </div>
-    );
+      <div>
+        <button className="contact-btn">
+          <Link to="/Contact" className="contact-btn--link">Contact</Link>
+        </button>
+      </div>
+    </div>
+  );
   }
 }
 
