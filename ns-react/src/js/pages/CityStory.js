@@ -29,7 +29,7 @@ export class CityStory extends React.Component{
   }
   render(){
     return (
-      <div className="CityStory--container">
+      <div className="cityStory--container">
         <Helmet>
           <style>{'body {background: white); background-repeat: no-repeat;}'}</style>
         </Helmet>
@@ -42,17 +42,18 @@ export class CityStory extends React.Component{
           </button>
         </div>
 
+        <div>
+          <img className="cityStory-img"src={stad} alt="" />
+          <div className="cityStory-text">
+            <h2 className="cityStory-title">{this.props.city}</h2>
+            <hr />
+            <p className="cityStory-story">{this.state.info}</p>
+          </div>
+        </div>
 
-        <div>
-          <img className="CityStory-img"src={stad} alt="" />
-          <h2 className="CityStory-title">{this.props.city}</h2>
-          <p className="CityStory-text">{this.state.info}</p>
-        </div>
-        <div>
-          <button className="CityStory-btn">
-            <Link to="/Sightseeing" className="contact-btn--link">More</Link>
-          </button>
-        </div>
+        <button className="cityStory-btn">
+          <Link to="/Sightseeing" className="contact-btn--link">More</Link>
+        </button>
       </div>
     );
   };

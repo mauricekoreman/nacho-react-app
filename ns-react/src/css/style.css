@@ -402,22 +402,28 @@ body {
   margin: 0 auto;
   margin-bottom: 50px; }
 
-.CityStory-text {
-  margin: 10px 16px 0 16px;
-  font-size: 15px; }
+.cityStory--container {
+  margin-bottom: 30px; }
 
-.CityStory-img {
+.cityStory-img {
   width: 100%; }
 
-.CityStory-title {
-  margin: 22px 16px 22px 16px; }
+.cityStory-text {
+  margin: 0 30px; }
 
-.CityStory-btn {
+.cityStory-title {
+  margin: 22px 0;
+  color: #212B5C; }
+
+.cityStory-story {
+  font-size: 15px; }
+
+.cityStory-btn {
   margin: 40px auto 0% auto;
   display: block;
   padding: 20px 80px;
   border: none;
-  border-top: 1.5px solid #000;
+  border-top: 1.5px solid #212B5C;
   background: none; }
 
 .startPage-img {
