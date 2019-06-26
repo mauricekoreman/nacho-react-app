@@ -20,6 +20,7 @@ class GpsComponent extends React.Component{
     this.state = {
       latitude: '',
       longitude: '',
+      link:'/error',
     }
     this.getMyLocation = this.getMyLocation.bind(this)
   }
@@ -31,7 +32,7 @@ class GpsComponent extends React.Component{
 
   getMyLocation() {
     const location = window.navigator && window.navigator.geolocation
-
+    const steden = ['Amsterdam','Haarlem','Heemstede','Leiden', 'Den Haag', 'Delft', 'Schiedam', 'Rotterdam','Dordrecht', 'Roosendaal'];
     if (location) {
       location.getCurrentPosition((position) => {
         this.setState({
@@ -41,7 +42,13 @@ class GpsComponent extends React.Component{
         axios.get("https://geocode.xyz/"+ this.state.latitude +","+ this.state.longitude + "?json=1&auth=23107494923575132780x2775")
         .then(res=>{
           this.props.changeCity(res.data.city);
-
+          for (var i = 0; i < steden.length; i++) {
+            if (this.props.city == steden[i]) {
+              this.setState({
+                link:"/offer",
+              })
+            }
+          }
         })
         .catch(error =>{
           console.log(error);
@@ -53,8 +60,6 @@ class GpsComponent extends React.Component{
       console.log(this.props.city)
     }
   }
-
-
   render() {
     return (
       <div className="gps-container">
@@ -75,7 +80,7 @@ class GpsComponent extends React.Component{
             height="42"
             width="42"/>
         </div>
-        <Link to="/offer" className="home-beginBtn--link">Start</Link>
+        <Link to={this.state.link} className="home-beginBtn--link">Start</Link>
       </div>
     );
   }
