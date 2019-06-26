@@ -1,6 +1,8 @@
 .header {
+  margin-top: 0;
   background-color: #fcc63f;
-  height: 10vh; }
+  height: 10vh;
+  width: 100%; }
 
 .vlaggenMenu {
   position: absolute;
@@ -19,6 +21,25 @@
     background-image: url("../img/vlaggenMenu.png");
     background-size: cover; }
   .vlaggenMenu:hover {
+    cursor: pointer; }
+
+.gaTerug {
+  position: absolute;
+  width: auto;
+  height: 11%;
+  left: 10px;
+  top: 0px;
+  background: none;
+  border: none; }
+  .gaTerug-link {
+    height: 45px;
+    width: 45px;
+    border-radius: 8px;
+    display: inline-block;
+    background-position: center;
+    background-image: url("../img/arrow_back.png");
+    background-size: cover; }
+  .gaTerug:hover {
     cursor: pointer; }
 
 * {
@@ -347,19 +368,12 @@ body {
   color: #FFF;
   background-size: cover; }
 
-.sightseeing-container {
+.sightseeing-blok {
   position: relative;
   width: 90%;
   margin: 0 auto;
+  height: 50px;
   margin-bottom: 50px; }
-
-.sightseeing-heading {
-  color: #212B5C;
-  display: inline-block;
-  margin-top: 50px; }
-
-.sightseeing-header {
-  height: 120px; }
 
 .CityStory-text {
   margin: 10px 16px 0 16px;

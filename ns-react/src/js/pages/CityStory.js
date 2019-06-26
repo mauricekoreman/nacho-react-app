@@ -33,6 +33,16 @@ export class CityStory extends React.Component{
         <Helmet>
           <style>{'body {background: white); background-repeat: no-repeat;}'}</style>
         </Helmet>
+        <div className="header">
+          <button className="gaTerug">
+            <Link to="/GpsComponent" className="gaTerug-link"></Link>
+          </button>
+          <button className="vlaggenMenu">
+            <Link to="/Language" className="vlaggenMenu-link"></Link>
+          </button>
+        </div>
+
+
         <div>
           <img className="CityStory-img"src={stad} alt="" />
           <h2 className="CityStory-title">{this.props.city}</h2>
