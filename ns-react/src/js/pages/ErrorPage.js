@@ -8,6 +8,7 @@ import {
   Redirect
 } from "react-router-dom";
 import GpsComponent from "./GpsComponent";
+import {connect} from "react-redux";
 
 export class ErrorPage extends React.Component{
 
@@ -27,5 +28,8 @@ export class ErrorPage extends React.Component{
     );
   };
 }
+const mapStateToProps = state => {
+  return {language: state.language};
+};
 
-export default ErrorPage;
+export default connect(mapStateToProps) (ErrorPage);

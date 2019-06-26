@@ -35,11 +35,11 @@ export class CityStory extends React.Component{
         </Helmet>
         <div>
           <img className="CityStory-img"src={stad} alt="" />
-          <h2>{this.props.city}</h2>
+          <h2 className="CityStory-title">{this.props.city}</h2>
           <p className="CityStory-text">{this.state.info}</p>
         </div>
         <div>
-          <button className="contact-btn">
+          <button className="CityStory-btn">
             <Link to="/Sightseeing" className="contact-btn--link">More</Link>
           </button>
         </div>
