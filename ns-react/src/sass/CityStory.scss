@@ -1,8 +1,21 @@
-.CityStory-text{
-  margin: 16px;
-  font-size: 15px;
+.CityStory{
+  &-text{
+    margin: 10px 16px 0 16px;
+    font-size: 15px;
+  }
+  &-img{
+    width: 100%;
+  }
+  &-title{
+    margin:10px 16px 0 16px;
+  }
 
-}
-.CityStory-img{
-  width: 100%;
+  &-btn{
+    margin: 10px auto 0% auto;
+    display:block;
+    padding: 20px 80px;
+    border: none;
+    border-top: 1.5px solid $primary-btn-color;
+    background: none;
+  }
 }
