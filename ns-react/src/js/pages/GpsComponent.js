@@ -79,17 +79,17 @@ class GpsComponent extends React.Component{
             <Link to="/Language" className="vlaggenMenu-link"></Link>
           </button>
         </div>
-        <div>
-          <h3 className="gps-text">{this.state.scanning}...</h3>
-          <h3 className="gps-text">{this.props.city}</h3>
-        </div>
+        <h3 className="gps-text gps-text--loading">{this.state.scanning}...</h3>
         <div className="pulse">
-          <img
-            className="logo_puls"
-            src={logoPuls}
-            alt="logoPuls"
-            height="42"
-            width="42"/>
+          <div className="pulse-animation">
+            <img
+              className="pulse-animation-logo"
+              src={logoPuls}
+              alt="logoPuls"
+              height="42"
+              width="42"/>
+          </div>
+          <h3 className="gps-text gps-text--city">{this.props.city}</h3>
         </div>
         <Link to={this.state.link} className="home-beginBtn--link">Start</Link>
       </div>
