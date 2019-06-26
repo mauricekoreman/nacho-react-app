@@ -1,4 +1,5 @@
 .CityOfferPage {
+
   &-keuzevlak {
     background-color: white;
     margin: 110px 20px;
@@ -64,6 +65,9 @@
     &-img {
       height: 50vh;
       width: auto;
+    }
+    &-container{
+      padding:0 420px;
     }
   }
 }
