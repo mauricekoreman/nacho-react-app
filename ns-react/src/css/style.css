@@ -227,41 +227,50 @@ body {
 
 .gps-text {
   text-align: center;
-  position: relative; }
+  position: relative;
+  color: #212B5C; }
+  .gps-text--loading {
+    margin-top: 45px; }
+  .gps-text--city {
+    margin-top: 90px; }
 
 .pulse {
   position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 120px;
-  height: 120px;
-  background-color: #212B5C;
-  color: #FFF;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 80px;
-  font-size: 48px; }
-  .pulse::before, .pulse::after {
-    content: "";
-    display: block;
-    position: absolute;
-    border: 4px solid #212B5C;
-    left: -40px;
-    right: -40px;
-    top: -40px;
-    bottom: -40px;
+  transform: translateX(-50%);
+  top: 36%; }
+  .pulse .pulse-animation {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+    background-color: #212B5C;
+    color: #FFF;
     border-radius: 50%;
-    animation: animate 1.5s linear infinite;
-    backface-visibility: hidden; }
-  .pulse::after {
-    animation-delay: 0.5s; }
-  .pulse .logo_puls {
-    display: block;
-    height: 100%;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto; }
+    text-align: center;
+    line-height: 80px;
+    font-size: 48px; }
+    .pulse .pulse-animation::before, .pulse .pulse-animation::after {
+      content: "";
+      display: block;
+      position: absolute;
+      border: 4px solid #212B5C;
+      left: -40px;
+      right: -40px;
+      top: -40px;
+      bottom: -40px;
+      border-radius: 50%;
+      animation: animate 1.5s linear infinite;
+      backface-visibility: hidden; }
+    .pulse .pulse-animation::after {
+      animation-delay: 0.5s; }
+    .pulse .pulse-animation-logo {
+      display: block;
+      height: 100%;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
 
 .home-beginBtn--link {
   position: absolute;
