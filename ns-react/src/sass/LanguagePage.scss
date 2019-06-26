@@ -29,7 +29,7 @@
   display:block;
   padding: 20px 80px;
   border: none;
-  border-top: 1.5px solid $primary-btn-color;
+  border-top: 1.5px solid $primary-text-color;
   background: none;
   position: absolute;
   left: 50%;
@@ -38,8 +38,9 @@
 
 
   &--link {
-    color: $primary-btn-color;
+    color: $primary-text-color;
     text-decoration: none;
-    border-bottom: 1px solid $primary-btn-color;
+    border-bottom: 1px solid $primary-text-color;
+    font-size: 18px;
   }
 }
