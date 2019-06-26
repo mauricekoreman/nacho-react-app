@@ -34,14 +34,10 @@ body {
   background-color: white;
   margin: 110px 20px;
   border-radius: 15px;
-  padding: 20px 20px 0px 20px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%); }
+  padding: 20px; }
 
 .CityOfferPage-img {
-  width: auto;
-  height: 60vh;
+  width: 76.5vw;
   border-radius: 15px;
   display: block;
   margin: auto; }
@@ -52,7 +48,7 @@ body {
 .CityOfferPage-btn-no {
   text-decoration: none;
   position: absolute;
-  left: 40px;
+  right: 40px;
   top: 80%;
   border: none;
   background: none; }
@@ -69,7 +65,7 @@ body {
 .CityOfferPage-btn-yes {
   text-decoration: none;
   position: absolute;
-  right: 40px;
+  left: 40px;
   top: 80%;
   border: none;
   background: none; }
@@ -83,55 +79,10 @@ body {
     padding: 0;
     margin: 0 25px; }
 
-@media only screen and (max-width: 768px) {
-  .CityOfferPage-keuzevlak {
-    background-color: white;
-    margin: 110px 20px;
-    border-radius: 15px;
-    padding-top: 20px;
-    position: none;
-    left: none;
-    transform: none; }
+@media only screen and (min-width: 768px) {
   .CityOfferPage-img {
-    width: 76.5vw;
-    border-radius: 15px;
-    display: block;
-    margin: auto;
-    height: none; }
-  .CityOfferPage-text {
-    text-align: center; }
-  .CityOfferPage-btn-no {
-    text-decoration: none;
-    position: absolute;
-    right: 40px;
-    top: 80%;
-    border: none;
-    background: none; }
-    .CityOfferPage-btn-no-link {
-      height: 80px;
-      width: 80px;
-      display: inline-block;
-      background-position: center;
-      background-image: url("../img/rodekruis.png");
-      background-size: cover;
-      padding: 0;
-      margin: 0 25px; }
-  .CityOfferPage-btn-yes {
-    text-decoration: none;
-    position: absolute;
-    left: 40px;
-    top: 80%;
-    border: none;
-    background: none; }
-    .CityOfferPage-btn-yes-link {
-      height: 80px;
-      width: 80px;
-      display: inline-block;
-      background-position: center;
-      background-image: url("../img/groenfinkje.png");
-      background-size: cover;
-      padding: 0;
-      margin: 0 25px; } }
+    height: 50vh;
+    width: auto; } }
 
 .contact-heading-primary {
   text-align: center;
