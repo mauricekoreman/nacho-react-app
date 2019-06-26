@@ -26,7 +26,7 @@ class CityOfferPage extends React.Component{
 
 render() {
   return (
-    <div>
+    <div className="CityOfferPage-container">
       <Helmet>
         <style>{'body { background-color: #FCC63F; background-repeat: no-repeat; font-family: Montserrat}'}</style>
       </Helmet>

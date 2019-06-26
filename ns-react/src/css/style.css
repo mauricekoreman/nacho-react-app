@@ -105,7 +105,9 @@ body {
 @media only screen and (min-width: 768px) {
   .CityOfferPage-img {
     height: 50vh;
-    width: auto; } }
+    width: auto; }
+  .CityOfferPage-container {
+    padding: 0 420px; } }
 
 .contact-heading-primary {
   text-align: center;
