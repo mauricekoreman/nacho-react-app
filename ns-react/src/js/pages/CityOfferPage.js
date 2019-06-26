@@ -8,8 +8,6 @@ import { connect } from "react-redux";
 import CityStory from '../pages/CityStory';
 import {naam_stad} from './GpsComponent';
 import GpsComponent from '../pages/GpsComponent';
-import stad from "../../img/steden/Leiden1.jpg";
-
 
 class CityOfferPage extends React.Component{
   // To show a photo in our React app, we need to store the API response in state.
@@ -26,7 +24,7 @@ class CityOfferPage extends React.Component{
 
 render() {
   return (
-    <div>
+    <div className="CityOfferPage-container">
       <Helmet>
         <style>{'body { background-color: #FCC63F; background-repeat: no-repeat; font-family: Montserrat}'}</style>
       </Helmet>
@@ -36,7 +34,7 @@ render() {
         </button>
       </div>
       <div className="CityOfferPage-keuzevlak">
-        <img className="CityOfferPage-img"src={stad} alt="" />
+        <img className="CityOfferPage-img"src={"../img/steden/" + this.props.city+ "1.jpg"} alt="" />
         <h1 className="CityOfferPage-text">{this.props.city}</h1>
       </div>
       <div>
