@@ -28,7 +28,7 @@ export class CityStory extends React.Component{
   }
   render(){
     return (
-      <div className="cityStory--container">
+      <div className="CityStory--container">
         <Helmet>
           <style>{'body {background: white); background-repeat: no-repeat;}'}</style>
         </Helmet>
@@ -41,7 +41,9 @@ export class CityStory extends React.Component{
           </button>
         </div>
 
+
         <div>
+<<<<<<< HEAD
           <img className="cityStory-img"src={"../img/steden/" + this.props.city+ "2.jpg"} alt="" />
           <div className="cityStory-text">
             <h2 className="cityStory-title">{this.props.city}</h2>
@@ -53,6 +55,17 @@ export class CityStory extends React.Component{
         <button className="cityStory-btn">
           <Link to="/Sightseeing" className="contact-btn--link">More</Link>
         </button>
+=======
+          <img className="CityStory-img"src={stad} alt="" />
+          <h2 className="CityStory-title">{this.props.city}</h2>
+          <p className="CityStory-text">{this.state.info}</p>
+        </div>
+        <div>
+          <button className="CityStory-btn">
+            <Link to="/Sightseeing" className="contact-btn--link">More</Link>
+          </button>
+        </div>
+>>>>>>> parent of 7f515e3... citystory: zijkanten een beetje meer ademruimte geven, tussen leiden stad en tekst een leuk lijntje
       </div>
     );
   };
