@@ -1,4 +1,4 @@
-/*We inporteren hier de react gerelateerde onderdelen */
+/*We importeren hier de react gerelateerde onderdelen */
 import React from "react";
 import {BrowserRouter as Router, Route, Link, Switch, Redirect} from "react-router-dom";
 import {Helmet} from 'react-helmet';
@@ -25,7 +25,8 @@ export class Contact extends React.Component {
   1. achtergrond kleur
   2. vlaggenmenu link die terug verwijst naar LanguagePage
   3. title van de pagina
-  4. telefoon, website, mail en twitter functionaliteit ophalen*/
+  4. telefoon, website, mail en twitter functionaliteit ophalen
+  */
   render() {
     return (
       <div>
