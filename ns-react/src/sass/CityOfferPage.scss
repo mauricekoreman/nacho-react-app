@@ -21,44 +21,36 @@
     color: $primary-text-color;
   }
 
-  &-btn-no {
+  &-btn-no-link {
     text-decoration: none;
     position: absolute;
     left: 40px;
     top: 83%;
     border: none;
-    background: none;
-
-    &-link {
-      height: 80px;
-      width: 80px;
-      display: inline-block;
-      background-position: center;
-      background-image: url("../img/rodekruis.png");
-      background-size: cover;
-      padding: 0;
-      margin: 0 25px;
-    }
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+    background-position: center;
+    background-image: url("../img/rodekruis.png");
+    background-size: cover;
+    padding: 0;
+    margin: 0 25px;
   }
 
-  &-btn-yes {
+  &-btn-yes-link {
     text-decoration: none;
     position: absolute;
     right: 40px;
     top: 83%;
     border: none;
-    background: none;
-
-    &-link {
-      height: 80px;
-      width: 80px;
-      display: inline-block;
-      background-position: center;
-      background-image: url("../img/groenfinkje.png");
-      background-size: cover;
-      padding: 0;
-      margin: 0 25px;
-    }
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+    background-position: center;
+    background-image: url("../img/groenfinkje.png");
+    background-size: cover;
+    padding: 0;
+    margin: 0 25px;
   }
 }
 @media only screen and (min-width : 768px) {

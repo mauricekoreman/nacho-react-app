@@ -13,7 +13,7 @@ import axios from "axios";
 2. vlaggenmenu knop die terug verwijst naar keuzen van taal
 3. afbeelding inladen van de stad die uit GpsComponent is gekomen
 4. naam van stad die uit GpsComponent is gekomen
-5. Yes en No button om voorkeur aan te geven Yes verwijst naar CityStory
+5. Yes en No link om voorkeur aan te geven Yes verwijst naar CityStory
    No verwijst naar GpsComponent*/
 const CityOfferPage = (props) =>{
   return (
@@ -22,21 +22,15 @@ const CityOfferPage = (props) =>{
         <style>{'body { background-color: #FCC63F; background-repeat: no-repeat; font-family: Montserrat}'}</style>
       </Helmet>
       <div>{/*2*/}
-        <button className="vlaggenMenu">
-          <Link to="/Language" className="vlaggenMenu-link"></Link>
-        </button>
+        <Link to="/Language" className="vlaggenMenu-link"></Link>
       </div>{/*3 en 4*/}
       <div className="CityOfferPage-keuzevlak">
         <img className="CityOfferPage-img"src={"../img/steden/" + props.city+ "1.jpg"} alt="" />
         <h1 className="CityOfferPage-text">{props.city}</h1>
       </div>
       <div>{/*5*/}
-        <button className="CityOfferPage-btn-yes">
           <Link className="CityOfferPage-btn-yes-link" to="/CityStory"></Link>
-        </button>
-        <button className="CityOfferPage-btn-no">
           <Link className="CityOfferPage-btn-no-link" to="/GpsComponent"></Link>
-        </button>
       </div>
     </div>
   );

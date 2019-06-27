@@ -1,23 +1,16 @@
-.vlaggenMenu{
+.vlaggenMenu-link {
   position: absolute;
-  width: auto;
-  height: 11%;
-  right: 10px;
-  top: 0px;
   background: none;
+  width: auto;
   border: none;
-
-  &-link {
-    height: 40px;
-    width: 60px;
-    border-radius: 8px;
-    display: inline-block;
-    background-position: center;
-    background-image: url('../img/vlaggenMenu.png');
-    background-size: cover;
+  height: 40px;
+  width: 60px;
+  right: 16px;
+  top: 5vh;
+  border-radius: 8px;
+  display: inline-block;
+  background-position: center;
+  background-image: url('../img/vlaggenMenu.png');
+  background-size: cover;
+  transform: translateY(-50%);
   }
-
-  &:hover {
-    cursor: pointer;
-  }
-}
