@@ -55,7 +55,7 @@ class GpsComponent extends React.Component{
         //Deze api zet de coördinaten om naar een stad naam
         axios.get("https://geocode.xyz/"+ this.state.latitude +","+ this.state.longitude + "?json=1&auth=488507351523553559567x2796")
         .then(res=>{
-          
+
           this.props.changeCity(res.data.city);
           for (var i = 0; i < steden.length; i++) {
             if (this.props.city == steden[i]) {
@@ -74,14 +74,22 @@ class GpsComponent extends React.Component{
       })
     }
   }
+  /* Dit is de opbouw van de pagina
+  1. achtergrond kleur
+  2. het woord scanning wordt van de vertaling hier boven vertaalt naar de vertaalt
+  3. laat het scannning logo zien
+  4. laat de stad zien die is gevonden door getMyLocation
+  5. link die je doorverwijst naar cityofferpage */
   render() {
     return (
       <div className="gps-container">
-        <div className="header">
-            <Link to="/Language" className="vlaggenMenu-link"></Link>
+        <div className="header">{/*1*/}
+          <Link to="/Language" className="vlaggenMenu-link"></Link>
         </div>
+        {/*2*/}
         <h3 className="gps-text gps-text--loading">{this.state.scanning}...</h3>
         <div className="pulse">
+          {/*3*/}
           <div className="pulse-animation">
             <img
               className="pulse-animation-logo"
@@ -90,15 +98,17 @@ class GpsComponent extends React.Component{
               height="42"
               width="42"/>
           </div>
+          {/*4*/}
           <h3 className="gps-text gps-text--city">{this.props.city}</h3>
         </div>
+        {/*5*/}
         <Link to={this.state.link} className="home-beginBtn--link">Start</Link>
       </div>
     );
   }
 }
+/*Dit is redux*/
 const mapStateToProps = state => {
   return { city: state.city, language: state.language };
 };
-
 export default connect(mapStateToProps, {changeCity: changeCity})(GpsComponent);
