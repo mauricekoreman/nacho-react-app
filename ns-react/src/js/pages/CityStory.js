@@ -22,10 +22,10 @@ export class CityStory extends React.Component{
     const CITY = this.props.city;
     const LANGUAGE =this.props.language;
 
-    axios.get("http://95.179.178.130/api/" + LANGUAGE + "/" + CITY)
+    axios.get("https://95.179.178.130/api/" + LANGUAGE + "/" + CITY)
     .then(res=>{
       this.setState({info: res.data[0].info});
-    }) 
+    })
   }
   /* Dit is de opbouw van de pagina
   1. achtergrond kleur
