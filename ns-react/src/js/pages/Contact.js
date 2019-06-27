@@ -23,22 +23,19 @@ export class Contact extends React.Component {
   };
   /* Dit is de opbouw van de pagina
   1. achtergrond kleur
-  2. vlaggenmenu knop die terug verwijst naar LanguagePage
+  2. vlaggenmenu link die terug verwijst naar LanguagePage
   3. title van de pagina
-  4. telefoon, website, mail en twitter functionaliteit ophalen
-  5. knop voor meer informatie wat er te doen is in de stad
-  */
+  4. telefoon, website, mail en twitter functionaliteit ophalen*/
   render() {
     return (
       <div>
         <Helmet>{/*1*/}
           <style>{'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'}</style>
         </Helmet>
-        <div>
-          <button className="vlaggenMenu">{/*2*/}
-            <Link to="/Language" className="vlaggenMenu-link"></Link>
-          </button>
-        </div>{/*3*/}
+        <div>{/*2*/}
+          <Link to="/Language" className="vlaggenMenu-link"></Link>
+        </div>
+        {/*3 en 4*/}
         <h1 className="contact-heading-primary">Contact</h1>
         <div className="contact-container">
           <div className="contact-container-tel">

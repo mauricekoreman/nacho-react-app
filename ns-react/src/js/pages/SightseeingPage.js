@@ -61,15 +61,9 @@ export class SightSeeingPage extends React.Component{
         </Helmet>
 
         <div className="header">
-        <button className="gaTerug">
           <Link to="/CityStory" className="gaTerug-link"></Link>
-        </button>
-        
-          <button className="vlaggenMenu">
-            <Link to="/Language" className="vlaggenMenu-link"></Link>
-          </button>
+          <Link to="/Language" className="vlaggenMenu-link"></Link>
           </div>
-      
         <div  className="sightseeing-blok">
           <h3 className="sightseeing-heading">Activity:</h3>
           <SightseeingComponent

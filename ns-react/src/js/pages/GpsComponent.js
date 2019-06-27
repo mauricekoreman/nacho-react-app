@@ -1,17 +1,16 @@
+/*We inporteren hier de react gerelateerde onderdelen */
 import React from "react";
-import axios from "axios";
-import "../../css/style.css";
+import {BrowserRouter as Router, Route, Link, Switch, Redirect} from "react-router-dom";
 import {Helmet} from 'react-helmet';
+import { connect } from "react-redux";
+/*We inporteren hier de css */
+import "../../css/style.css";
+/*We inporteren hier externe componenten */
+import axios from "axios";
+/*We importerne hier interne componenten*/
 import logoPuls from "../../img/logo_puls.png";
 import {changeCity} from "./actions";
-import { connect } from "react-redux";
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch,
-  Redirect
-} from "react-router-dom";
+
 
 class GpsComponent extends React.Component{
   // To show a photo in our React app, we need to store the API response in state.
@@ -75,9 +74,7 @@ class GpsComponent extends React.Component{
     return (
       <div className="gps-container">
         <div className="header">
-          <button className="vlaggenMenu">
             <Link to="/Language" className="vlaggenMenu-link"></Link>
-          </button>
         </div>
         <h3 className="gps-text gps-text--loading">{this.state.scanning}...</h3>
         <div className="pulse">

@@ -42,10 +42,7 @@ export class StartPage extends React.Component {
               <style>{'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'}</style>
             </Helmet>
             <div className = "header" />
-            <button className = "vlaggenMenu" >
               <Link to = "../Language" className = "vlaggenMenu-link"></Link>
-            </button>
-
             <div className="startPage-img" />
             <div className="tekstBlok">
               <p className="introductie">{this.state.zin}</p>
