@@ -1,10 +1,9 @@
 .CityOfferPage {
-
   &-keuzevlak {
     background-color: white;
     margin: 110px 20px;
     border-radius: 15px;
-    padding: 20px;
+    padding: 27px 7px 12px 7px;
   }
 
   &-img {
@@ -16,8 +15,10 @@
 
   &-text {
     text-align: center;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 0;
+    font-size: 40px;
+    color: $primary-text-color;
   }
 
   &-btn-no {

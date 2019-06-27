@@ -8,8 +8,6 @@ import { connect } from "react-redux";
 import CityStory from '../pages/CityStory';
 import {naam_stad} from './GpsComponent';
 import GpsComponent from '../pages/GpsComponent';
-import stad from "../../img/steden/Leiden1.jpg";
-
 
 class CityOfferPage extends React.Component{
   /* we vragen hier de stad op die is gevonden bij de GpsComponent. */
@@ -36,8 +34,8 @@ render() {
         </button>
       </div>
       <div className="CityOfferPage-keuzevlak">
-        <img className="CityOfferPage-img"src={stad} alt="" />/*3.*/
-        <h1 className="CityOfferPage-text">{this.props.city}</h1>/*4.*/
+        <img className="CityOfferPage-img"src={"../img/steden/" + this.props.city+ "1.jpg"} alt="" />/*3.*/
+        <h1 className="CityOfferPage-text">{this.props.city}</h1>/*4*/
       </div>
       <div>/*5.*/
         <button className="CityOfferPage-btn-yes">
