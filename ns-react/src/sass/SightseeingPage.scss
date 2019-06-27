@@ -1,8 +1,16 @@
+.header {
+  background-color: transparent;
+}
+
 .sightseeing {
   &-blok {
     position: relative;
     width: 90%;
     margin: 0 auto;
     margin-bottom: 50px;
+  }
+
+  &-heading {
+    color: $primary-text-color;
   }
 }

@@ -389,28 +389,35 @@ body {
   color: #FFF;
   background-size: cover; }
 
+.header {
+  background-color: transparent; }
+
 .sightseeing-blok {
   position: relative;
   width: 90%;
   margin: 0 auto;
   margin-bottom: 50px; }
 
-.CityStory-text {
-  margin: 10px 16px 0 16px;
+.sightseeing-heading {
+  color: #212B5C; }
+
+.cityStory-text {
+  margin: 10px 25px 0 25px;
   font-size: 15px; }
 
-.CityStory-img {
+.cityStory-img {
   width: 100%; }
 
-.CityStory-title {
-  margin: 22px 16px 22px 16px; }
+.cityStory-title {
+  margin: 22px 0;
+  color: #212B5C; }
 
-.CityStory-btn {
+.cityStory-btn {
   margin: 40px auto 0% auto;
   display: block;
   padding: 20px 80px;
   border: none;
-  border-top: 1.5px solid #000;
+  border-top: 1.5px solid #212B5C;
   background: none; }
 
 .startPage-img {
