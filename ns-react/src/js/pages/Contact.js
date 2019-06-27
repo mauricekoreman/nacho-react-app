@@ -1,17 +1,14 @@
+/*We inporteren hier de react gerelateerde onderdelen */
 import React from "react";
-import "../../css/style.css";
-import vlaggenMenu from "../../img/vlaggenMenu.png";
+import {BrowserRouter as Router, Route, Link, Switch, Redirect} from "react-router-dom";
 import {Helmet} from 'react-helmet';
-import Language from '../components/Language';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch,
-  Redirect
-} from "react-router-dom";
+/*We inporteren hier de css */
+import "../../css/style.css";
+
 
 export class Contact extends React.Component {
+  /*Hier zorgen we er voor dat wanneer je op de icons of text drukt je naar de
+  vervolg stap word gestuurd */
   onMobileClicked = () => {
     window.open('tel:+31307515155');
   };
@@ -24,21 +21,24 @@ export class Contact extends React.Component {
   onTwitterClicked = () => {
     window.location.href = 'https://twitter.com/ns_online';
   };
-
+  /* Dit is de opbouw van de pagina
+  1. achtergrond kleur
+  2. vlaggenmenu knop die terug verwijst naar LanguagePage
+  3. title van de pagina
+  4. telefoon, website, mail en twitter functionaliteit ophalen
+  5. knop voor meer informatie wat er te doen is in de stad
+  */
   render() {
     return (
       <div>
-        <Helmet>
-          <style>
-            {'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'}</style>
+        <Helmet>{/*1*/}
+          <style>{'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'}</style>
         </Helmet>
-
         <div>
-        <button className="vlaggenMenu">
+          <button className="vlaggenMenu">{/*2*/}
             <Link to="/Language" className="vlaggenMenu-link"></Link>
           </button>
-        </div>
-
+        </div>{/*3*/}
         <h1 className="contact-heading-primary">Contact</h1>
         <div className="contact-container">
           <div className="contact-container-tel">
@@ -58,12 +58,8 @@ export class Contact extends React.Component {
             <p className="contact-container-text" onClick={this.onTwitterClicked}>@NS_online</p>
           </div>
         </div>
-        <Switch>
-          <Route path="/language" exact="exact" component={Language}/>
-        </Switch>
-
-    </div>
-  );
+      </div>
+    );
   };
 }
 
