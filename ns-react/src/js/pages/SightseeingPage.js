@@ -23,6 +23,7 @@ export class SightSeeingPage extends React.Component{
   }
 
   componentDidMount() {
+    // Hier worden constanten aangemaakt. Hierdoor hoef je dit alleen hier aan te passen en niet in de API call zelf.
     const BASE_URL = "https://www.triposo.com/api/20181213/";
     const CATEGORIE_LOCATION = "location.json?";
     const CATEGORIE_POI = "poi.json?";
@@ -33,6 +34,8 @@ export class SightSeeingPage extends React.Component{
     const API_TOKEN = "&token=v56oi7tj6zdoweync49h0h3vyddtd13x";
     const CITY = this.props.city;
     // Sightseeing
+
+    // De API call naar triposo
     axios.all([
       axios.get(BASE_URL + CATEGORIE_POI + LOCATION + CITY + "&order_by=-score&fields=name,score,images,snippet&count=1" + ACCOUNT + API_TOKEN),
       axios.get(BASE_URL + CATEGORIE_POI + LOCATION + CITY + TAG_LABELS + "eatingout" + "&order_by=-score&fields=name,coordinates,score,images,snippet" + ACCOUNT + API_TOKEN)
