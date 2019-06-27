@@ -1,6 +1,17 @@
+.language-container {
+  height: 100vh;
+  position: relative;
+}
+
+.language-content {
+  width: 100%;
+  position: absolute;
+  top: 10%;
+}
+
 .language-title {
   text-align: center;
-  margin: 100px 0;
+  margin: 0;
   color: $primary-text-color;
 }
 
@@ -11,20 +22,24 @@
   grid-column-gap: 20px;
   grid-row-gap: 50px;
   text-align: center;
+  position: absolute;
+  top: 100px;
 }
 
-.contact-btn{
-  margin: 150px auto 0% auto;
+.contact-btn {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
   display:block;
   padding: 20px 80px;
   border: none;
-  border-top: 1.5px solid $primary-btn-color;
+  border-top: 1.5px solid $primary-text-color;
   background: none;
 
-
   &--link {
-    color: $primary-btn-color;
+    color: $primary-text-color;
     text-decoration: none;
-    border-bottom: 1px solid $primary-btn-color;
+    border-bottom: 1px solid $primary-text-color;
   }
 }

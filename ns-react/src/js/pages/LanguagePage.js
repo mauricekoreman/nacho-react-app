@@ -45,28 +45,33 @@ export class LanguagePage extends React.Component {
           <style>{'body { background-color: white; background-repeat: no-repeat;}'}</style>
         </Helmet>
         {/*2*/}
-        <h3 className="language-title">Pick your language</h3>
-        <div className="grid-container">{/*3*/}
-          <div className="grid-item">
-            <Language id="Nederlands" cardClicked={this.cardNLClicked} background={vlagNL}/>
+        <div className="language-container">
+          <div className="language-content">
+            <h3 className="language-title">Pick your language</h3>
+            <div className="grid-container">{/*3*/}
+              <div className="grid-item">
+                <Language id="Nederlands" cardClicked={this.cardNLClicked} background={vlagNL}/>
+              </div>
+              <div className="grid-item">
+                <Language id="Engels" cardClicked={this.cardENClicked} background={vlagUK}/>
+              </div>
+              <div className="grid-item">
+                <Language id="Spaans" cardClicked={this.cardSPClicked} background={vlagSP}/>
+              </div>
+              <div className="grid-item">
+                <Language id="Frans" cardClicked={this.cardFRClicked} background={vlagFK}/>
+              </div>
+            </div>
           </div>
-          <div className="grid-item">
-            <Language id="Engels" cardClicked={this.cardENClicked} background={vlagUK}/>
+
+          <div>{/*4*/}
+            <button className="contact-btn">
+              <Link to="/Contact" className="contact-btn--link">Contact</Link>
+            </button>
           </div>
-          <div className="grid-item">
-            <Language id="Spaans" cardClicked={this.cardSPClicked} background={vlagSP}/>
-          </div>
-          <div className="grid-item">
-            <Language id="Frans" cardClicked={this.cardFRClicked} background={vlagFK}/>
-          </div>
+        </div>
       </div>
-      <div>{/*4*/}
-        <button className="contact-btn">
-          <Link to="/Contact" className="contact-btn--link">Contact</Link>
-        </button>
-      </div>
-    </div>
-  );
+    );
   }
 }
 /*Dit is redux*/

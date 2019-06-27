@@ -28,8 +28,8 @@ const CityOfferPage = (props) =>{
 
       <div className="CityOfferPage-content">
         <div className="CityOfferPage-keuzevlak">
-          <img className="CityOfferPage-img"src={"../img/steden/" + this.props.city+ "1.jpg"} alt="" />
-          <h1 className="CityOfferPage-text">{this.props.city}</h1>
+          <img className="CityOfferPage-img"src={"../img/steden/" + props.city+ "1.jpg"} alt="" />
+          <h1 className="CityOfferPage-text">{props.city}</h1>
         </div>{/*5*/}
 
         <div className="CityOfferPage-btn">
