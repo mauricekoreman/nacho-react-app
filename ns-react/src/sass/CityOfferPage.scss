@@ -1,11 +1,10 @@
 .CityOfferPage {
   &-content {
-    background-color: red;
     position: absolute;
     margin-top: 100px;
     left: 50%;
     transform: translateX(-50%);
-    height: 80vh;
+    // height: 65vh;
   }
 
   &-keuzevlak {
@@ -42,33 +41,33 @@
       background-position: center;
       background-size: cover;
       padding: 0;
-      bottom: 0px;
       position: absolute;
     }
 
     &--no {
       &-link {
-        left: 0px;
+        left: 20px;
         background-image: url("../img/rodekruis.png");
       }
     }
 
     &--yes {
       &-link {
-        right: 0px;
+        right: 20px;
         background-image: url("../img/groenfinkje.png");
       }
     }
   }
 }
-// @media only screen and (min-width : 768px) {
-//   .CityOfferPage {
-//     &-img {
-//       height: 50vh;
-//       width: auto;
-//     }
-//     &-container{
-//       padding:0 420px;
-//     }
-//   }
-// }
+
+@media only screen and (min-width : 600px) {
+  .CityOfferPage {
+    &-content {
+      width: 430px;
+    }
+
+    &-img {
+      width: 100%;
+    }
+  }
+}
