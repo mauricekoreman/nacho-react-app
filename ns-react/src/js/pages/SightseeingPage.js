@@ -1,18 +1,17 @@
+/*We inporteren hier de react gerelateerde onderdelen */
 import React from "react";
-import axios from "axios";
+import {Link} from "react-router-dom";
 import {Helmet} from 'react-helmet';
+import { connect } from "react-redux";
+import {changeCity} from "./actions";
+/*We inporteren hier de css */
+import "../../css/style.css";
+/*We inporteren hier externe componenten */
+import axios from "axios";
+/*We inporteren hier interne componenten */
 import SightseeingComponent from '../components/SightseeingComponent';
 import RestaurantComponent from '../components/RestaurantComponent';
-import {changeCity} from "./actions";
-import { connect } from "react-redux";
-import "../../css/style.css";
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch,
-  Redirect
-} from "react-router-dom";
+
 
 export class SightSeeingPage extends React.Component{
   // To show a photo in our React app, we need to store the API response in state.
@@ -51,26 +50,23 @@ export class SightSeeingPage extends React.Component{
       });
     }));
   };
-
-
+  /* Dit is de opbouw van de pagina
+  1. achtergrond kleur
+  2. vlaggenmenu link die terug verwijst naar LanguagePage en ga terug link
+     die verwijst naar de GpsComponent
+  3. Hier word de actievitiet en eet locatie aangeboden per stad */
   render(){
     return (
       <div className="sightseeing-container">
-        <Helmet>
+        <Helmet>{/*1*/}
           <style>{'body { background-color: white; background-repeat: no-repeat;}'}</style>
         </Helmet>
 
-        <div className="header sightseeing-header">
-          <button className="gaTerug">
-            <Link to="/CityStory" className="gaTerug-link"></Link>
-          </button>
-
-          <button className="vlaggenMenu">
-            <Link to="/Language" className="vlaggenMenu-link"></Link>
-          </button>
+        <div className="header sightseeing-header">{/*2*/}
+          <Link to="/CityStory" className="gaTerug-link"></Link>
+          <Link to="/Language" className="vlaggenMenu-link"></Link>
         </div>
-
-        <div className="sightseeing-blok">
+        <div className="sightseeing-blok">{/*3*/}
           <h3 className="sightseeing-heading">Activity:</h3>
           <SightseeingComponent
             actname={ this.state.name }
@@ -88,6 +84,7 @@ export class SightSeeingPage extends React.Component{
     );
   };
 }
+/*Dit is redux*/
 const mapStateToProps = state => {
   return { city: state.city };
 };

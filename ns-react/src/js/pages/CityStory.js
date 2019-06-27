@@ -1,6 +1,6 @@
-/*We inporteren hier de react gerelateerde onderdelen */
+/*We importeren hier de react gerelateerde onderdelen */
 import React from "react";
-import {BrowserRouter as Router, Route, Link, Redirect} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {Helmet} from 'react-helmet';
 import { connect } from "react-redux";
 /*We inporteren hier de css */
@@ -29,8 +29,7 @@ export class CityStory extends React.Component{
   }
   /* Dit is de opbouw van de pagina
   1. achtergrond kleur
-  2. vlaggenmenu knop die terug verwijst naar LanguagePage en ga terug knop
-     die verwijst naar de GpsComponent
+  2. vlaggenmenu link die terug verwijst naar LanguagePage en ga terug link die verwijst naar de GpsComponent
   3. afbeelding inladen van de stad die uit GpsComponent is gekomen
   4. naam van de stad en de informatie in de goede taal laten zien
   5. knop voor meer informatie wat er te doen is in de stad
@@ -42,12 +41,8 @@ export class CityStory extends React.Component{
           <style>{'body {background: white); background-repeat: no-repeat;}'}</style>
         </Helmet>
         <div className="header">{/*2*/}
-          <button className="gaTerug">
-            <Link to="/GpsComponent" className="gaTerug-link"></Link>
-          </button>
-          <button className="vlaggenMenu">
-            <Link to="/Language" className="vlaggenMenu-link"></Link>
-          </button>
+          <Link to="/GpsComponent" className="gaTerug-link"></Link>
+          <Link to="/Language" className="vlaggenMenu-link"></Link>
         </div>
         <div>{/*3 en 4*/}
           <img className="cityStory-img"src={"../img/steden/" + this.props.city+ "2.jpg"} alt="" />

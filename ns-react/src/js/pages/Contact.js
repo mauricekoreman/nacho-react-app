@@ -1,17 +1,14 @@
+/*We importeren hier de react gerelateerde onderdelen */
 import React from "react";
-import "../../css/style.css";
-import vlaggenMenu from "../../img/vlaggenMenu.png";
+import {Link} from "react-router-dom";
 import {Helmet} from 'react-helmet';
-import Language from '../components/Language';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch,
-  Redirect
-} from "react-router-dom";
+/*We inporteren hier de css */
+import "../../css/style.css";
+
 
 export class Contact extends React.Component {
+  /*Hier zorgen we er voor dat wanneer je op de icons of text drukt je naar de
+  vervolg stap word gestuurd */
   onMobileClicked = () => {
     window.open('tel:+31307515155');
   };
@@ -24,21 +21,26 @@ export class Contact extends React.Component {
   onTwitterClicked = () => {
     window.location.href = 'https://twitter.com/ns_online';
   };
-
+  /* Dit is de opbouw van de pagina
+  1. achtergrond kleur
+  2. vlaggenmenu link die terug verwijst naar LanguagePage
+  3. title van de pagina
+  4. telefoon, website, mail en twitter functionaliteit ophalen
+  */
   render() {
     return (
       <div>
-        <Helmet>
-          <style>
-            {'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'}</style>
+        <Helmet>{/*1*/}
+          <style>{'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'}</style>
         </Helmet>
 
-        <div className="header contact-header">
+        <div className="header contact-header">{/*2*/}
           <button className="gaTerug">
             <Link to="/Language" className="gaTerug-link"></Link>
           </button>
           <span className="contact-heading-primary">Contact</span>
         </div>
+        {/*3 en 4*/}
 
         <div className="contact-container">
           <div className="contact-container-tel">
@@ -58,12 +60,8 @@ export class Contact extends React.Component {
             <p className="contact-container-text" onClick={this.onTwitterClicked}>@NS_online</p>
           </div>
         </div>
-        <Switch>
-          <Route path="/language" exact="exact" component={Language}/>
-        </Switch>
-
-    </div>
-  );
+      </div>
+    );
   };
 }
 

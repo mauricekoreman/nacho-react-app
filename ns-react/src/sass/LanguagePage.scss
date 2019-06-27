@@ -1,18 +1,6 @@
-.language-container {
-  height: 100vh;
-  position: relative;
-}
-
-.language-content {
-  top: 80px;
-  position: absolute;
-  width: 100%;
-}
-
 .language-title {
   text-align: center;
-  margin: 0;
-  margin-bottom: 70px;
+  margin: 100px 0;
   color: $primary-text-color;
 }
 
@@ -25,22 +13,18 @@
   text-align: center;
 }
 
-.contact-btn {
+.contact-btn{
+  margin: 150px auto 0% auto;
   display:block;
   padding: 20px 80px;
   border: none;
-  border-top: 1.5px solid $primary-text-color;
+  border-top: 1.5px solid $primary-btn-color;
   background: none;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 8%;
 
 
   &--link {
-    color: $primary-text-color;
+    color: $primary-btn-color;
     text-decoration: none;
-    border-bottom: 1px solid $primary-text-color;
-    font-size: 18px;
+    border-bottom: 1px solid $primary-btn-color;
   }
 }
