@@ -52,7 +52,7 @@ class GpsComponent extends React.Component{
           longitude:position.coords.longitude,
         })
         //Deze api zet de coördinaten om naar een stad naam
-        axios.get("https://geocode.xyz/"+ this.state.latitude +","+ this.state.longitude + "?json=1&auth=488507351523553559567x2796")
+        axios.get("https://geocode.xyz/"+ this.state.latitude +","+ this.state.longitude + "?json=1&auth=350119353143491747656x2817")
         .then(res=>{
 
           this.props.changeCity(res.data.city);
