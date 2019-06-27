@@ -60,7 +60,7 @@ export class SightSeeingPage extends React.Component{
           <style>{'body { background-color: white; background-repeat: no-repeat;}'}</style>
         </Helmet>
 
-        <div className="header">
+        <div className="header sightseeing-header">
           <button className="gaTerug">
             <Link to="/CityStory" className="gaTerug-link"></Link>
           </button>

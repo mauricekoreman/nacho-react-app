@@ -28,7 +28,7 @@ export class ErrorPage extends React.Component{
     );
   };
 }
-const mapStateToProps = state => {
+const mapStateToProps = state => { 
   return {language: state.language};
 };
 

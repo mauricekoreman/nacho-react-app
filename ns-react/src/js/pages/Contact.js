@@ -33,13 +33,13 @@ export class Contact extends React.Component {
             {'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'}</style>
         </Helmet>
 
-        <div>
-        <button className="vlaggenMenu">
-            <Link to="/Language" className="vlaggenMenu-link"></Link>
+        <div className="header contact-header">
+          <button className="gaTerug">
+            <Link to="/Language" className="gaTerug-link"></Link>
           </button>
+          <span className="contact-heading-primary">Contact</span>
         </div>
 
-        <h1 className="contact-heading-primary">Contact</h1>
         <div className="contact-container">
           <div className="contact-container-tel">
             <i className="fa fa-mobile" onClick={this.onMobileClicked}></i>

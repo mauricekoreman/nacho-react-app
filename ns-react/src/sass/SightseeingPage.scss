@@ -1,8 +1,8 @@
-.header {
-  background-color: transparent;
-}
-
 .sightseeing {
+  &-header {
+    background-color: transparent;
+  }
+
   &-blok {
     position: relative;
     width: 90%;
