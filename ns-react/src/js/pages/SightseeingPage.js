@@ -1,18 +1,17 @@
+/*We inporteren hier de react gerelateerde onderdelen */
 import React from "react";
-import axios from "axios";
+import {BrowserRouter as Router, Route, Link, Switch, Redirect} from "react-router-dom";
 import {Helmet} from 'react-helmet';
+import { connect } from "react-redux";
+import {changeCity} from "./actions";
+/*We inporteren hier de css */
+import "../../css/style.css";
+/*We inporteren hier externe componenten */
+import axios from "axios";
+/*We inporteren hier interne componenten */
 import SightseeingComponent from '../components/SightseeingComponent';
 import RestaurantComponent from '../components/RestaurantComponent';
-import {changeCity} from "./actions";
-import { connect } from "react-redux";
-import "../../css/style.css";
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch,
-  Redirect
-} from "react-router-dom";
+
 
 export class SightSeeingPage extends React.Component{
   // To show a photo in our React app, we need to store the API response in state.
@@ -82,6 +81,7 @@ export class SightSeeingPage extends React.Component{
     );
   };
 }
+/*Dit is redux*/
 const mapStateToProps = state => {
   return { city: state.city };
 };
