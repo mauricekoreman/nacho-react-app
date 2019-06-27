@@ -1,3 +1,5 @@
+/* Hier worden de acties aan gemaakt die mogelijk zijn in deze applicatie.*/
+
 export const CHANGE_LANGUAGE = "CHANGE_LANGUAGE";
 export const CHANGE_CITY = "CHANGE_CITY";
 

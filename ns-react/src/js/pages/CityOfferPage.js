@@ -12,34 +12,34 @@ import stad from "../../img/steden/Leiden1.jpg";
 
 
 class CityOfferPage extends React.Component{
-  // To show a photo in our React app, we need to store the API response in state.
-  constructor() {
-    super()
-    this.state = {
-      image:''
-    }
-  }
-
+  /* we vragen hier de stad op die is gevonden bij de GpsComponent. */
   componentDidMount() {
     const CITY = this.props.city;
   };
 
+  /* Dit is de opbouw van de pagina
+  1. achtergrond kleur
+  2. vlaggenmenu knop die terug verwijst naar keuzen van taal
+  3. afbeelding inladen van de stad die uit GpsComponent is gekomen
+  4. naam van stad die uit GpsComponent is gekomen
+  5. Yes en No button om voorkeur aan te geven Yes verwijst naar CityStory
+     No verwijst naar GpsComponent*/
 render() {
   return (
     <div className="CityOfferPage-container">
-      <Helmet>
-        <style>{'body { background-color: #FCC63F; background-repeat: no-repeat; font-family: Montserrat}'}</style>
+      <Helmet>/*1.*/
+      <style>{'body { background-color: #FCC63F; background-repeat: no-repeat; font-family: Montserrat}'}</style>
       </Helmet>
-      <div>
+      <div>/*2.*/
         <button className="vlaggenMenu">
           <Link to="/Language" className="vlaggenMenu-link"></Link>
         </button>
       </div>
       <div className="CityOfferPage-keuzevlak">
-        <img className="CityOfferPage-img"src={stad} alt="" />
-        <h1 className="CityOfferPage-text">{this.props.city}</h1>
+        <img className="CityOfferPage-img"src={stad} alt="" />/*3.*/
+        <h1 className="CityOfferPage-text">{this.props.city}</h1>/*4.*/
       </div>
-      <div>
+      <div>/*5.*/
         <button className="CityOfferPage-btn-yes">
           <Link className="CityOfferPage-btn-yes-link" to="/CityStory"></Link>
         </button>
@@ -52,6 +52,7 @@ render() {
   );
 }
 }
+/*Dit is redux*/
 const mapStateToProps = state => {
   return { city: state.city, language: state.language };
 };
