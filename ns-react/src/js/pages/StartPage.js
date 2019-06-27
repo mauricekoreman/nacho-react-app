@@ -1,6 +1,6 @@
 /* We importeren hier de react gerelateerde onderdelen */
 import React from "react";
-import {BrowserRouter as Router, Route, Link, Switch, Redirect} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {Helmet} from 'react-helmet';
 import {connect} from "react-redux";
 /* We inporteren hier de css */
@@ -18,19 +18,19 @@ export class StartPage extends React.Component {
   componentDidMount() {
     /*Hier veranderen we de tekst zodat je de tekst in de juiste taal ziet
     Door middel van de states wordt de taal gekozen die moet worden getoont.*/
-    if (this.props.language == 'NL') {
+    if (this.props.language === 'NL') {
       this.setState({zin: "Welkom in Nederland !!"});
       this.setState({knop: "Begin"});
     }
-    if (this.props.language == 'ENG') {
+    if (this.props.language === 'ENG') {
       this.setState({zin: "Welcome to the Netherlands !!"});
       this.setState({knop: "Get started"});
     }
-    if (this.props.language == 'SP') {
+    if (this.props.language === 'SP') {
       this.setState({zin: "Bienvenidos a Holanda !!"});
       this.setState({knop: "Empezar"});
     }
-    if (this.props.language == 'FR') {
+    if (this.props.language === 'FR') {
       this.setState({zin: "Bienvenue aux Pays-Bas !!"});
       this.setState({knop: "Commencer"});
     }

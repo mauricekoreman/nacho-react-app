@@ -5,9 +5,7 @@ import { Provider } from "react-redux";
 import {
   BrowserRouter as Router,
   Route,
-  Link,
   Switch,
-  Redirect
 } from "react-router-dom";
 
 
