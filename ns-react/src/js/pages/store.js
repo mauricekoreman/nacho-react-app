@@ -1,3 +1,4 @@
+/*Hier worden de language en city opgeslagen*/
 import {
   combineReducers,
   createStore
