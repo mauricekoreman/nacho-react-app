@@ -1,14 +1,22 @@
 .CityOfferPage {
+  &-content {
+    background-color: red;
+    position: absolute;
+    margin-top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80vh;
+  }
 
   &-keuzevlak {
-    background-color: white;
-    margin: 110px 20px;
+    background-color: #FFF;
     border-radius: 15px;
-    padding: 27px 7px 12px 7px;
+    padding: 20px 20px 10px 20px;
   }
 
   &-img {
-    width: 76.5vw;
+    width: 70vw;
+    height: auto;
     border-radius: 15px;
     display: block;
     margin: auto;
@@ -18,58 +26,49 @@
     text-align: center;
     margin-top: 10px;
     margin-bottom: 0;
-    font-size: 40px;
+    font-size: 35px;
     color: $primary-text-color;
   }
 
-  &-btn-no {
+  &-btn {
     text-decoration: none;
-    position: absolute;
-    left: 40px;
-    top: 83%;
     border: none;
     background: none;
 
-    &-link {
-      height: 80px;
-      width: 80px;
+    &--no-link, &--yes-link {
+      height: 70px;
+      width: 70px;
       display: inline-block;
       background-position: center;
-      background-image: url("../img/rodekruis.png");
       background-size: cover;
       padding: 0;
-      margin: 0 25px;
+      bottom: 0px;
+      position: absolute;
     }
-  }
 
-  &-btn-yes {
-    text-decoration: none;
-    position: absolute;
-    right: 40px;
-    top: 83%;
-    border: none;
-    background: none;
+    &--no {
+      &-link {
+        left: 0px;
+        background-image: url("../img/rodekruis.png");
+      }
+    }
 
-    &-link {
-      height: 80px;
-      width: 80px;
-      display: inline-block;
-      background-position: center;
-      background-image: url("../img/groenfinkje.png");
-      background-size: cover;
-      padding: 0;
-      margin: 0 25px;
+    &--yes {
+      &-link {
+        right: 0px;
+        background-image: url("../img/groenfinkje.png");
+      }
     }
   }
 }
-@media only screen and (min-width : 768px) {
-  .CityOfferPage {
-    &-img {
-      height: 50vh;
-      width: auto;
-    }
-    &-container{
-      padding:0 420px;
-    }
-  }
-}
+// @media only screen and (min-width : 768px) {
+//   .CityOfferPage {
+//     &-img {
+//       height: 50vh;
+//       width: auto;
+//     }
+//     &-container{
+//       padding:0 420px;
+//     }
+//   }
+// }

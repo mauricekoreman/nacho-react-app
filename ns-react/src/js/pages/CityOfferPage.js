@@ -25,26 +25,33 @@ class CityOfferPage extends React.Component{
 render() {
   return (
     <div className="CityOfferPage-container">
+
       <Helmet>
         <style>{'body { background-color: #FCC63F; background-repeat: no-repeat; font-family: Montserrat}'}</style>
       </Helmet>
+
       <div>
         <button className="vlaggenMenu">
           <Link to="/Language" className="vlaggenMenu-link"></Link>
         </button>
       </div>
-      <div className="CityOfferPage-keuzevlak">
-        <img className="CityOfferPage-img"src={"../img/steden/" + this.props.city+ "1.jpg"} alt="" />
-        <h1 className="CityOfferPage-text">{this.props.city}</h1>
+
+      <div className="CityOfferPage-content">
+        <div className="CityOfferPage-keuzevlak">
+          <img className="CityOfferPage-img"src={"../img/steden/" + this.props.city+ "1.jpg"} alt="" />
+          <h1 className="CityOfferPage-text">{this.props.city}</h1>
+        </div>
+
+        <div className="CityOfferPage-btn">
+          <button className="CityOfferPage-btn CityOfferPage-btn--yes">
+            <Link className="CityOfferPage-btn--yes CityOfferPage-btn--yes-link" to="/CityStory"></Link>
+          </button>
+          <button className="CityOfferPage-btn CityOfferPage-btn--no">
+            <Link className="CityOfferPage-btn--no-link" to="/GpsComponent"></Link>
+          </button>
+        </div>
       </div>
-      <div>
-        <button className="CityOfferPage-btn-yes">
-          <Link className="CityOfferPage-btn-yes-link" to="/CityStory"></Link>
-        </button>
-        <button className="CityOfferPage-btn-no">
-          <Link className="CityOfferPage-btn-no-link" to="/GpsComponent"></Link>
-        </button>
-      </div>
+
     </div>
 
   );
