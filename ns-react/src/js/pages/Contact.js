@@ -1,6 +1,6 @@
 /*We importeren hier de react gerelateerde onderdelen */
 import React from "react";
-import {BrowserRouter as Router, Route, Link, Switch, Redirect} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {Helmet} from 'react-helmet';
 /*We inporteren hier de css */
 import "../../css/style.css";

@@ -1,7 +1,6 @@
 /*We importeren hier de react gerelateerde onderdelen */
 import React from "react";
-import {BrowserRouter as Router, Route, Link, Switch, Redirect} from "react-router-dom";
-import {Helmet} from 'react-helmet';
+import {Link} from "react-router-dom";
 import { connect } from "react-redux";
 /*We inporteren hier de css */
 import "../../css/style.css";
@@ -27,16 +26,16 @@ class GpsComponent extends React.Component{
   componentDidMount() {
     //Hier zetten we de scanning tekst om naar de taal die eerder geselecteerd is
     this.getMyLocation()
-    if (this.props.language == 'NL'){
+    if (this.props.language === 'NL'){
         this.setState({scanning: "Zoeken"});
     }
-    if (this.props.language == 'ENG'){
+    if (this.props.language === 'ENG'){
         this.setState({scanning: "Scanning"});
     }
-    if (this.props.language == 'SP'){
+    if (this.props.language === 'SP'){
         this.setState({scanning: "exploración"});
     }
-    if (this.props.language == 'FR'){
+    if (this.props.language === 'FR'){
         this.setState({scanning: "balayage"});
     }
   }
@@ -58,7 +57,7 @@ class GpsComponent extends React.Component{
 
           this.props.changeCity(res.data.city);
           for (var i = 0; i < steden.length; i++) {
-            if (this.props.city == steden[i]) {
+            if (this.props.city === steden[i]) {
               this.setState({
                 link:"/offer",
               })

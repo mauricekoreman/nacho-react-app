@@ -1,6 +1,6 @@
 /*We inporteren hier de react gerelateerde onderdelen */
 import React from "react";
-import {BrowserRouter as Router, Route, Link, Switch, Redirect} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {Helmet} from 'react-helmet';
 import { connect } from "react-redux";
 import {changeCity} from "./actions";
@@ -50,20 +50,22 @@ export class SightSeeingPage extends React.Component{
       });
     }));
   };
-
-
+  /* Dit is de opbouw van de pagina
+  1. achtergrond kleur
+  2. vlaggenmenu link die terug verwijst naar LanguagePage en ga terug link
+     die verwijst naar de GpsComponent
+  3. Hier word de actievitiet en eet locatie aangeboden per stad */
   render(){
     return (
       <div className="sightseeing-container">
-        <Helmet>
+        <Helmet>{/*1*/}
           <style>{'body { background-color: white; background-repeat: no-repeat;}'}</style>
         </Helmet>
-
-        <div className="header">
+        <div className="header">{/*2*/}
           <Link to="/CityStory" className="gaTerug-link"></Link>
           <Link to="/Language" className="vlaggenMenu-link"></Link>
           </div>
-        <div  className="sightseeing-blok">
+        <div  className="sightseeing-blok">{/*3*/}
           <h3 className="sightseeing-heading">Activity:</h3>
           <SightseeingComponent
             actname={ this.state.name }
