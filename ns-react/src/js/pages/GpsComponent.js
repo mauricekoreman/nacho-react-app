@@ -13,7 +13,6 @@ import {changeCity} from "./actions";
 
 
 class GpsComponent extends React.Component{
-  // To show a photo in our React app, we need to store the API response in state.
   constructor() {
     super()
     this.state = {
@@ -26,6 +25,7 @@ class GpsComponent extends React.Component{
   }
 
   componentDidMount() {
+    //Hier zetten we de scanning tekst om naar de taal die eerder geselecteerd is
     this.getMyLocation()
     if (this.props.language == 'NL'){
         this.setState({scanning: "Zoeken"});
@@ -42,7 +42,9 @@ class GpsComponent extends React.Component{
   }
 
   getMyLocation() {
+    //Hier haalt geolocation de locatie van de gebruiker op
     const location = window.navigator && window.navigator.geolocation
+    //Deze array wordt gebruikt om naar de error pagina geleid te worden wanneer de stad die gescant word nog niet in de api staat
     const steden = ['Amsterdam','Haarlem','Heemstede','Leiden', 'Den Haag', 'Delft', 'Schiedam', 'Rotterdam','Dordrecht', 'Roosendaal'];
     if (location) {
       location.getCurrentPosition((position) => {
@@ -50,8 +52,10 @@ class GpsComponent extends React.Component{
           latitude:position.coords.latitude,
           longitude:position.coords.longitude,
         })
+        //Deze api zet de coördinaten om naar een stad naam
         axios.get("https://geocode.xyz/"+ this.state.latitude +","+ this.state.longitude + "?json=1&auth=488507351523553559567x2796")
         .then(res=>{
+          
           this.props.changeCity(res.data.city);
           for (var i = 0; i < steden.length; i++) {
             if (this.props.city == steden[i]) {
