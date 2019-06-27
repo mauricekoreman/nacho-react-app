@@ -25,12 +25,11 @@ export class CityStory extends React.Component{
     axios.get("http://95.179.178.130/api/" + LANGUAGE + "/" + CITY)
     .then(res=>{
       this.setState({info: res.data[0].info});
-    })
+    }) 
   }
   /* Dit is de opbouw van de pagina
   1. achtergrond kleur
-  2. vlaggenmenu link die terug verwijst naar LanguagePage en ga terug link
-     die verwijst naar de GpsComponent
+  2. vlaggenmenu link die terug verwijst naar LanguagePage en ga terug link die verwijst naar de GpsComponent
   3. afbeelding inladen van de stad die uit GpsComponent is gekomen
   4. naam van de stad en de informatie in de goede taal laten zien
   5. knop voor meer informatie wat er te doen is in de stad
@@ -42,8 +41,8 @@ export class CityStory extends React.Component{
           <style>{'body {background: white); background-repeat: no-repeat;}'}</style>
         </Helmet>
         <div className="header">{/*2*/}
-            <Link to="/GpsComponent" className="gaTerug-link"></Link>
-            <Link to="/Language" className="vlaggenMenu-link"></Link>
+          <Link to="/GpsComponent" className="gaTerug-link"></Link>
+          <Link to="/Language" className="vlaggenMenu-link"></Link>
         </div>
         <div>{/*3 en 4*/}
           <img className="cityStory-img"src={"../img/steden/" + this.props.city+ "2.jpg"} alt="" />

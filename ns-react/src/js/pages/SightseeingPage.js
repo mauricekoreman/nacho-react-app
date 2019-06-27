@@ -61,11 +61,12 @@ export class SightSeeingPage extends React.Component{
         <Helmet>{/*1*/}
           <style>{'body { background-color: white; background-repeat: no-repeat;}'}</style>
         </Helmet>
-        <div className="header">{/*2*/}
+
+        <div className="header sightseeing-header">{/*2*/}
           <Link to="/CityStory" className="gaTerug-link"></Link>
           <Link to="/Language" className="vlaggenMenu-link"></Link>
-          </div>
-        <div  className="sightseeing-blok">{/*3*/}
+        </div>
+        <div className="sightseeing-blok">{/*3*/}
           <h3 className="sightseeing-heading">Activity:</h3>
           <SightseeingComponent
             actname={ this.state.name }

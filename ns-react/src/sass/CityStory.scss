@@ -1,13 +1,14 @@
-.cityStory{ 
+.cityStory{
   &-text{
-    margin: 10px 16px 0 16px;
+    margin: 10px 25px 0 25px;
     font-size: 15px;
   }
   &-img{
     width: 100%;
   }
   &-title{
-    margin: 22px 16px 22px 16px;
+    margin: 22px 0;
+    color: $primary-text-color
   }
 
   &-btn{

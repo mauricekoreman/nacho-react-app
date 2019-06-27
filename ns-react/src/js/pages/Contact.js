@@ -33,11 +33,15 @@ export class Contact extends React.Component {
         <Helmet>{/*1*/}
           <style>{'body {background: linear-gradient(#fcc63f, white); background-repeat: no-repeat;}'}</style>
         </Helmet>
-        <div>{/*2*/}
-          <Link to="/Language" className="vlaggenMenu-link"></Link>
+
+        <div className="header contact-header">{/*2*/}
+          <button className="gaTerug">
+            <Link to="/Language" className="gaTerug-link"></Link>
+          </button>
+          <span className="contact-heading-primary">Contact</span>
         </div>
         {/*3 en 4*/}
-        <h1 className="contact-heading-primary">Contact</h1>
+
         <div className="contact-container">
           <div className="contact-container-tel">
             <i className="fa fa-mobile" onClick={this.onMobileClicked}></i>

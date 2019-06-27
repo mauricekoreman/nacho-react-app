@@ -19,16 +19,27 @@ const CityOfferPage = (props) =>{
       <Helmet>{/*1*/}
         <style>{'body { background-color: #FCC63F; background-repeat: no-repeat; font-family: Montserrat}'}</style>
       </Helmet>
+
       <div>{/*2*/}
-        <Link to="/Language" className="vlaggenMenu-link"></Link>
+        <button className="vlaggenMenu">
+          <Link to="/Language" className="vlaggenMenu-link"></Link>
+        </button>
       </div>{/*3 en 4*/}
-      <div className="CityOfferPage-keuzevlak">
-        <img className="CityOfferPage-img"src={"../img/steden/" + props.city+ "1.jpg"} alt="" />
-        <h1 className="CityOfferPage-text">{props.city}</h1>
-      </div>
-      <div>{/*5*/}
-          <Link className="CityOfferPage-btn-yes-link" to="/CityStory"></Link>
-          <Link className="CityOfferPage-btn-no-link" to="/GpsComponent"></Link>
+
+      <div className="CityOfferPage-content">
+        <div className="CityOfferPage-keuzevlak">
+          <img className="CityOfferPage-img"src={"../img/steden/" + this.props.city+ "1.jpg"} alt="" />
+          <h1 className="CityOfferPage-text">{this.props.city}</h1>
+        </div>{/*5*/}
+
+        <div className="CityOfferPage-btn">
+          <button className="CityOfferPage-btn CityOfferPage-btn--yes">
+            <Link className="CityOfferPage-btn--yes CityOfferPage-btn--yes-link" to="/CityStory"></Link>
+          </button>
+          <button className="CityOfferPage-btn CityOfferPage-btn--no">
+            <Link className="CityOfferPage-btn--no-link" to="/GpsComponent"></Link>
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -1,13 +1,20 @@
 .CityOfferPage {
+  &-content {
+    position: absolute;
+    margin-top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
   &-keuzevlak {
-    background-color: white;
-    margin: 110px 20px;
+    background-color: #FFF;
     border-radius: 15px;
-    padding: 27px 7px 12px 7px;
+    padding: 20px 20px 10px 20px;
   }
 
   &-img {
-    width: 76.5vw;
+    width: 70vw;
+    height: auto;
     border-radius: 15px;
     display: block;
     margin: auto;
@@ -17,50 +24,49 @@
     text-align: center;
     margin-top: 10px;
     margin-bottom: 0;
-    font-size: 40px;
+    font-size: 35px;
     color: $primary-text-color;
   }
-
-  &-btn-no-link {
+  
+  &-btn {
     text-decoration: none;
-    position: absolute;
-    left: 40px;
-    top: 83%;
     border: none;
-    height: 80px;
-    width: 80px;
-    display: inline-block;
-    background-position: center;
-    background-image: url("../img/rodekruis.png");
-    background-size: cover;
-    padding: 0;
-    margin: 0 25px;
-  }
+    background: none;
 
-  &-btn-yes-link {
-    text-decoration: none;
-    position: absolute;
-    right: 40px;
-    top: 83%;
-    border: none;
-    height: 80px;
-    width: 80px;
-    display: inline-block;
-    background-position: center;
-    background-image: url("../img/groenfinkje.png");
-    background-size: cover;
-    padding: 0;
-    margin: 0 25px;
+    &--no-link, &--yes-link {
+      height: 70px;
+      width: 70px;
+      display: inline-block;
+      background-position: center;
+      background-size: cover;
+      padding: 0;
+      position: absolute;
+    }
+
+    &--no {
+      &-link {
+        left: 20px;
+        background-image: url("../img/rodekruis.png");
+      }
+    }
+
+    &--yes {
+      &-link {
+        right: 20px;
+        background-image: url("../img/groenfinkje.png");
+      }
+    }
   }
 }
-@media only screen and (min-width : 768px) {
+
+@media only screen and (min-width : 600px) {
   .CityOfferPage {
-    &-img {
-      height: 50vh;
-      width: auto;
+    &-content {
+      width: 430px;
     }
-    &-container{
-      padding:0 420px;
+
+    &-img {
+      width: 100%;
     }
   }
 }

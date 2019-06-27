@@ -25,6 +25,7 @@ const ErrorPage = () =>{
       </div>
     );
   };
+
 /*Dit is redux*/
 const mapStateToProps = state => {
   return {language: state.language};
