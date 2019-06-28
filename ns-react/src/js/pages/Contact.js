@@ -35,9 +35,7 @@ export class Contact extends React.Component {
         </Helmet>
 
         <div className="header contact-header">{/*2*/}
-          <button className="gaTerug">
             <Link to="/Language" className="gaTerug-link"></Link>
-          </button>
           <span className="contact-heading-primary">Contact</span>
         </div>
         {/*3 en 4*/}

@@ -21,9 +21,7 @@ const CityOfferPage = (props) =>{
       </Helmet>
 
       <div>{/*2*/}
-        <button className="vlaggenMenu">
           <Link to="/Language" className="vlaggenMenu-link"></Link>
-        </button>
       </div>{/*3 en 4*/}
 
       <div className="CityOfferPage-content">
@@ -33,12 +31,8 @@ const CityOfferPage = (props) =>{
         </div>{/*5*/}
 
         <div className="CityOfferPage-btn">
-          <button className="CityOfferPage-btn CityOfferPage-btn--yes">
             <Link className="CityOfferPage-btn--yes CityOfferPage-btn--yes-link" to="/CityStory"></Link>
-          </button>
-          <button className="CityOfferPage-btn CityOfferPage-btn--no">
             <Link className="CityOfferPage-btn--no-link" to="/GpsComponent"></Link>
-          </button>
         </div>
       </div>
     </div>
